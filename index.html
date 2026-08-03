@@ -1,0 +1,1728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile No Track | Free Mobile Number & IP Location Lookup</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Trace mobile number location, telecom circle & city instantly. Free online mobile number lookup tool for India and 240+ countries. Also check IP location, DNS, WHOIS, VPN, Blacklist & more.">
+    <meta name="keywords" content="mobile number lookup, trace mobile number, mobile number location, telecom circle finder, mobile number tracker India, phone number lookup, IP address lookup, bulk number checker, DNS lookup, WHOIS, VPN detector, spam blacklist check, link scanner">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Mobile No Track">
+    <meta name="theme-color" content="#0f3460">
+    <link rel="canonical" href="https://mobilenotrack.com/" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Open Graph / Facebook & WhatsApp preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mobile No Track | Free Mobile Number & IP Location Lookup">
+    <meta property="og:description" content="Look up any mobile number from any country — instantly find telecom circle, city, and location. Also check IP, DNS, WHOIS, VPN & spam. 240+ countries supported.">
+    <meta property="og:url" content="https://mobilenotrack.com/">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:image" content="https://mobilenotrack.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Mobile No Track - Free Mobile Number Lookup Tool">
+    <meta property="og:site_name" content="Mobile No Track">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mobile No Track | Free Mobile Number & IP Lookup">
+    <meta name="twitter:description" content="Look up any mobile number from any country — instantly find telecom circle, city, and location. 240+ countries supported.">
+    <meta name="twitter:image" content="https://mobilenotrack.com/og-image.png">
+    <meta name="twitter:site" content="@mobilenotrack">
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Mobile No Track",
+      "url": "https://mobilenotrack.com/",
+      "description": "Free online tool to find telecom circle, city, and location from a mobile number. Also supports IP lookup, DNS, WHOIS, VPN detection, spam blacklist, and link security scanning. 240+ countries supported.",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "Any",
+      "inLanguage": ["en", "hi"],
+      "image": "https://mobilenotrack.com/og-image.png",
+      "author": {
+        "@type": "Organization",
+        "name": "Mobile No Track",
+        "url": "https://mobilenotrack.com/",
+        "email": "contact@mobilenotrack.com"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "INR"
+      },
+      "featureList": [
+        "Mobile number lookup for 240+ countries",
+        "India telecom circle detection",
+        "IP address geolocation",
+        "VPN and proxy detection",
+        "DNS record lookup",
+        "WHOIS domain information",
+        "Link security scanner",
+        "Spam blacklist check",
+        "Bulk number lookup"
+      ]
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://mobilenotrack.com/"
+        }
+      ]
+    }
+    </script>
+
+    <!-- FAQ Schema for Google rich results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How to trace a mobile number location in India?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Enter the mobile number with country code (e.g. +919876543210) on Mobile No Track. It will instantly show the telecom circle and estimated region based on the number series using publicly available numbering plan data."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Mobile No Track free to use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Mobile No Track is completely free. No registration or payment is required. It supports 240+ countries."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I check multiple mobile numbers at once?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, use the Bulk Lookup feature to check up to 100 numbers at once. Paste them separated by commas, spaces, or new lines."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the IP lookup tool?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The IP lookup tool shows the approximate city, region, and country of any public IP address, and also detects if it belongs to a VPN, proxy, or datacenter network."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+         crossorigin="anonymous"></script>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            padding: 15px;
+        }
+
+        .wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 24px 0 18px;
+            color: #fff;
+        }
+        .header h1 {
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        .header p {
+            font-size: 14px;
+            color: #a8c5f0;
+            margin-top: 6px;
+        }
+
+        /* Ad Banner */
+        .ad-banner {
+            background: #fff;
+            border-radius: 10px;
+            padding: 8px;
+            margin-bottom: 14px;
+            text-align: center;
+            min-height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .ad-label {
+            font-size: 10px;
+            color: #999;
+            text-align: center;
+            margin-top: 3px;
+        }
+
+        /* Card */
+        .card {
+            background: rgba(255,255,255,0.97);
+            border-radius: 14px;
+            padding: 22px;
+            margin-bottom: 14px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.22);
+        }
+
+        .card h2 {
+            font-size: 18px;
+            color: #1a1a2e;
+            margin-bottom: 6px;
+        }
+        .card .subtitle {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 14px;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            min-width: 200px;
+            padding: 13px 16px;
+            font-size: 17px;
+            border: 2px solid #d0daea;
+            border-radius: 8px;
+            outline: none;
+            transition: border-color 0.2s;
+            letter-spacing: 1px;
+        }
+        input[type="text"]:focus {
+            border-color: #0f3460;
+        }
+
+        button {
+            padding: 13px 26px;
+            font-size: 16px;
+            background: linear-gradient(135deg, #0f3460, #e94560);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: opacity 0.2s;
+            white-space: nowrap;
+        }
+        button:hover { opacity: 0.88; }
+        button:active { opacity: 0.75; }
+
+        /* Result Box */
+        #result {
+            margin-top: 16px;
+            padding: 14px 16px;
+            border-radius: 9px;
+            display: none;
+            font-size: 15px;
+            line-height: 1.75;
+        }
+        .valid {
+            background: #eaf7ee;
+            color: #1a4a26;
+            border: 1.5px solid #7dcd9d;
+        }
+        .invalid {
+            background: #fdf0f0;
+            color: #8b1c1c;
+            border: 1.5px solid #f5a0a0;
+        }
+        #result table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+            margin-top: 4px;
+        }
+        #result table td {
+            padding: 5px 8px;
+            vertical-align: top;
+        }
+        #result table td:first-child {
+            font-weight: 600;
+            color: #0f3460;
+            width: 170px;
+            white-space: nowrap;
+        }
+
+        /* Loading */
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 12px;
+            color: #555;
+            font-size: 14px;
+        }
+        .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #ccc;
+            border-top-color: #0f3460;
+            border-radius: 50%;
+            animation: spin 0.7s linear infinite;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* Map */
+        #map {
+            height: 440px;
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid #cdd8ea;
+        }
+
+        /* Side Ads */
+        .ad-side {
+            background: #fff;
+            border-radius: 10px;
+            padding: 8px;
+            margin-bottom: 14px;
+            min-height: 250px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            color: #a8c5f0;
+            font-size: 12px;
+            padding: 16px 0 10px;
+        }
+
+        @media (max-width: 540px) {
+            .header h1 { font-size: 20px; }
+            input[type="text"] { font-size: 15px; }
+            button { padding: 13px 18px; font-size: 14px; }
+            #map { height: 320px; }
+        }
+    </style>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- libphonenumber-js -->
+    <script src="https://cdn.jsdelivr.net/npm/libphonenumber-js@1.10.55/bundle/libphonenumber-min.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+
+    <!-- Header -->
+    <div class="header" style="position:relative;">
+        <button id="loginBtn" onclick="openLoginModal()" style="position:absolute; top:0; right:0; background:rgba(255,255,255,0.12); padding:8px 16px; font-size:13px; border-radius:20px;">👤 Login</button>
+        <h1>📱 Mobile No Track</h1>
+        <p>Find telecom circle & location for any mobile number, worldwide</p>
+    </div>
+
+    <!-- Top Ad Banner -->
+    <div class="ad-banner">
+        <div>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="1234567890"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+    <div class="ad-label">Advertisement</div>
+
+    <!-- Main Search Card — BOX 1 with Tabs -->
+    <div class="card">
+        <h2>🔍 Search Number &amp; Domain Security Hub</h2>
+        <p class="subtitle">Enter number with country code · Examples: +910000000000 &nbsp;|&nbsp; +10000000000 &nbsp;|&nbsp; +440000000000</p>
+
+        <!-- Tab Buttons -->
+        <div style="display:flex; gap:8px; margin-bottom:14px; flex-wrap:wrap;">
+            <button onclick="switchTab1('phone')"  id="tab1-phone"     class="t1btn active-t1" style="padding:8px 12px; border:1px solid #0f3460; background:linear-gradient(135deg,#0f3460,#e94560); color:#fff; border-radius:6px; cursor:pointer; font-size:13px; font-weight:bold;">📱 Phone Lookup</button>
+            <button onclick="switchTab1('dns')"    id="tab1-dns"       class="t1btn" style="padding:8px 12px; border:1px solid #cbd5e1; background:#f8fafc; color:#333; border-radius:6px; cursor:pointer; font-size:13px;">🌐 DNS Lookup</button>
+            <button onclick="switchTab1('whois')"  id="tab1-whois"     class="t1btn" style="padding:8px 12px; border:1px solid #cbd5e1; background:#f8fafc; color:#333; border-radius:6px; cursor:pointer; font-size:13px;">📋 WHOIS Info</button>
+            <button onclick="switchTab1('link')"   id="tab1-link"      class="t1btn" style="padding:8px 12px; border:1px solid #cbd5e1; background:#f8fafc; color:#333; border-radius:6px; cursor:pointer; font-size:13px;">🛡️ LinkGuard</button>
+            <button onclick="switchTab1('port')"   id="tab1-port"      class="t1btn" style="padding:8px 12px; border:1px solid #cbd5e1; background:#f8fafc; color:#333; border-radius:6px; cursor:pointer; font-size:13px;">🔌 Port &amp; Ping</button>
+        </div>
+
+        <!-- TAB: Phone Lookup (original) -->
+        <div id="pane-phone">
+            <div class="input-group">
+                <input type="text" id="phoneInput" placeholder="+910000000000" value="+910000000000"
+                       onkeydown="if(event.key==='Enter') lookupNumber()">
+                <button onclick="lookupNumber()">🔎 Search</button>
+            </div>
+            <div class="loading" id="loading">
+                <span class="spinner"></span> Looking up information...
+            </div>
+            <div id="result"></div>
+        </div>
+
+        <!-- TAB: DNS Lookup -->
+        <div id="pane-dns" style="display:none;">
+            <p style="font-size:13px;color:#666;margin-bottom:10px;">Domain ka DNS record check karo (A, MX records)</p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;">
+                <input type="text" id="dnsInput" placeholder="उदा. google.com" style="flex:1;min-width:200px;padding:10px;border:1px solid #ccc;border-radius:6px;font-size:14px;" onkeydown="if(event.key==='Enter') runDNS()">
+                <button onclick="runDNS()" style="background:#3498db;color:#fff;border:none;padding:10px 18px;border-radius:6px;cursor:pointer;font-weight:bold;">🔍 DNS Check</button>
+            </div>
+            <div id="dnsResult" style="margin-top:12px;min-height:60px;background:#f9fafb;padding:12px;border-radius:8px;border:1px solid #e5e7eb;font-size:13px;line-height:1.7;">
+                <span style="color:#999;">Domain दर्ज करें और DNS Check करें।</span>
+            </div>
+        </div>
+
+        <!-- TAB: WHOIS -->
+        <div id="pane-whois" style="display:none;">
+            <p style="font-size:13px;color:#666;margin-bottom:10px;">Domain registration info (RDAP Protocol — Free &amp; Legal)</p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;">
+                <input type="text" id="whoisInput" placeholder="उदा. google.com" style="flex:1;min-width:200px;padding:10px;border:1px solid #ccc;border-radius:6px;font-size:14px;" onkeydown="if(event.key==='Enter') runWHOIS()">
+                <button onclick="runWHOIS()" style="background:#8e44ad;color:#fff;border:none;padding:10px 18px;border-radius:6px;cursor:pointer;font-weight:bold;">📋 WHOIS</button>
+            </div>
+            <div id="whoisResult" style="margin-top:12px;min-height:60px;background:#f9fafb;padding:12px;border-radius:8px;border:1px solid #e5e7eb;font-size:13px;line-height:1.7;">
+                <span style="color:#999;">Domain दर्ज करें और WHOIS जांचें।</span>
+            </div>
+        </div>
+
+        <!-- TAB: LinkGuard -->
+        <div id="pane-link" style="display:none;">
+            <p style="font-size:13px;color:#666;margin-bottom:10px;">URL को phishing, suspicious pattern और HTTPS के लिए जांचें</p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;">
+                <input type="text" id="linkInput" placeholder="उदा. https://example.com या bit.ly/xyz" style="flex:1;min-width:200px;padding:10px;border:1px solid #ccc;border-radius:6px;font-size:14px;" onkeydown="if(event.key==='Enter') runLinkGuard()">
+                <button onclick="runLinkGuard()" style="background:#27ae60;color:#fff;border:none;padding:10px 18px;border-radius:6px;cursor:pointer;font-weight:bold;">🛡️ Scan</button>
+            </div>
+            <div id="linkResult" style="margin-top:12px;min-height:60px;background:#f9fafb;padding:12px;border-radius:8px;border:1px solid #e5e7eb;font-size:13px;line-height:1.7;">
+                <span style="color:#999;">URL दर्ज करें और LinkGuard scan करें।</span>
+            </div>
+        </div>
+
+        <!-- TAB: Port & Ping -->
+        <div id="pane-port" style="display:none;">
+            <p style="font-size:13px;color:#666;margin-bottom:10px;">Domain/IP का latency और port availability test करें</p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;">
+                <input type="text" id="portInput" placeholder="उदा. google.com" style="flex:1;min-width:200px;padding:10px;border:1px solid #ccc;border-radius:6px;font-size:14px;" onkeydown="if(event.key==='Enter') runPortPing()">
+                <button onclick="runPortPing()" style="background:#e67e22;color:#fff;border:none;padding:10px 18px;border-radius:6px;cursor:pointer;font-weight:bold;">🔌 Test</button>
+            </div>
+            <div id="portResult" style="margin-top:12px;min-height:60px;background:#f9fafb;padding:12px;border-radius:8px;border:1px solid #e5e7eb;font-size:13px;line-height:1.7;">
+                <span style="color:#999;">Domain दर्ज करें और Port/Ping test करें।</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bulk Lookup -->
+    <div class="card" style="padding: 18px; margin-top: 14px;">
+        <h3 style="margin-top:0;">📋 Bulk Lookup — Check Multiple Numbers at Once</h3>
+        <p style="font-size:13px; color:#666; margin-top:4px;">Enter numbers separated by a new line, comma, space, or even pasted together — the tool will auto-detect each one. Then click "Bulk Check".</p>
+        <textarea id="bulkInput" rows="6" placeholder="+910000000000&#10;+10000000000&#10;+440000000000" style="width:100%; font-family:inherit; font-size:14px; padding:10px; border-radius:8px; border:1px solid #ccc; margin-top:8px; resize:vertical;"></textarea>
+        <div style="display:flex; gap:10px; margin-top:10px; flex-wrap:wrap;">
+            <button onclick="bulkLookup()" style="background:#4a90d9;color:#fff;border:none;padding:10px 18px;border-radius:6px;cursor:pointer;font-size:14px;">📋 Bulk Check</button>
+            <button onclick="document.getElementById('bulkInput').value=''; document.getElementById('bulkResult').innerHTML='';" style="background:#6c757d;color:#fff;border:none;padding:10px 18px;border-radius:6px;cursor:pointer;font-size:14px;">🗑️ Clear</button>
+        </div>
+        <div id="bulkResult" style="margin-top:14px; overflow-x:auto;"></div>
+    </div>
+
+    <!-- Map -->
+    <div class="card" style="padding: 14px;">
+        <div id="map"></div>
+    </div>
+
+    <!-- IP Intelligence Card — BOX 2 with Tabs -->
+    <div class="card" style="padding: 18px; margin-top: 14px;">
+        <h3 style="margin-top:0;">🌐 IP Intelligence, VPN &amp; Carrier Hub</h3>
+        <p style="font-size:13px; color:#666; margin-top:4px;">IP address ya phone number daalke full intelligence check karo</p>
+
+        <!-- Tab Buttons -->
+        <div style="display:flex; gap:8px; margin:12px 0 14px; flex-wrap:wrap;">
+            <button onclick="switchTab2('ip')"       id="tab2-ip"       class="t2btn active-t2" style="padding:8px 12px; border:1px solid #4a90d9; background:#4a90d9; color:#fff; border-radius:6px; cursor:pointer; font-size:13px; font-weight:bold;">🌐 IP Lookup</button>
+            <button onclick="switchTab2('vpn')"      id="tab2-vpn"      class="t2btn" style="padding:8px 12px; border:1px solid #cbd5e1; background:#f8fafc; color:#333; border-radius:6px; cursor:pointer; font-size:13px;">🛡️ VPN / Proxy</button>
+            <button onclick="switchTab2('blacklist')" id="tab2-blacklist" class="t2btn" style="padding:8px 12px; border:1px solid #cbd5e1; background:#f8fafc; color:#333; border-radius:6px; cursor:pointer; font-size:13px;">🚫 Spam / Blacklist</button>
+            <button onclick="switchTab2('carrier')"  id="tab2-carrier"  class="t2btn" style="padding:8px 12px; border:1px solid #cbd5e1; background:#f8fafc; color:#333; border-radius:6px; cursor:pointer; font-size:13px;">📲 Carrier Lookup</button>
+        </div>
+
+        <!-- TAB: IP Lookup (original) -->
+        <div id="pane2-ip">
+            <input type="text" id="ipInput" placeholder="e.g. 0.0.0.0" style="margin-top:4px;width:100%;"
+                   onkeydown="if(event.key==='Enter') lookupIP(document.getElementById('ipInput').value.trim())">
+            <div style="display:flex; gap:10px; margin-top:10px; flex-wrap:wrap;">
+                <button onclick="lookupIP(document.getElementById('ipInput').value.trim())" style="background:#4a90d9;color:#fff;border:none;padding:10px 18px;border-radius:6px;cursor:pointer;font-size:14px;">🔍 Search IP</button>
+                <button onclick="lookupMyIP()" style="background:#6c757d;color:#fff;border:none;padding:10px 18px;border-radius:6px;cursor:pointer;font-size:14px;">📍 My IP</button>
+            </div>
+            <div id="ipResult" style="margin-top:14px;"></div>
+        </div>
+
+        <!-- TAB: VPN / Proxy Detector -->
+        <div id="pane2-vpn" style="display:none;">
+            <p style="font-size:13px;color:#666;margin-bottom:10px;">IP address check karo — Residential, Mobile, DataCenter ya VPN/Proxy hai?</p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;">
+                <input type="text" id="vpnInput" placeholder="उदा. 8.8.8.8" style="flex:1;min-width:200px;padding:10px;border:1px solid #ccc;border-radius:6px;font-size:14px;" onkeydown="if(event.key==='Enter') runVPNCheck()">
+                <button onclick="runVPNCheck()" style="background:#e74c3c;color:#fff;border:none;padding:10px 18px;border-radius:6px;cursor:pointer;font-weight:bold;">🛡️ VPN Check</button>
+            </div>
+            <div id="vpnResult" style="margin-top:12px;min-height:60px;background:#f9fafb;padding:12px;border-radius:8px;border:1px solid #e5e7eb;font-size:13px;line-height:1.7;">
+                <span style="color:#999;">IP address दर्ज करें।</span>
+            </div>
+        </div>
+
+        <!-- TAB: Spam / Blacklist -->
+        <div id="pane2-blacklist" style="display:none;">
+            <p style="font-size:13px;color:#666;margin-bottom:10px;">IP को Spamhaus, SpamCop, SORBS blacklist में check करें</p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;">
+                <input type="text" id="blInput" placeholder="उदा. 1.2.3.4" style="flex:1;min-width:200px;padding:10px;border:1px solid #ccc;border-radius:6px;font-size:14px;" onkeydown="if(event.key==='Enter') runBlacklist()">
+                <button onclick="runBlacklist()" style="background:#c0392b;color:#fff;border:none;padding:10px 18px;border-radius:6px;cursor:pointer;font-weight:bold;">🚫 Check</button>
+            </div>
+            <div id="blResult" style="margin-top:12px;min-height:60px;background:#f9fafb;padding:12px;border-radius:8px;border:1px solid #e5e7eb;font-size:13px;line-height:1.7;">
+                <span style="color:#999;">IP address दर्ज करें।</span>
+            </div>
+        </div>
+
+        <!-- TAB: Global Carrier Lookup -->
+        <div id="pane2-carrier" style="display:none;">
+            <p style="font-size:13px;color:#666;margin-bottom:10px;">International phone number ka carrier, country aur type check karo (+country code ke saath)</p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;">
+                <input type="text" id="carrierInput" placeholder="उदा. +14155552671 या +919876543210" style="flex:1;min-width:200px;padding:10px;border:1px solid #ccc;border-radius:6px;font-size:14px;" onkeydown="if(event.key==='Enter') runCarrier()">
+                <button onclick="runCarrier()" style="background:#16a085;color:#fff;border:none;padding:10px 18px;border-radius:6px;cursor:pointer;font-weight:bold;">📲 Lookup</button>
+            </div>
+            <div id="carrierResult" style="margin-top:12px;min-height:60px;background:#f9fafb;padding:12px;border-radius:8px;border:1px solid #e5e7eb;font-size:13px;line-height:1.7;">
+                <span style="color:#999;">+देशकोड सहित नंबर दर्ज करें।</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Ad -->
+    <div class="ad-banner">
+        <div>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="0987654321"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+    <div class="ad-label">Advertisement</div>
+
+    <div class="footer">
+        ⚠️ This tool only provides telecom circle/region information, or (for landlines) area-code city information. It does not perform exact location tracking. In most countries, mobile numbers are not linked to a city. Operator detection for India is an estimate based on original number series — due to Mobile Number Portability (MNP), the actual current operator may differ.<br>
+        <div style="margin: 10px 0;">
+            <a href="#about-section" style="color:#4a90d9; margin: 0 8px; text-decoration:underline;">About</a> |
+            <a href="#privacy-section" style="color:#4a90d9; margin: 0 8px; text-decoration:underline;">Privacy Policy</a> |
+            <a href="#contact-section" style="color:#4a90d9; margin: 0 8px; text-decoration:underline;">Contact</a>
+        </div>
+        © 2026 <a href="https://mobilenotrack.com/" style="color:#a8c5f0; text-decoration:none;">mobilenotrack.com</a> | Powered by <a href="https://www.openstreetmap.org/copyright" style="color:#a8c5f0;" target="_blank" rel="noopener">© OpenStreetMap contributors</a>
+    </div>
+
+    <!-- About Section (required by AdSense for authenticity/authorship) -->
+    <div class="card" id="about-section" style="padding: 18px; margin-top: 14px; text-align: left;">
+        <h3>ℹ️ About Mobile No Track</h3>
+        <p>Mobile No Track is a free online tool that uses the libphonenumber-js library (an open-source numbering-plan database maintained with Google-originated data) to show the validity, country, telecom circle (for India), and landline area-code city (for select countries) of any mobile/landline number.</p>
+        <p>This tool does not reveal a person's exact real-time location, address, or identity — it only provides region-level information based on publicly available numbering-plan data.</p>
+    </div>
+
+    <!-- Privacy Policy Section (required by Google AdSense Terms, Section 10) -->
+    <div class="card" id="privacy-section" style="padding: 18px; margin-top: 14px; text-align: left;">
+        <h3>🔒 Privacy Policy</h3>
+        <p><b>Data Usage:</b> This website does not store the phone numbers you enter anywhere — all processing happens client-side in your browser.</p>
+        <p><b>Cookies and Advertising:</b> This site uses Google AdSense. Google and its partners use cookies to serve ads based on your prior visits. Google's advertising cookies enable Google and its partners to serve ads based on your visits to this site and/or other sites on the internet. You can opt out of personalized advertising by visiting <a href="https://adssettings.google.com" target="_blank" rel="noopener" style="color:#4a90d9;">Google Ads Settings</a>.</p>
+        <p><b>Third-party services:</b> This site uses OpenStreetMap for map data, and geojs.io / api.ipify.org for the IP location feature — your IP address is only sent to those services when you click "View My IP Location".</p>
+        <p><b>GDPR/CCPA:</b> For users in the European Union (EU) and other applicable regions, you have the right to consent to cookies. For more information, see <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener" style="color:#4a90d9;">Google's Ads Policy</a>.</p>
+        <p style="font-size:12px; color:#888;">Last updated: July 2026</p>
+    </div>
+
+    <!-- Contact Section (required by AdSense) -->
+    <div class="card" id="contact-section" style="padding: 18px; margin-top: 14px; text-align: left;">
+        <h3>📧 Contact</h3>
+        <p>For any questions, suggestions, or complaints, please contact us:</p>
+        <p><b>Email:</b> <a href="mailto:contact@mobilenotrack.com" style="color:#4a90d9;">contact@mobilenotrack.com</a></p>
+        <p><b>Website:</b> <a href="https://mobilenotrack.com/" style="color:#4a90d9;" target="_blank">mobilenotrack.com</a></p>
+        <p style="font-size:12px; color:#888;">We typically respond within 24–48 hours.</p>
+    </div>
+
+</div>
+
+<!-- ═════════════════════════════════════════════
+     Login Modal (UI placeholder — NOT functional yet)
+     Wire this up later to Firebase Auth / Supabase Auth /
+     your own backend. See TODO comments in the script below.
+     ═════════════════════════════════════════════ -->
+<div id="loginModalOverlay" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.55); z-index:10000; align-items:center; justify-content:center; padding:16px;">
+    <div style="background:#fff; border-radius:14px; padding:26px; max-width:360px; width:100%; box-shadow:0 12px 40px rgba(0,0,0,0.3);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
+            <h3 style="margin:0;">👤 Login</h3>
+            <button onclick="closeLoginModal()" style="background:none; color:#888; padding:2px 8px; font-size:18px; box-shadow:none;">✕</button>
+        </div>
+
+        <p style="font-size:12px; color:#c0392b; background:#fdf0f0; padding:8px 10px; border-radius:6px; margin-bottom:14px;">
+            ⚠️ Login is not active yet — this is a placeholder UI. No account is created and no data is sent anywhere.
+        </p>
+
+        <input type="email" id="loginEmail" placeholder="Email address" style="width:100%; margin-bottom:10px;">
+        <input type="password" id="loginPassword" placeholder="Password" style="width:100%; margin-bottom:14px;">
+
+        <button onclick="handleLoginPlaceholder()" style="width:100%; margin-bottom:8px;">Log In</button>
+        <button onclick="handleLoginPlaceholder()" style="width:100%; background:linear-gradient(135deg, #4a90d9, #357abd);">Sign Up</button>
+
+        <p style="font-size:11px; color:#999; text-align:center; margin-top:12px;">
+            Coming soon — powered by your choice of auth provider.
+        </p>
+    </div>
+</div>
+
+<!-- Map Init -->
+<script>
+    var map = L.map('map').setView([22.5937, 78.9629], 5);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    var currentMarker = null;
+    var currentCircle = null;
+
+    // ─────────────────────────────────────────────
+    // ─────────────────────────────────────────────
+    // Indian Mobile Operator Detection (approximate)
+    // NOTE: Due to Mobile Number Portability (MNP), the
+    // ORIGINALLY-ALLOTTED operator series may not match the
+    // CURRENT operator if the number has been ported. This is
+    // a best-effort estimate based on published series blocks,
+    // not a live/real-time carrier lookup.
+    // ─────────────────────────────────────────────
+    var operatorSeries = [
+        { prefix: '988', operator: 'BSNL',          color: '🟢' },
+        { prefix: '94',  operator: 'BSNL',           color: '🟢' },
+        { prefix: '96',  operator: 'Vodafone Idea',  color: '🔵' },
+        { prefix: '97',  operator: 'Vodafone Idea',  color: '🔵' },
+        { prefix: '98',  operator: 'Vodafone Idea',  color: '🔵' },
+        { prefix: '90',  operator: 'Airtel',         color: '🔴' },
+        { prefix: '91',  operator: 'Airtel',         color: '🔴' },
+        { prefix: '92',  operator: 'Airtel',         color: '🔴' },
+        { prefix: '93',  operator: 'Airtel',         color: '🔴' },
+        { prefix: '95',  operator: 'Airtel',         color: '🔴' },
+        { prefix: '6',   operator: 'Reliance Jio',   color: '🟡' },
+        { prefix: '80',  operator: 'Reliance Jio',   color: '🟡' },
+        { prefix: '81',  operator: 'Reliance Jio',   color: '🟡' },
+        { prefix: '70',  operator: 'Reliance Jio',   color: '🟡' },
+        { prefix: '71',  operator: 'Reliance Jio',   color: '🟡' },
+        { prefix: '72',  operator: 'Reliance Jio',   color: '🟡' },
+        { prefix: '73',  operator: 'Reliance Jio',   color: '🟡' },
+        { prefix: '74',  operator: 'Reliance Jio',   color: '🟡' },
+        { prefix: '75',  operator: 'Reliance Jio',   color: '🟡' },
+        { prefix: '76',  operator: 'Reliance Jio',   color: '🟡' },
+        { prefix: '77',  operator: 'Reliance Jio',   color: '🟡' },
+        { prefix: '78',  operator: 'Reliance Jio',   color: '🟡' },
+        { prefix: '79',  operator: 'Reliance Jio',   color: '🟡' },
+    ];
+
+    function getOperator(national) {
+        var sorted = operatorSeries.slice().sort(function(a, b) { return b.prefix.length - a.prefix.length; });
+        for (var i = 0; i < sorted.length; i++) {
+            if (national.indexOf(sorted[i].prefix) === 0) {
+                return { name: sorted[i].operator, color: sorted[i].color };
+            }
+        }
+        return null;
+    }
+
+    // Indian Telecom Circle Detection (improved)
+    // ─────────────────────────────────────────────
+    function getIndianCircle(national) {
+        if (national.length < 10) return { name: "India", lat: 22.5937, lon: 78.9629, zoom: 5 };
+
+        var p4 = national.substring(0, 4);
+        var p3 = national.substring(0, 3);
+        var p2 = national.substring(0, 2);
+        var first = national.charAt(0);
+
+        var circles = {
+            // ── Delhi NCR ──
+            "9810": "Delhi NCR", "9811": "Delhi NCR", "9818": "Delhi NCR",
+            "9871": "Delhi NCR", "9891": "Delhi NCR", "9910": "Delhi NCR",
+            "9958": "Delhi NCR", "9999": "Delhi NCR", "8800": "Delhi NCR",
+            "9711": "Delhi NCR", "9650": "Delhi NCR", "7042": "Delhi NCR",
+            "9310": "Delhi NCR", "9313": "Delhi NCR", "9315": "Delhi NCR",
+            "8447": "Delhi NCR", "8750": "Delhi NCR", "9312": "Delhi NCR",
+
+            // ── Mumbai ──
+            "9820": "Mumbai", "9821": "Mumbai", "9819": "Mumbai",
+            "9833": "Mumbai", "9869": "Mumbai", "9769": "Mumbai",
+            "9969": "Mumbai", "8080": "Mumbai", "9004": "Mumbai",
+            "9167": "Mumbai", "7738": "Mumbai", "8422": "Mumbai",
+            "8879": "Mumbai", "9702": "Mumbai",
+
+            // ── Maharashtra (non-Mumbai) ──
+            "9822": "Maharashtra", "9823": "Maharashtra", "9850": "Maharashtra",
+            "9890": "Maharashtra", "9922": "Maharashtra", "9422": "Maharashtra",
+            "9423": "Maharashtra", "8888": "Maharashtra", "7709": "Maharashtra",
+            "9158": "Maharashtra", "7030": "Maharashtra", "8380": "Maharashtra",
+            "9604": "Maharashtra",
+
+            // ── Gujarat ──
+            "9824": "Gujarat", "9825": "Gujarat", "9898": "Gujarat",
+            "9909": "Gujarat", "9925": "Gujarat", "9426": "Gujarat",
+            "9099": "Gujarat", "8141": "Gujarat", "9727": "Gujarat",
+            "7600": "Gujarat", "8460": "Gujarat", "9512": "Gujarat",
+
+            // ── Andhra Pradesh / Telangana ──
+            "9848": "Andhra Pradesh", "9849": "Andhra Pradesh", "9885": "Andhra Pradesh",
+            "9949": "Andhra Pradesh", "9989": "Andhra Pradesh", "9440": "Andhra Pradesh",
+            "9000": "Telangana",    "9618": "Telangana",    "8008": "Andhra Pradesh",
+            "7702": "Andhra Pradesh", "8331": "Andhra Pradesh",
+
+            // ── Karnataka ──
+            "9844": "Karnataka", "9845": "Karnataka", "9880": "Karnataka",
+            "9900": "Karnataka", "9945": "Karnataka", "9980": "Karnataka",
+            "9448": "Karnataka", "9008": "Karnataka", "9740": "Karnataka",
+            "8105": "Karnataka", "7022": "Karnataka", "6360": "Karnataka",
+
+            // ── Tamil Nadu ──
+            "9840": "Tamil Nadu", "9841": "Tamil Nadu", "9884": "Tamil Nadu",
+            "9940": "Tamil Nadu", "9952": "Tamil Nadu", "9444": "Tamil Nadu",
+            "9003": "Tamil Nadu", "9790": "Tamil Nadu", "8939": "Tamil Nadu",
+            "7299": "Tamil Nadu", "6382": "Tamil Nadu",
+
+            // ── Kerala ──
+            "9846": "Kerala", "9847": "Kerala", "9946": "Kerala",
+            "9947": "Kerala", "9447": "Kerala", "9020": "Kerala",
+            "9633": "Kerala", "8086": "Kerala", "7012": "Kerala",
+            "6235": "Kerala", "9745": "Kerala",
+
+            // ── Kolkata ──
+            "9830": "Kolkata", "9831": "Kolkata", "9836": "Kolkata",
+            "9874": "Kolkata", "9007": "Kolkata", "8981": "Kolkata",
+            "9163": "Kolkata", "8017": "Kolkata", "7044": "Kolkata",
+            "8420": "Kolkata",
+
+            // ── West Bengal (non-Kolkata) ──
+            "9832": "West Bengal", "9434": "West Bengal", "9733": "West Bengal",
+            "9734": "West Bengal", "9735": "West Bengal", "8016": "West Bengal",
+            "8927": "West Bengal", "7029": "West Bengal",
+
+            // ── UP East ──
+            "9839": "UP East", "9838": "UP East", "9935": "UP East",
+            "9936": "UP East", "9415": "UP East", "9005": "UP East",
+            "9198": "UP East", "8004": "UP East", "7388": "UP East",
+            "8853": "UP East", "9455": "UP East",
+
+            // ── UP West ──
+            "9837": "UP West", "9897": "UP West", "9927": "UP West",
+            "9412": "UP West", "9012": "UP West", "9758": "UP West",
+            "8439": "UP West", "7060": "UP West", "8868": "UP West",
+
+            // ── Bihar & Jharkhand ──
+            "9835": "Bihar", "9931": "Bihar", "9934": "Bihar",
+            "9431": "Jharkhand", "9006": "Bihar", "9199": "Bihar",
+            "8084": "Bihar", "7070": "Bihar", "8298": "Bihar",
+            "6200": "Bihar", "7979": "Bihar",
+
+            // ── Rajasthan ──
+            "9828": "Rajasthan", "9829": "Rajasthan", "9875": "Rajasthan",
+            "9928": "Rajasthan", "9414": "Rajasthan", "9001": "Rajasthan",
+            "9602": "Rajasthan", "8094": "Rajasthan", "7073": "Rajasthan",
+            "6375": "Rajasthan",
+
+            // ── Madhya Pradesh & Chhattisgarh ──
+            "9826": "Madhya Pradesh", "9827": "Madhya Pradesh", "9893": "Madhya Pradesh",
+            "9926": "Madhya Pradesh", "9425": "Madhya Pradesh", "9009": "Madhya Pradesh",
+            "9179": "Madhya Pradesh", "8109": "Madhya Pradesh", "7049": "Madhya Pradesh",
+            "9685": "Chhattisgarh",
+
+            // ── Punjab & Chandigarh ──
+            "9814": "Punjab", "9815": "Punjab", "9872": "Punjab",
+            "9914": "Punjab", "9417": "Punjab", "9041": "Punjab",
+            "9888": "Punjab", "8146": "Punjab", "7087": "Punjab",
+
+            // ── Haryana ──
+            "9812": "Haryana", "9896": "Haryana", "9991": "Haryana",
+            "9416": "Haryana", "9034": "Haryana", "9729": "Haryana",
+            "8059": "Haryana", "7027": "Haryana",
+
+            // ── Odisha ──
+            "9861": "Odisha", "9937": "Odisha", "9437": "Odisha",
+            "9040": "Odisha", "9777": "Odisha", "8093": "Odisha",
+            "7008": "Odisha", "6370": "Odisha",
+
+            // ── Assam & North East ──
+            "9864": "Assam", "9435": "Assam", "9085": "Assam",
+            "8811": "Assam", "7086": "Assam", "9862": "Meghalaya",
+            "9436": "Tripura", "9615": "Manipur", "9089": "Mizoram",
+
+            // ── Himachal Pradesh ──
+            "9816": "Himachal Pradesh", "9817": "Himachal Pradesh",
+            "9882": "Himachal Pradesh", "7018": "Himachal Pradesh",
+
+            // ── J&K ──
+            "9419": "Jammu & Kashmir", "9697": "Jammu & Kashmir",
+            "9906": "Jammu & Kashmir", "7006": "Jammu & Kashmir",
+
+            // ── Uttarakhand ──
+            "9411": "Uttarakhand", "9412": "Uttarakhand",
+            "7500": "Uttarakhand", "8394": "Uttarakhand",
+
+            // ── Goa ──
+            "9822": "Goa", "9960": "Goa", "7498": "Goa",
+        };
+
+        // Telecom Circle coordinates
+        var coords = {
+            "Delhi NCR":        { lat: 28.6139, lon: 77.2090, zoom: 10 },
+            "Mumbai":           { lat: 19.0760, lon: 72.8777, zoom: 10 },
+            "Maharashtra":      { lat: 19.7515, lon: 75.7139, zoom: 7  },
+            "Gujarat":          { lat: 22.2587, lon: 71.1924, zoom: 7  },
+            "Andhra Pradesh":   { lat: 15.9129, lon: 79.7400, zoom: 7  },
+            "Telangana":        { lat: 17.1232, lon: 79.2088, zoom: 7  },
+            "Karnataka":        { lat: 15.3173, lon: 75.7139, zoom: 7  },
+            "Tamil Nadu":       { lat: 11.1271, lon: 78.6569, zoom: 7  },
+            "Kerala":           { lat: 10.8505, lon: 76.2711, zoom: 7  },
+            "Kolkata":          { lat: 22.5726, lon: 88.3639, zoom: 11 },
+            "West Bengal":      { lat: 22.9868, lon: 87.8550, zoom: 7  },
+            "UP East":          { lat: 26.8467, lon: 80.9462, zoom: 7  },
+            "UP West":          { lat: 28.9845, lon: 77.7064, zoom: 7  },
+            "Bihar":            { lat: 25.0961, lon: 85.3131, zoom: 7  },
+            "Jharkhand":        { lat: 23.6102, lon: 85.2799, zoom: 7  },
+            "Rajasthan":        { lat: 27.0238, lon: 74.2179, zoom: 7  },
+            "Madhya Pradesh":   { lat: 22.9734, lon: 78.6569, zoom: 7  },
+            "Chhattisgarh":     { lat: 21.2787, lon: 81.8661, zoom: 7  },
+            "Punjab":           { lat: 31.1471, lon: 75.3412, zoom: 7  },
+            "Haryana":          { lat: 29.0588, lon: 76.0856, zoom: 7  },
+            "Odisha":           { lat: 20.9517, lon: 85.0985, zoom: 7  },
+            "Assam":            { lat: 26.2006, lon: 92.9376, zoom: 7  },
+            "Meghalaya":        { lat: 25.4670, lon: 91.3662, zoom: 7  },
+            "Tripura":          { lat: 23.9408, lon: 91.9882, zoom: 7  },
+            "Manipur":          { lat: 24.6637, lon: 93.9063, zoom: 7  },
+            "Mizoram":          { lat: 23.1645, lon: 92.9376, zoom: 7  },
+            "Himachal Pradesh": { lat: 31.1048, lon: 77.1734, zoom: 7  },
+            "Jammu & Kashmir":  { lat: 33.7782, lon: 76.5762, zoom: 7  },
+            "Uttarakhand":      { lat: 30.0668, lon: 79.0193, zoom: 7  },
+            "Goa":              { lat: 15.2993, lon: 74.1240, zoom: 9  },
+            "India":            { lat: 22.5937, lon: 78.9629, zoom: 5  },
+        };
+
+        var circleName = circles[p4] || null;
+
+        // Fallback prefix-3 heuristics
+        if (!circleName) {
+            var p3map = {
+                "620": "Bihar", "621": "Bihar", "628": "Bihar",
+                "630": "Andhra Pradesh", "635": "Tamil Nadu",
+                "636": "Tamil Nadu", "637": "Rajasthan",
+                "638": "Maharashtra", "639": "Tamil Nadu",
+                "700": "West Bengal", "701": "Kerala",
+                "706": "Jammu & Kashmir", "739": "Gujarat",
+                "740": "West Bengal", "742": "UP West",
+                "751": "Madhya Pradesh", "761": "Madhya Pradesh",
+                "789": "Assam",
+            };
+            circleName = p3map[p3] || null;
+        }
+
+        // Fallback by first digit
+        if (!circleName) {
+            if (first === "6") circleName = "India";
+            else circleName = "India";
+        }
+
+        var geo = coords[circleName] || coords["India"];
+        return { name: circleName, lat: geo.lat, lon: geo.lon, zoom: geo.zoom };
+    }
+
+    // ─────────────────────────────────────────────
+    // Landline Area-Code → City Detection (multi-country)
+    // NOTE: Mobile numbers in most countries (outside India) are
+    // NOT tied to a geographic area, so we only do this for
+    // FIXED_LINE / FIXED_LINE_OR_MOBILE numbers.
+    // ─────────────────────────────────────────────
+    var landlineCodes = {
+        US: [
+            { prefix: '212', city: 'New York, NY',    lat: 40.7128, lon: -74.0060 },
+            { prefix: '646', city: 'New York, NY',    lat: 40.7128, lon: -74.0060 },
+            { prefix: '718', city: 'Brooklyn/Queens, NY', lat: 40.6782, lon: -73.9442 },
+            { prefix: '213', city: 'Los Angeles, CA', lat: 34.0522, lon: -118.2437 },
+            { prefix: '310', city: 'Los Angeles (West), CA', lat: 34.0522, lon: -118.4437 },
+            { prefix: '312', city: 'Chicago, IL',      lat: 41.8781, lon: -87.6298 },
+            { prefix: '415', city: 'San Francisco, CA', lat: 37.7749, lon: -122.4194 },
+            { prefix: '202', city: 'Washington, DC',   lat: 38.9072, lon: -77.0369 },
+            { prefix: '305', city: 'Miami, FL',        lat: 25.7617, lon: -80.1918 },
+            { prefix: '617', city: 'Boston, MA',       lat: 42.3601, lon: -71.0589 },
+            { prefix: '702', city: 'Las Vegas, NV',    lat: 36.1699, lon: -115.1398 },
+            { prefix: '404', city: 'Atlanta, GA',      lat: 33.7490, lon: -84.3880 },
+            { prefix: '214', city: 'Dallas, TX',       lat: 32.7767, lon: -96.7970 },
+            { prefix: '713', city: 'Houston, TX',      lat: 29.7604, lon: -95.3698 },
+            { prefix: '602', city: 'Phoenix, AZ',      lat: 33.4484, lon: -112.0740 },
+            { prefix: '206', city: 'Seattle, WA',      lat: 47.6062, lon: -122.3321 },
+            { prefix: '303', city: 'Denver, CO',       lat: 39.7392, lon: -104.9903 },
+            { prefix: '619', city: 'San Diego, CA',    lat: 32.7157, lon: -117.1611 },
+        ],
+        CA: [
+            { prefix: '416', city: 'Toronto, ON',    lat: 43.6532, lon: -79.3832 },
+            { prefix: '514', city: 'Montreal, QC',   lat: 45.5017, lon: -73.5673 },
+            { prefix: '604', city: 'Vancouver, BC',  lat: 49.2827, lon: -123.1207 },
+            { prefix: '403', city: 'Calgary, AB',    lat: 51.0447, lon: -114.0719 },
+            { prefix: '613', city: 'Ottawa, ON',     lat: 45.4215, lon: -75.6972 },
+        ],
+        GB: [
+            { prefix: '20',  city: 'London',      lat: 51.5074, lon: -0.1278 },
+            { prefix: '121', city: 'Birmingham',  lat: 52.4862, lon: -1.8904 },
+            { prefix: '161', city: 'Manchester',  lat: 53.4808, lon: -2.2426 },
+            { prefix: '113', city: 'Leeds',       lat: 53.8008, lon: -1.5491 },
+            { prefix: '114', city: 'Sheffield',   lat: 53.3811, lon: -1.4701 },
+            { prefix: '117', city: 'Bristol',     lat: 51.4545, lon: -2.5879 },
+            { prefix: '131', city: 'Edinburgh',   lat: 55.9533, lon: -3.1883 },
+            { prefix: '141', city: 'Glasgow',     lat: 55.8642, lon: -4.2518 },
+            { prefix: '151', city: 'Liverpool',   lat: 53.4084, lon: -2.9916 },
+            { prefix: '191', city: 'Newcastle',   lat: 54.9783, lon: -1.6178 },
+        ],
+        DE: [
+            { prefix: '30',  city: 'Berlin',      lat: 52.5200, lon: 13.4050 },
+            { prefix: '89',  city: 'Munich',      lat: 48.1351, lon: 11.5820 },
+            { prefix: '40',  city: 'Hamburg',     lat: 53.5511, lon: 9.9937 },
+            { prefix: '221', city: 'Cologne',     lat: 50.9375, lon: 6.9603 },
+            { prefix: '69',  city: 'Frankfurt',   lat: 50.1109, lon: 8.6821 },
+            { prefix: '211', city: 'Düsseldorf',  lat: 51.2277, lon: 6.7735 },
+            { prefix: '711', city: 'Stuttgart',   lat: 48.7758, lon: 9.1829 },
+        ],
+        FR: [
+            { prefix: '1', city: 'Île-de-France (Paris region)', lat: 48.8566, lon: 2.3522 },
+            { prefix: '2', city: 'North-West France',            lat: 47.4784, lon: -0.5632 },
+            { prefix: '3', city: 'North-East France',            lat: 48.6921, lon: 6.1844 },
+            { prefix: '4', city: 'South-East France',            lat: 45.7640, lon: 4.8357 },
+            { prefix: '5', city: 'South-West France',            lat: 44.8378, lon: -0.5792 },
+        ],
+        AU: [
+            { prefix: '2', city: 'NSW / ACT (Sydney/Canberra region)', lat: -33.8688, lon: 151.2093 },
+            { prefix: '3', city: 'VIC / TAS (Melbourne region)',       lat: -37.8136, lon: 144.9631 },
+            { prefix: '7', city: 'QLD (Brisbane region)',              lat: -27.4698, lon: 153.0251 },
+            { prefix: '8', city: 'WA / SA / NT (Perth/Adelaide region)', lat: -31.9505, lon: 115.8605 },
+        ],
+        BR: [
+            { prefix: '11', city: 'São Paulo',       lat: -23.5505, lon: -46.6333 },
+            { prefix: '21', city: 'Rio de Janeiro',  lat: -22.9068, lon: -43.1729 },
+            { prefix: '31', city: 'Belo Horizonte',  lat: -19.9167, lon: -43.9345 },
+            { prefix: '41', city: 'Curitiba',        lat: -25.4284, lon: -49.2733 },
+            { prefix: '51', city: 'Porto Alegre',    lat: -30.0346, lon: -51.2177 },
+            { prefix: '61', city: 'Brasília',        lat: -15.7939, lon: -47.8828 },
+        ],
+        JP: [
+            { prefix: '3',  city: 'Tokyo',   lat: 35.6762, lon: 139.6503 },
+            { prefix: '6',  city: 'Osaka',   lat: 34.6937, lon: 135.5023 },
+            { prefix: '52', city: 'Nagoya',  lat: 35.1815, lon: 136.9066 },
+            { prefix: '11', city: 'Sapporo', lat: 43.0618, lon: 141.3545 },
+        ],
+        CN: [
+            { prefix: '10',  city: 'Beijing',   lat: 39.9042, lon: 116.4074 },
+            { prefix: '21',  city: 'Shanghai',  lat: 31.2304, lon: 121.4737 },
+            { prefix: '20',  city: 'Guangzhou', lat: 23.1291, lon: 113.2644 },
+            { prefix: '755', city: 'Shenzhen',  lat: 22.5431, lon: 114.0579 },
+            { prefix: '23',  city: 'Chongqing', lat: 29.4316, lon: 106.9123 },
+            { prefix: '28',  city: 'Chengdu',   lat: 30.5728, lon: 104.0668 },
+        ],
+    };
+
+    function getLandlineCity(countryISO, national) {
+        var list = landlineCodes[countryISO];
+        if (!list) return null;
+        var sorted = list.slice().sort(function(a, b) { return b.prefix.length - a.prefix.length; });
+        for (var i = 0; i < sorted.length; i++) {
+            if (national.indexOf(sorted[i].prefix) === 0) {
+                return { name: sorted[i].city, lat: sorted[i].lat, lon: sorted[i].lon, zoom: 10 };
+            }
+        }
+        return null;
+    }
+
+    // ─────────────────────────────────────────────
+    // Main Lookup Function
+    // ─────────────────────────────────────────────
+    // ─────────────────────────────────────────────
+    // Pure analysis function (no DOM) — reused by
+    // single lookup and bulk lookup
+    // ─────────────────────────────────────────────
+    function analyzeNumber(rawNum) {
+        rawNum = (rawNum || '').trim();
+        if (!rawNum) return { valid: false, input: rawNum, error: 'Empty number' };
+        if (!rawNum.startsWith('+')) rawNum = '+' + rawNum;
+
+        var lib = window.libphonenumber || window.libphonenumberJs;
+        if (!lib) return { valid: false, input: rawNum, error: 'Library failed to load' };
+
+        try {
+            var parse = lib.parsePhoneNumberFromString || lib.parse;
+            if (!parse) return { valid: false, input: rawNum, error: 'Parser not available' };
+
+            var phone = parse(rawNum);
+            if (!phone || !phone.isValid()) {
+                return { valid: false, input: rawNum, error: 'Invalid number' };
+            }
+
+            var countryISO = phone.country || '??';
+            var national  = phone.nationalNumber || '';
+            var formatted = phone.formatInternational ? phone.formatInternational() : rawNum;
+            var numType   = (phone.getType ? phone.getType() : null) || 'UNKNOWN';
+
+            var regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
+            var countryName = '';
+            try { countryName = regionNames.of(countryISO); } catch(e) { countryName = countryISO; }
+
+            var circleInfo = null;
+            var isFixedType = (numType === 'FIXED_LINE' || numType === 'FIXED_LINE_OR_MOBILE');
+            if (countryISO === 'IN') {
+                circleInfo = getIndianCircle(national);
+            } else if (isFixedType) {
+                circleInfo = getLandlineCity(countryISO, national);
+            }
+
+            var cityLabel = circleInfo ? circleInfo.name : (numType === 'MOBILE' && countryISO !== 'IN' ? '—' : '—');
+
+            return {
+                valid: true,
+                input: rawNum,
+                formatted: formatted,
+                countryISO: countryISO,
+                countryName: countryName,
+                national: national,
+                numType: numType,
+                circleInfo: circleInfo,
+                cityLabel: cityLabel
+            };
+        } catch(e) {
+            return { valid: false, input: rawNum, error: e.message };
+        }
+    }
+
+    function lookupNumber() {
+        var rawNum = document.getElementById('phoneInput').value.trim();
+        var resultDiv = document.getElementById('result');
+        var loading = document.getElementById('loading');
+
+        resultDiv.style.display = 'none';
+        loading.style.display = 'block';
+
+        // Small delay for UX
+        setTimeout(function() {
+            loading.style.display = 'none';
+            doLookup(rawNum, resultDiv);
+        }, 400);
+    }
+
+    function doLookup(rawNum, resultDiv) {
+        resultDiv.style.display = 'block';
+
+        if (!rawNum) {
+            resultDiv.className = 'invalid';
+            resultDiv.innerHTML = '⚠️ Please enter a number with country code! (e.g. +910000000000)';
+            return;
+        }
+
+        // Ensure + prefix
+        if (!rawNum.startsWith('+')) rawNum = '+' + rawNum;
+
+        // Try libphonenumber (both bundle & global names)
+        var lib = window.libphonenumber || window.libphonenumberJs;
+        if (!lib) {
+            // Fallback: manual parse
+            manualLookup(rawNum, resultDiv);
+            return;
+        }
+
+        try {
+            var parse = lib.parsePhoneNumberFromString || lib.parse;
+            if (!parse) { manualLookup(rawNum, resultDiv); return; }
+
+            var phone = parse(rawNum);
+
+            if (!phone || !phone.isValid()) {
+                resultDiv.className = 'invalid';
+                resultDiv.innerHTML = '❌ Invalid number! Check the correct country code and digits.<br><small>Example: +910000000000</small>';
+                return;
+            }
+
+            var countryISO = phone.country || '??';
+            var national  = phone.nationalNumber || '';
+            var formatted = phone.formatInternational ? phone.formatInternational() : rawNum;
+            var numType   = (phone.getType ? phone.getType() : null) || 'UNKNOWN';
+
+            var regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
+            var countryName = '';
+            try { countryName = regionNames.of(countryISO); } catch(e) { countryName = countryISO; }
+
+            var circleInfo = null;
+            var cityRow = '';
+            var isFixedType = (numType === 'FIXED_LINE' || numType === 'FIXED_LINE_OR_MOBILE');
+
+            if (countryISO === 'IN') {
+                circleInfo = getIndianCircle(national);
+            } else if (isFixedType) {
+                circleInfo = getLandlineCity(countryISO, national);
+            }
+
+            var typeEmoji = { MOBILE: '📱', FIXED_LINE: '☎️', FIXED_LINE_OR_MOBILE: '📞' };
+            var typeLabel = typeEmoji[numType] || '📱';
+
+            if (countryISO === 'IN' && circleInfo) {
+                cityRow = `<tr><td>📍 Telecom Circle</td><td><b>${circleInfo.name}</b>, India</td></tr>`;
+            } else if (circleInfo) {
+                cityRow = `<tr><td>📍 Area / City</td><td><b>${circleInfo.name}</b> (from landline area code)</td></tr>`;
+            } else if (numType === 'MOBILE' && countryISO !== 'IN') {
+                cityRow = `<tr><td>📍 Area / City</td><td><i>Not available — mobile numbers in this country are not geographically linked to a city</i></td></tr>`;
+            }
+
+            var operatorRow = '';
+            if (countryISO === 'IN' && numType !== 'FIXED_LINE') {
+                var opInfo = getOperator(national);
+                if (opInfo) {
+                    operatorRow = `<tr><td>${opInfo.color} Operator</td><td><b>${opInfo.name}</b> <span style="font-size:11px; color:#999;">(estimated — may differ if ported)</span></td></tr>`;
+                }
+            }
+
+            resultDiv.className = 'valid';
+            resultDiv.innerHTML = `
+                <b>✅ Valid Number</b>
+                <table style="margin-top:10px;">
+                    <tr><td>📞 Formatted</td><td>${formatted}</td></tr>
+                    <tr><td>🌍 Country</td><td>${countryName} (${countryISO})</td></tr>
+                    ${cityRow}
+                    ${operatorRow}
+                    <tr><td>${typeLabel} Number Type</td><td>${numType.replace(/_/g,' ')}</td></tr>
+                    <tr><td>📟 National No.</td><td>${national}</td></tr>
+                </table>
+            `;
+
+            // Map update
+            if (circleInfo) {
+                updateMap(circleInfo.lat, circleInfo.lon, circleInfo.zoom, formatted, circleInfo.name + (countryISO === 'IN' ? ', India' : ', ' + countryName));
+            } else {
+                geocodeCountry(countryName, formatted);
+            }
+
+        } catch(e) {
+            resultDiv.className = 'invalid';
+            resultDiv.innerHTML = '❌ Error: ' + e.message + '<br><small>Please enter the number in the correct format.</small>';
+        }
+    }
+
+    function splitBulkInput(raw) {
+        // First try: does the text contain multiple "+countrycode..." chunks
+        // stuck together without separators? e.g. "+91987...+91999...+91783..."
+        var plusMatches = raw.match(/\+\d{6,15}/g);
+        var newlineOrDelimSplit = raw.split(/[\n,;]+/).map(function(l) { return l.trim(); }).filter(Boolean);
+
+        // If plus-matches count is higher than naive line-split count,
+        // the numbers were pasted concatenated — use the regex matches instead.
+        if (plusMatches && plusMatches.length > newlineOrDelimSplit.length) {
+            return plusMatches;
+        }
+        // Otherwise, split normally by newline/comma/semicolon, and also
+        // break on whitespace within each line in case numbers were
+        // space-separated on one line.
+        var result = [];
+        newlineOrDelimSplit.forEach(function(line) {
+            var parts = line.split(/\s+/).filter(Boolean);
+            parts.forEach(function(p) { result.push(p); });
+        });
+        return result;
+    }
+
+    function bulkLookup() {
+        var raw = document.getElementById('bulkInput').value;
+        var lines = splitBulkInput(raw);
+        var bulkResultDiv = document.getElementById('bulkResult');
+
+        if (lines.length === 0) {
+            bulkResultDiv.innerHTML = '<p style="color:#c0392b;">⚠️ Please enter at least one number.</p>';
+            return;
+        }
+        if (lines.length > 100) {
+            bulkResultDiv.innerHTML = '<p style="color:#c0392b;">⚠️ Check a maximum of 100 numbers at a time.</p>';
+            return;
+        }
+
+        bulkResultDiv.innerHTML = '<p style="color:#888;">⏳ Checking ' + lines.length + ' number(s)...</p>';
+
+        setTimeout(function() {
+            var rows = lines.map(function(line) {
+                var r = analyzeNumber(line);
+                if (!r.valid) {
+                    return `<tr><td>${line}</td><td colspan="4" style="color:#c0392b;">❌ ${r.error || 'Invalid'}</td></tr>`;
+                }
+                var typeEmoji = { MOBILE: '📱', FIXED_LINE: '☎️', FIXED_LINE_OR_MOBILE: '📞' };
+                return `<tr>
+                    <td>${r.formatted}</td>
+                    <td>${r.countryName} (${r.countryISO})</td>
+                    <td>${r.cityLabel}</td>
+                    <td>${typeEmoji[r.numType] || '📱'} ${(r.numType || '').replace(/_/g,' ')}</td>
+                </tr>`;
+            }).join('');
+
+            bulkResultDiv.innerHTML = `
+                <table style="width:100%; border-collapse: collapse; font-size:13px;">
+                    <thead>
+                        <tr style="background:#f0f4f8; text-align:left;">
+                            <th style="padding:8px;">📞 Number</th>
+                            <th style="padding:8px;">🌍 Country</th>
+                            <th style="padding:8px;">📍 Circle/City</th>
+                            <th style="padding:8px;">Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>${rows}</tbody>
+                </table>
+                <p style="font-size:12px; color:#888; margin-top:8px;">Total ${lines.length} number(s) checked.</p>
+            `;
+        }, 300);
+    }
+
+    function manualLookup(rawNum, resultDiv) {
+        // Basic manual parse for India
+        var digits = rawNum.replace(/\D/g, '');
+        if (digits.startsWith('91') && digits.length === 12) {
+            var national = digits.substring(2);
+            var circleInfo = getIndianCircle(national);
+            var opInfo = getOperator(national);
+            var opRow = opInfo ? `<tr><td>${opInfo.color} Operator</td><td><b>${opInfo.name}</b> <span style="font-size:11px; color:#999;">(estimated)</span></td></tr>` : '';
+            resultDiv.className = 'valid';
+            resultDiv.innerHTML = `
+                <b>✅ Number Parsed</b>
+                <table style="margin-top:10px;">
+                    <tr><td>📞 Number</td><td>+91 ${national}</td></tr>
+                    <tr><td>🌍 Country</td><td>India (IN)</td></tr>
+                    <tr><td>📍 Telecom Circle</td><td><b>${circleInfo.name}</b></td></tr>
+                    ${opRow}
+                </table>
+            `;
+            updateMap(circleInfo.lat, circleInfo.lon, circleInfo.zoom, '+91 ' + national, circleInfo.name + ', India');
+        } else {
+            resultDiv.className = 'invalid';
+            resultDiv.innerHTML = '❌ Library load error. Please refresh the page.';
+        }
+    }
+
+    function updateMap(lat, lon, zoom, numText, locationName) {
+        if (currentMarker) { map.removeLayer(currentMarker); currentMarker = null; }
+        if (currentCircle) { map.removeLayer(currentCircle); currentCircle = null; }
+
+        map.setView([lat, lon], zoom);
+
+        currentMarker = L.marker([lat, lon]).addTo(map);
+        currentMarker.bindPopup(
+            `<b>${numText}</b><br>📍 ${locationName}`
+        ).openPopup();
+
+        // Light circle overlay for state-level
+        if (zoom < 11) {
+            currentCircle = L.circle([lat, lon], {
+                radius: 80000,
+                color: '#0f3460',
+                fillColor: '#0f3460',
+                fillOpacity: 0.1,
+                weight: 2
+            }).addTo(map);
+        }
+    }
+
+    function geocodeCountry(countryName, numText) {
+        fetch('https://nominatim.openstreetmap.org/search?format=json&limit=1&q=' + encodeURIComponent(countryName), {
+            headers: { 'Accept-Language': 'en' }
+        })
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+            if (data && data.length > 0) {
+                updateMap(parseFloat(data[0].lat), parseFloat(data[0].lon), 5, numText, countryName);
+            }
+        })
+        .catch(function(e) { console.error('Geocode error:', e); });
+    }
+
+    // ─────────────────────────────────────────────
+    // IP Address Lookup (Private & Public IP ready)
+    // ─────────────────────────────────────────────
+
+    // 1. प्राइवेट/लोकल IP जांचने का फंक्शन
+    function isPrivateIP(ip) {
+        var ipv4Private = /^(10\.|172\.(1[6-9]|2[0-9]|3[01])\.|192\.168\.|127\.|169\.254\.)/;
+        var ipv6Private = /^(::1|fe80:|fc00:|fd00:)/i;
+        return ipv4Private.test(ip) || ipv6Private.test(ip);
+    }
+
+    // 2. प्रसिद्ध Anycast DNS IPs का डेटाबेस (Fallback के लिए)
+    var knownDNS = {
+        '1.1.1.1':         { name: 'Cloudflare Public DNS', city: 'Global Anycast Network', country: 'Worldwide' },
+        '1.0.0.1':         { name: 'Cloudflare Public DNS', city: 'Global Anycast Network', country: 'Worldwide' },
+        '8.8.8.8':         { name: 'Google Public DNS',     city: 'Global Anycast Network', country: 'Worldwide' },
+        '8.8.4.4':         { name: 'Google Public DNS',     city: 'Global Anycast Network', country: 'Worldwide' },
+        '9.9.9.9':         { name: 'Quad9 Security DNS',    city: 'Global Anycast Network', country: 'Worldwide' },
+        '208.67.222.222':  { name: 'Cisco OpenDNS',         city: 'Global Anycast Network', country: 'Worldwide' },
+        '208.67.220.220':  { name: 'Cisco OpenDNS',         city: 'Global Anycast Network', country: 'Worldwide' }
+    };
+
+    function isValidIP(ip) {
+        var ipv4 = /^(\d{1,3}\.){3}\d{1,3}$/;
+        var ipv6 = /^([0-9a-fA-F]{0,4}:){2,7}[0-9a-fA-F]{0,4}$/;
+        if (ipv4.test(ip)) {
+            return ip.split('.').every(function(part) { return parseInt(part, 10) <= 255; });
+        }
+        return ipv6.test(ip);
+    }
+
+    function lookupMyIP() {
+        document.getElementById('ipInput').value = '';
+        var ipResultDiv = document.getElementById('ipResult');
+        ipResultDiv.innerHTML = '<p style="color:#888;">⏳ Looking up location...</p>';
+
+        var geoPromise = fetch('https://get.geojs.io/v1/ip/geo.json')
+            .then(function(r) { return r.ok ? r.json() : {}; })
+            .catch(function() { return {}; });
+
+        var v4Promise = fetch('https://api.ipify.org?format=json').then(function(r) { return r.ok ? r.json() : null; }).catch(function() { return null; });
+        var v6Promise = fetch('https://api6.ipify.org?format=json').then(function(r) { return r.ok ? r.json() : null; }).catch(function() { return null; });
+
+        Promise.all([geoPromise, v4Promise, v6Promise]).then(function(results) {
+            var geo = results[0] || {};
+            var v4 = results[1] ? results[1].ip : null;
+            var v6 = results[2] ? results[2].ip : null;
+            if (!v4 && !v6 && geo.ip) {
+                if (geo.ip.indexOf(':') !== -1) v6 = geo.ip; else v4 = geo.ip;
+            }
+            renderDualIPResult(v4, v6, geo);
+        });
+    }
+
+    function renderDualIPResult(v4, v6, geo) {
+        var ipResultDiv = document.getElementById('ipResult');
+        var city = geo.city || 'Unknown';
+        var region = geo.region || '';
+        var country = geo.country || 'Unknown';
+        var lat = parseFloat(geo.latitude);
+        var lon = parseFloat(geo.longitude);
+
+        var v4Row = v4 ? `<tr><td style="padding:6px 0;">🌐 IPv4 Address</td><td><b>${v4}</b></td></tr>`
+                       : `<tr><td style="padding:6px 0;">🌐 IPv4 Address</td><td><i style="color:#999;">Not available on this network</i></td></tr>`;
+        var v6Row = v6 ? `<tr><td style="padding:6px 0;">🌐 IPv6 Address</td><td><b>${v6}</b></td></tr>`
+                       : `<tr><td style="padding:6px 0;">🌐 IPv6 Address</td><td><i style="color:#999;">Not available on this network</i></td></tr>`;
+
+        ipResultDiv.innerHTML = `
+            <table style="width:100%; border-collapse: collapse;">
+                ${v4Row}
+                ${v6Row}
+                <tr><td style="padding:6px 0;">🏙️ City</td><td><b>${city}</b></td></tr>
+                <tr><td style="padding:6px 0;">📍 Region</td><td>${region}</td></tr>
+                <tr><td style="padding:6px 0;">🌍 Country</td><td>${country}</td></tr>
+            </table>
+            <p style="font-size:12px; color:#888; margin-top:8px;">⚠️ This is an ISP-based estimate — a VPN/proxy can change it.</p>
+        `;
+
+        if (!isNaN(lat) && !isNaN(lon)) {
+            updateMap(lat, lon, 11, 'IP: ' + (v4 || v6), city + ', ' + country);
+        }
+    }
+
+    function lookupIP(ip) {
+        if (!ip) {
+            lookupMyIP();
+            return;
+        }
+        if (!isValidIP(ip)) {
+            document.getElementById('ipResult').innerHTML = '<p style="color:#c0392b;">❌ Please enter a valid IP address (e.g. 8.8.8.8)</p>';
+            return;
+        }
+        runIPLookup(ip);
+    }
+
+    function runIPLookup(ip) {
+        var ipResultDiv = document.getElementById('ipResult');
+
+        // A. यदि प्राइवेट IP है
+        if (isPrivateIP(ip)) {
+            ipResultDiv.innerHTML = `
+                <div style="background:#fff3cd; border:1.5px solid #ffeeba; color:#856404; padding:12px; border-radius:8px; margin-top:8px;">
+                    <b>🏠 Private / Local IP Address (${ip})</b><br>
+                    <span style="font-size:13px;">यह एक आंतरिक (Local) IP एड्रेस है जो केवल आपके राउटर या वाई-फाई के अंदर इस्तेमाल होता है। यह इंटरनेट पर ट्रेस नहीं हो सकता।</span>
+                </div>
+            `;
+            return;
+        }
+
+        ipResultDiv.innerHTML = '<p style="color:#888;">⏳ Looking up location...</p>';
+
+        // B. यदि Anycast DNS List में है
+        if (knownDNS[ip]) {
+            var k = knownDNS[ip];
+            ipResultDiv.innerHTML = `
+                <table style="width:100%; border-collapse: collapse;">
+                    <tr><td style="padding:6px 0;">🌐 IP Address</td><td><b>${ip}</b></td></tr>
+                    <tr><td style="padding:6px 0;">🏙️ Type / Network</td><td><b>${k.city}</b></td></tr>
+                    <tr><td style="padding:6px 0;">📍 Provider</td><td>${k.name}</td></tr>
+                    <tr><td style="padding:6px 0;">🌍 Country</td><td>${k.country}</td></tr>
+                </table>
+                <p style="font-size:12px; color:#888; margin-top:8px;">ℹ️ यह Anycast नेटवर्क का IP है जो दुनिया भर के सैकड़ों डेटा सेंटरों में एक साथ चलता है।</p>
+            `;
+            return;
+        }
+
+        // C. पब्लिक IP के लिए path-based API URL (geojs recommended format)
+        var url = 'https://get.geojs.io/v1/ip/geo/' + encodeURIComponent(ip) + '.json';
+
+        fetch(url)
+            .then(function(r) {
+                if (!r.ok) throw new Error('API error');
+                return r.json();
+            })
+            .then(function(data) {
+                var city = data.city || 'Global Server / Anycast';
+                var region = data.region || '';
+                var country = data.country || 'Unknown';
+                var resultIp = data.ip || ip || '-';
+                var lat = parseFloat(data.latitude);
+                var lon = parseFloat(data.longitude);
+
+                ipResultDiv.innerHTML = `
+                    <table style="width:100%; border-collapse: collapse;">
+                        <tr><td style="padding:6px 0;">🌐 IP Address</td><td><b>${resultIp}</b></td></tr>
+                        <tr><td style="padding:6px 0;">🏙️ City</td><td><b>${city}</b></td></tr>
+                        ${region ? `<tr><td style="padding:6px 0;">📍 Region</td><td>${region}</td></tr>` : ''}
+                        <tr><td style="padding:6px 0;">🌍 Country</td><td>${country}</td></tr>
+                    </table>
+                    <p style="font-size:12px; color:#888; margin-top:8px;">⚠️ यह ISP-आधारित अनुमानित स्थान है।</p>
+                `;
+
+                if (!isNaN(lat) && !isNaN(lon)) {
+                    updateMap(lat, lon, 11, 'IP: ' + resultIp, city + ', ' + country);
+                }
+            })
+            .catch(function(e) {
+                ipResultDiv.innerHTML = '<p style="color:#c0392b;">❌ Could not fetch location for this IP. Please try again.</p>';
+                console.error('IP lookup error:', e);
+            });
+    }
+
+    // ─────────────────────────────────────────────
+    // Login Modal (placeholder — not functional yet)
+    // TODO: Replace handleLoginPlaceholder() with real
+    // auth calls once you wire up Firebase Auth /
+    // Supabase Auth / your own backend, e.g.:
+    //   firebase.auth().signInWithEmailAndPassword(email, pass)
+    // ─────────────────────────────────────────────
+    function openLoginModal() {
+        document.getElementById('loginModalOverlay').style.display = 'flex';
+    }
+    function closeLoginModal() {
+        document.getElementById('loginModalOverlay').style.display = 'none';
+    }
+    function handleLoginPlaceholder() {
+        alert('Login is not active yet — this is a placeholder. Connect a real auth provider (e.g. Firebase Auth) to enable this.');
+    }
+    document.getElementById('loginModalOverlay').addEventListener('click', function(e) {
+        if (e.target === this) closeLoginModal();
+    });
+
+    // Auto-run on load
+    window.addEventListener('load', function() {
+        setTimeout(lookupNumber, 700);
+    });
+
+    // ─────────────────────────────────────────────
+    // Cookie Consent Banner (required for GDPR + AdSense)
+    // ─────────────────────────────────────────────
+    (function() {
+        if (localStorage_safe_get('cookieConsent') === 'accepted') return;
+        var banner = document.createElement('div');
+        banner.style.cssText = 'position:fixed;bottom:0;left:0;right:0;background:#222;color:#fff;padding:14px 16px;font-size:13px;z-index:9999;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;';
+        banner.innerHTML = '<span>This website uses cookies to personalize ads (Google AdSense). By continuing, you agree. <a href="#privacy-section" style="color:#8ecaff;">Learn more</a></span>' +
+            '<button id="cookieAcceptBtn" style="background:#4a90d9;color:#fff;border:none;padding:8px 16px;border-radius:6px;cursor:pointer;font-size:13px;">Got it</button>';
+        document.body.appendChild(banner);
+        document.getElementById('cookieAcceptBtn').addEventListener('click', function() {
+            localStorage_safe_set('cookieConsent', 'accepted');
+            banner.remove();
+        });
+    })();
+
+    // Safe wrappers since localStorage may be unavailable in some embedded/artifact contexts
+    function localStorage_safe_get(key) {
+        try { return localStorage.getItem(key); } catch (e) { return null; }
+    }
+    function localStorage_safe_set(key, val) {
+        try { localStorage.setItem(key, val); } catch (e) {}
+    }
+
+    // ─────────────────────────────────────────────────────────────
+    // BOX 1 TAB SWITCHER
+    // ─────────────────────────────────────────────────────────────
+    var box1Tabs = ['phone','dns','whois','link','port'];
+    function switchTab1(tab) {
+        box1Tabs.forEach(function(t) {
+            var pane = document.getElementById('pane-' + t);
+            var btn  = document.getElementById('tab1-' + t);
+            if (!pane || !btn) return;
+            pane.style.display = (t === tab) ? '' : 'none';
+            if (t === tab) {
+                btn.style.background = 'linear-gradient(135deg,#0f3460,#e94560)';
+                btn.style.color = '#fff';
+                btn.style.borderColor = '#0f3460';
+            } else {
+                btn.style.background = '#f8fafc';
+                btn.style.color = '#333';
+                btn.style.borderColor = '#cbd5e1';
+            }
+        });
+    }
+
+    // ─────────────────────────────────────────────────────────────
+    // DNS LOOKUP
+    // ─────────────────────────────────────────────────────────────
+    function runDNS() {
+        var input = document.getElementById('dnsInput').value.trim();
+        var res   = document.getElementById('dnsResult');
+        if (!input) { res.innerHTML = '<span style="color:red;">⚠️ Domain दर्ज करें!</span>'; return; }
+        var domain = input.replace(/^https?:\/\//,'').replace(/\/.*/,'');
+        res.innerHTML = '⏳ DNS records fetch हो रहे हैं...';
+
+        Promise.all([
+            fetch('https://dns.google/resolve?name=' + encodeURIComponent(domain) + '&type=A').then(function(r){return r.json();}).catch(function(){return {};}),
+            fetch('https://dns.google/resolve?name=' + encodeURIComponent(domain) + '&type=MX').then(function(r){return r.json();}).catch(function(){return {};}),
+            fetch('https://dns.google/resolve?name=' + encodeURIComponent(domain) + '&type=NS').then(function(r){return r.json();}).catch(function(){return {};})
+        ]).then(function(d) {
+            var a  = (d[0].Answer||[]).map(function(x){return '<li>A → <b>'+x.data+'</b></li>';}).join('');
+            var mx = (d[1].Answer||[]).map(function(x){return '<li>MX → <b>'+x.data+'</b></li>';}).join('');
+            var ns = (d[2].Answer||[]).map(function(x){return '<li>NS → <b>'+x.data+'</b></li>';}).join('');
+            res.innerHTML = '<b>🌐 DNS Records — ' + domain + '</b>' +
+                '<ul style="margin:8px 0;padding-left:20px;">' + (a||'<li>No A record</li>') + (mx||'') + (ns||'') + '</ul>' +
+                '<span style="font-size:11px;color:#888;">Source: Google Public DNS API (dns.google)</span>';
+        });
+    }
+
+    // ─────────────────────────────────────────────────────────────
+    // WHOIS (RDAP)
+    // ─────────────────────────────────────────────────────────────
+    function runWHOIS() {
+        var input = document.getElementById('whoisInput').value.trim();
+        var res   = document.getElementById('whoisResult');
+        if (!input) { res.innerHTML = '<span style="color:red;">⚠️ Domain दर्ज करें!</span>'; return; }
+        var domain = input.replace(/^https?:\/\//,'').replace(/\/.*/,'');
+        res.innerHTML = '⏳ WHOIS data fetch हो रहा है...';
+        fetch('https://rdap.org/domain/' + encodeURIComponent(domain))
+            .then(function(r){ return r.json(); })
+            .then(function(data) {
+                var handle = data.handle || 'N/A';
+                var registrar = 'N/A';
+                if (data.entities && data.entities.length) {
+                    data.entities[0].vcardArray && data.entities[0].vcardArray[1] &&
+                    data.entities[0].vcardArray[1].forEach(function(v){ if(v[0]==='fn') registrar=v[3]; });
+                }
+                var events = (data.events||[]).map(function(e){
+                    return '<li><b>'+e.eventAction+':</b> '+new Date(e.eventDate).toLocaleDateString('hi-IN')+'</li>';
+                }).join('');
+                var ns = (data.nameservers||[]).map(function(n){return '<li>'+n.ldhName+'</li>';}).join('');
+                res.innerHTML = '<b>📋 WHOIS — ' + domain + '</b><br>' +
+                    '• Handle: <b>'+handle+'</b><br>' +
+                    '• Registrar: <b>'+registrar+'</b><br>' +
+                    (events?'<ul style="margin:6px 0;padding-left:20px;">'+events+'</ul>':'') +
+                    (ns?'<b>Name Servers:</b><ul style="margin:4px 0;padding-left:20px;">'+ns+'</ul>':'') +
+                    '<span style="font-size:11px;color:#888;">Source: RDAP (ICANN Official)</span>';
+            })
+            .catch(function(){ res.innerHTML = 'ℹ️ RDAP data limited है या domain private-protected है।'; });
+    }
+
+    // ─────────────────────────────────────────────────────────────
+    // LINKGUARD
+    // ─────────────────────────────────────────────────────────────
+    function runLinkGuard() {
+        var input = document.getElementById('linkInput').value.trim();
+        var res   = document.getElementById('linkResult');
+        if (!input) { res.innerHTML = '<span style="color:red;">⚠️ URL दर्ज करें!</span>'; return; }
+        var isHttps      = /^https:\/\//i.test(input) || !/^http:\/\//i.test(input);
+        var isSuspicious = /(bit\.ly|tinyurl|free-money|login-update|verify-account|secure-login|update-info|ebay-login|paypal-secure|bank-verify)/i.test(input);
+        var hasIP        = /https?:\/\/\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/.test(input);
+        var manyDots     = (input.match(/\./g)||[]).length > 4;
+        var longUrl      = input.length > 100;
+        var riskScore    = [isSuspicious, hasIP, manyDots, longUrl].filter(Boolean).length;
+        var riskLabel    = riskScore === 0 ? '🟢 SAFE' : riskScore === 1 ? '🟡 LOW RISK' : riskScore >= 2 ? '🔴 HIGH RISK' : '🟡 MODERATE';
+        var riskColor    = riskScore === 0 ? '#27ae60' : riskScore >= 2 ? '#c0392b' : '#e67e22';
+
+        res.innerHTML = '<b>🛡️ LinkGuard Security Report</b><br>' +
+            '• URL: <code style="font-size:11px;background:#eee;padding:1px 4px;border-radius:3px;">' + input.substring(0,60) + (input.length>60?'...':'') + '</code><br>' +
+            '• HTTPS / SSL: <b>' + (isHttps ? '🟢 Secured' : '🔴 Unsecured HTTP') + '</b><br>' +
+            '• Phishing Pattern: <b>' + (isSuspicious ? '🔴 Suspicious Keywords Found' : '🟢 Clean') + '</b><br>' +
+            '• IP in URL: <b>' + (hasIP ? '🔴 YES — Suspicious' : '🟢 No') + '</b><br>' +
+            '• Excessive Subdomains: <b>' + (manyDots ? '⚠️ Yes' : '🟢 Normal') + '</b><br>' +
+            '• URL Length: <b>' + (longUrl ? '⚠️ Very Long ('+input.length+' chars)' : '🟢 Normal') + '</b><br>' +
+            '• <b>Overall Risk: <span style="color:'+riskColor+'">'+riskLabel+'</span></b><br>' +
+            '<p style="font-size:11px;color:#666;margin-top:6px;">किसी भी अनजान लिंक पर OTP या password कभी न डालें।</p>';
+    }
+
+    // ─────────────────────────────────────────────────────────────
+    // PORT & PING TEST
+    // ─────────────────────────────────────────────────────────────
+    function runPortPing() {
+        var input = document.getElementById('portInput').value.trim();
+        var res   = document.getElementById('portResult');
+        if (!input) { res.innerHTML = '<span style="color:red;">⚠️ Domain दर्ज करें!</span>'; return; }
+        var domain = input.replace(/^https?:\/\//,'').replace(/\/.*/,'');
+        res.innerHTML = '⏳ Port & latency test हो रहा है...';
+        var start = Date.now();
+        fetch('https://' + domain, { mode:'no-cors' })
+            .then(function() {
+                var ms = Date.now() - start;
+                var quality = ms < 100 ? '🟢 Excellent' : ms < 300 ? '🟡 Good' : '🔴 High Latency';
+                res.innerHTML = '<b>🔌 Port & Latency — ' + domain + '</b><br>' +
+                    '• Port 443 (HTTPS): <b>🟢 OPEN</b><br>' +
+                    '• Response Time: <b>' + ms + ' ms</b><br>' +
+                    '• Quality: <b>' + quality + '</b><br>' +
+                    '• Server Status: <b>🟢 Online</b><br>' +
+                    '<span style="font-size:11px;color:#888;">नोट: Browser fetch से approximate latency measure की गई है।</span>';
+            })
+            .catch(function() {
+                var ms = Date.now() - start;
+                res.innerHTML = '<b>🔌 Port & Latency — ' + domain + '</b><br>' +
+                    '• Port 80/443: <b>🔴 Blocked / Offline</b><br>' +
+                    '• Response Time: <b>' + ms + ' ms (timeout)</b><br>' +
+                    '<span style="font-size:11px;color:#888;">नोट: CORS या firewall block के कारण offline दिख सकता है।</span>';
+            });
+    }
+
+    // ─────────────────────────────────────────────────────────────
+    // BOX 2 TAB SWITCHER
+    // ─────────────────────────────────────────────────────────────
+    var box2Tabs = ['ip','vpn','blacklist','carrier'];
+    function switchTab2(tab) {
+        box2Tabs.forEach(function(t) {
+            var pane = document.getElementById('pane2-' + t);
+            var btn  = document.getElementById('tab2-' + t);
+            if (!pane || !btn) return;
+            pane.style.display = (t === tab) ? '' : 'none';
+            if (t === tab) {
+                btn.style.background = '#4a90d9';
+                btn.style.color = '#fff';
+                btn.style.borderColor = '#4a90d9';
+            } else {
+                btn.style.background = '#f8fafc';
+                btn.style.color = '#333';
+                btn.style.borderColor = '#cbd5e1';
+            }
+        });
+    }
+
+    // ─────────────────────────────────────────────────────────────
+    // VPN / PROXY DETECTOR
+    // ─────────────────────────────────────────────────────────────
+    function runVPNCheck() {
+        var ip  = document.getElementById('vpnInput').value.trim();
+        var res = document.getElementById('vpnResult');
+        if (!ip) { res.innerHTML = '<span style="color:red;">⚠️ IP दर्ज करें!</span>'; return; }
+        res.innerHTML = '⏳ VPN/Proxy check हो रहा है...';
+        fetch('https://get.geojs.io/v1/ip/geo/' + encodeURIComponent(ip) + '.json')
+            .then(function(r){ return r.json(); })
+            .then(function(data) {
+                var org = data.organization || data.org || 'Unknown';
+                var isHosting  = /(hosting|datacenter|data.center|cloud|vps|server|hetzner|digitalocean|aws|amazon|azure|linode|vultr|ovh|cloudflare|akamai)/i.test(org);
+                var isMobile   = /(mobile|telecom|cellular|reliance|airtel|jio|vodafone|bsnl)/i.test(org);
+                var netType    = isHosting ? '🔴 Likely VPN / Proxy / DataCenter' : isMobile ? '📱 Mobile Network' : '🟢 Residential / Broadband';
+                var vpnRisk    = isHosting ? 'HIGH — Anonymizing Network detected' : 'LOW — Normal Network';
+                res.innerHTML = '<b>🛡️ VPN / Proxy Detection — ' + ip + '</b><br>' +
+                    '• IP: <b>' + (data.ip||ip) + '</b><br>' +
+                    '• Country: <b>' + (data.country||'N/A') + '</b> | City: <b>' + (data.city||'N/A') + '</b><br>' +
+                    '• ISP / Org: <b>' + org + '</b><br>' +
+                    '• Network Type: <b>' + netType + '</b><br>' +
+                    '• VPN/Proxy Risk: <b>' + vpnRisk + '</b><br>' +
+                    '<span style="font-size:11px;color:#888;">Source: GeoJS API (Free, No key required)</span>';
+            })
+            .catch(function(){ res.innerHTML = '❌ Invalid IP या API error। कृपया सही IP दर्ज करें।'; });
+    }
+
+    // ─────────────────────────────────────────────────────────────
+    // SPAM / BLACKLIST CHECK (DNSBL via Google DNS)
+    // ─────────────────────────────────────────────────────────────
+    function runBlacklist() {
+        var ip  = document.getElementById('blInput').value.trim();
+        var res = document.getElementById('blResult');
+        if (!ip) { res.innerHTML = '<span style="color:red;">⚠️ IP दर्ज करें!</span>'; return; }
+        res.innerHTML = '⏳ Blacklist databases check हो रहे हैं...';
+        var reversed = ip.split('.').reverse().join('.');
+        var zones = [
+            { zone:'zen.spamhaus.org',  name:'Spamhaus ZEN'  },
+            { zone:'bl.spamcop.net',    name:'SpamCop'       },
+            { zone:'dnsbl.sorbs.net',   name:'SORBS'         },
+        ];
+        Promise.all(zones.map(function(bl) {
+            return fetch('https://dns.google/resolve?name=' + reversed + '.' + bl.zone + '&type=A')
+                .then(function(r){ return r.json(); })
+                .then(function(d){ return { name: bl.name, listed: !!(d.Answer && d.Answer.length) }; })
+                .catch(function(){ return { name: bl.name, listed: false }; });
+        })).then(function(results) {
+            var anyListed = results.some(function(r){ return r.listed; });
+            var rows = results.map(function(r) {
+                return '• ' + r.name + ': <b style="color:' + (r.listed?'#c0392b':'#27ae60') + '">' + (r.listed?'🔴 LISTED':'🟢 CLEAR') + '</b>';
+            }).join('<br>');
+            res.innerHTML = '<b>🚫 Blacklist Check — ' + ip + '</b><br>' + rows +
+                '<br><br>• Overall: <b style="color:' + (anyListed?'#c0392b':'#27ae60') + '">' +
+                (anyListed ? '⚠️ IP किसी Blacklist में है!' : '✅ Clean — किसी Blacklist में नहीं') + '</b><br>' +
+                '<span style="font-size:11px;color:#888;">Checked: Spamhaus ZEN, SpamCop, SORBS (via Google DNS)</span>';
+        });
+    }
+
+    // ─────────────────────────────────────────────────────────────
+    // GLOBAL CARRIER LOOKUP (libphonenumber)
+    // ─────────────────────────────────────────────────────────────
+    function runCarrier() {
+        var val = document.getElementById('carrierInput').value.trim();
+        var res = document.getElementById('carrierResult');
+        if (!val) { res.innerHTML = '<span style="color:red;">⚠️ Phone number दर्ज करें!</span>'; return; }
+        if (typeof libphonenumber === 'undefined') {
+            res.innerHTML = '⏳ Library load हो रही है, थोड़ा रुकें...'; return;
+        }
+        try {
+            var parsed = libphonenumber.parsePhoneNumber(val);
+            var numType = parsed.getType ? (parsed.getType() || 'Mobile / Fixed Line') : 'Mobile / Fixed Line';
+            res.innerHTML = '<b>📲 Global Carrier Info</b><br>' +
+                '• Valid: <b>' + (parsed.isValid() ? '✅ YES' : '❌ NO') + '</b><br>' +
+                '• Country: <b>' + (parsed.country||'Unknown') + '</b> (+' + parsed.countryCallingCode + ')<br>' +
+                '• Number Type: <b>' + numType + '</b><br>' +
+                '• National Number: <b>' + parsed.nationalNumber + '</b><br>' +
+                '• International Format: <b>' + parsed.formatInternational() + '</b><br>' +
+                '• National Format: <b>' + parsed.formatNational() + '</b><br>' +
+                '<span style="font-size:11px;color:#888;">Source: libphonenumber-js (Google open-source library)</span>';
+        } catch(e) {
+            res.innerHTML = '❌ Invalid number। + देश कोड के साथ दर्ज करें।<br><span style="font-size:11px;color:#888;">उदाहरण: +919876543210 या +14155552671</span>';
+        }
+    }
+</script>
+
+</body>
+</html>

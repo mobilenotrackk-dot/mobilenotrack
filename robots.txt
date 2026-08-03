@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Block bots from admin/private paths (add if needed)
+# Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://mobilenotrack.com/sitemap.xml
+
+# Crawl delay (optional, respectful)
+Crawl-delay: 1
