@@ -1,37 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/0.2/"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/0.2/
-        http://www.sitemaps.org/schemas/0.2/sitemap.xsd">
-
-  <!-- Main Page -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mobilenotrack.com/</loc>
-    <lastmod>2026-08-03</lastmod>
+    <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/</loc>
+    <lastmod>2026-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <!-- Anchor sections (for Google to index) -->
-  <url>
-    <loc>https://mobilenotrack.com/#about-section</loc>
-    <lastmod>2026-08-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://mobilenotrack.com/#privacy-section</loc>
-    <lastmod>2026-08-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://mobilenotrack.com/#contact-section</loc>
-    <lastmod>2026-08-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
 </urlset>
