@@ -1,33 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Home Page -->
   <url>
     <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/</loc>
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Blog 1 -->
   <url>
     <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog1-mobile-number-trace.html</loc>
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Blog 2 -->
   <url>
-    <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog2-ip-address-location.html</loc>
-    <lastmod>2026-08-04</lastmod>
+    <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/Blog2-ip-address-location.html</loc>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Blog 3 -->
   <url>
     <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog3-what-is-vpn.html</loc>
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Blog 4 -->
   <url>
-    <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog4-spam-calls.html</loc>
-    <lastmod>2026-08-04</lastmod>
+    <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/(blog4-spam-calls.html)</loc>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Blog 5 -->
+  <url>
+    <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog5-dns-lookup.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog 6 -->
+  <url>
+    <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog6-link-safety.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog 7 -->
+  <url>
+    <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog7-mnp.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog 8 -->
+  <url>
+    <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog8-ip-blacklist.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog 9 -->
+  <url>
+    <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog-privacy-guide-2026.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
+    
