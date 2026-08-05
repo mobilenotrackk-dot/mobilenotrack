@@ -450,7 +450,7 @@
     </div>
 
     <!        <!-- Bulk Lookup -->
-    <div class="card" style="padding: 18px; margin-top: 14px;">
+    < divclass="card" style="padding: 18px; margin-top: 14px;">
         <h3 style="margin-top:0;">📋 Bulk Lookup — Check Multiple Numbers at Once</h3>
         <p style="font-size:13px; color:#666; margin-top:4px;">Enter numbers separated by a new line, comma, space, or even pasted together — the tool will auto-detect each one. Then click "Bulk Check".</p>
         <textarea id="bulkInput" rows="6" placeholder="+910000000000&#10;+10000000000&#10;+440000000000" style="width:100%; font-family:inherit; font-size:14px; padding:10px; border-radius:8px; border:1px solid #ccc; margin-top:8px; resize:vertical;"></textarea>
@@ -458,12 +458,12 @@
             <button onclick="bulkLookup()" style="background:#4a90d9;color:#fff;border:none;padding:10px 18px;border-radius:6px;cursor:pointer;font-size:14px;">📋 Bulk Check</button>
             <button onclick="document.getElementById('bulkInput').value=''; document.getElementById('bulkResult').innerHTML='';" style="background:#6c757d;color:#fff;border:none;padding:10px 18px;border-radius:6px;cursor:pointer;font-size:14px;">🗑️ Clear</button>
         </div>
-        <div id="bulkResult" style="margin-top:14px; overflow-x:auto;"></div>
+        </div> id="bulkResult" style="margin-top:14px; overflow-x:auto;"></div>
     </div>
-<!-- ==================== BLOG SECTION START (ALL 21 BLOGS) ==================== -->
-<div class="card" style="margin-top: 14px;">
-    <h2 style="font-size: 20px; color: #1a1a2e; margin-bottom: 4px;">📚 Tech, Network & Security Guides</h2>
-    <p class="subtitle" style="margin-bottom: 18px;">100% Fact-Based Technical Research, IP, OS, Privacy & Future Tech Articles</p>
+<!-- ==================== BLOG SECTION START ==================== -->
+<div class="card" style="margin-top: 14px; padding: 22px;">
+    <h2 style="font-size: 20px; color: #1a1a2e; margin-bottom: 4px; text-align: center;">📚 Tech, Network & Security Guides</h2>
+    <p class="subtitle" style="margin-bottom: 18px; text-align: center;">100% Fact-Based Technical Research, IP, OS, Privacy & Future Tech Articles</p>
 
     <!-- Internal CSS for Blog Section Grid & Cards -->
     <style>
@@ -476,11 +476,13 @@
             background: #f8fafc;
             border: 1px solid #cbd5e1;
             border-radius: 10px;
-            padding: 14px;
+            padding: 16px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
         }
         .b-card:hover {
             transform: translateY(-2px);
@@ -502,7 +504,7 @@
         .tag-sec { background: #ffe4e6; color: #be123c; border: 1px solid #fecdd3; }
         
         .b-title {
-            font-size: 14px;
+            font-size: 15px;
             font-weight: 700;
             color: #0f3460;
             margin-bottom: 6px;
@@ -516,7 +518,6 @@
             flex-grow: 1;
         }
         .b-link {
-            text-decoration: none;
             color: #e94560;
             font-size: 12px;
             font-weight: 700;
@@ -524,252 +525,235 @@
             align-items: center;
             gap: 4px;
         }
-        .b-link:hover {
-            text-decoration: underline;
-        }
     </style>
 
     <div class="blog-grid-container">
 
-        <!-- Blog 21 -->
-        <article class="b-card">
-            <div>
-                <span class="b-tag tag-ai">🤖 Artificial Intelligence</span>
-                <h3 class="b-title">What Is Artificial Intelligence (AI) & Future AI Technologies</h3>
-                <p class="b-desc">Learn how neural networks work, and explore AGI, Quantum AI, and Neuro-symbolic AI models.</p>
-            </div>
-            <a href="blog21-what-is-ai-future-trends.html" class="b-link">Read Full Article &rarr;</a>
-        </article>
-
-        <!-- Blog 20 -->
-        <article class="b-card">
-            <div>
-                <span class="b-tag tag-os">📱 Mobile OS</span>
-                <h3 class="b-title">iOS vs Android Explained: Technical & Security Guide</h3>
-                <p class="b-desc">Deep comparison of Linux vs Darwin kernels, app sandboxing, memory security, and updates.</p>
-            </div>
-            <a href="blog20-ios-vs-android-fact-guide.html" class="b-link">Read Full Article &rarr;</a>
-        </article>
-
-        <!-- Blog 19 -->
-        <article class="b-card">
-            <div>
-                <span class="b-tag tag-net">🌊 Subsea Cables</span>
-                <h3 class="b-title">How Internet Connects Oceans and Space</h3>
-                <p class="b-desc">How 99% of global data travels through submarine fiber optic cables and satellite lasers.</p>
-            </div>
-            <a href="blog19-internet-water-space-connection.html" class="b-link">Read Full Article &rarr;</a>
-        </article>
-
-        <!-- Blog 18 -->
-        <article class="b-card">
-            <div>
-                <span class="b-tag tag-net">🌍 Global Impact</span>
-                <h3 class="b-title">How the Internet Changed the World</h3>
-                <p class="b-desc">A factual guide on how global networking transformed banking, health, education, and commerce.</p>
-            </div>
-            <a href="blog18-how-internet-changed-the-world.html" class="b-link">Read Full Article &rarr;</a>
-        </article>
-
-        <!-- Blog 17 -->
-        <article class="b-card">
-            <div>
-                <span class="b-tag tag-ai">🚀 Future Internet</span>
-                <h3 class="b-title">Future Internet Technologies: 6G, Quantum & Li-Fi</h3>
-                <p class="b-desc">Technical breakdown of 6G Terahertz frequencies, Quantum Key Distribution, and Li-Fi light data.</p>
-            </div>
-            <a href="blog17-future-internet-technology.html" class="b-link">Read Full Article &rarr;</a>
-        </article>
-
-        <!-- Blog 16 -->
-        <article class="b-card">
-            <div>
-                <span class="b-tag tag-sec">🔒 Wi-Fi Security</span>
-                <h3 class="b-title">What Is Wi-Fi & Public Wi-Fi Safety Guide</h3>
-                <p class="b-desc">How Wi-Fi routers transmit radio signals, WPA2 vs WPA3 encryption, and hotspot safety rules.</p>
-            </div>
-            <a href="blog16-what-is-wifi-safety-guide.html" class="b-link">Read Full Article &rarr;</a>
-        </article>
-
-        <!-- Blog 15 -->
-        <article class="b-card">
-            <div>
-                <span class="b-tag tag-net">🌐 Broadband</span>
-                <h3 class="b-title">Types of Internet Connections Explained</h3>
-                <p class="b-desc">Detailed guide comparing Fiber FTTH, DSL, Cable Broadband, Cellular 5G, and Satellite latency.</p>
-            </div>
-            <a href="blog15-types-of-internet.html" class="b-link">Read Full Article &rarr;</a>
-        </article>
-
-        <!-- Blog 14 -->
-        <article class="b-card">
-            <div>
-                <span class="b-tag tag-sec">🔍 Privacy</span>
-                <h3 class="b-title">Google Search History & Privacy Management</h3>
-                <p class="b-desc">How Google logs search queries, server storage mechanics, auto-delete, and privacy settings.</p>
-            </div>
-            <a href="blog14-google-history.html" class="b-link">Read Full Article &rarr;</a>
-        </article>
-
-        <!-- Blog 13 -->
-        <article class="b-card">
-            <div>
-                <span class="b-tag tag-net">🌐 Internet Core</span>
-                <h3 class="b-title">What Is the Internet? Physical Architecture</h3>
-                <p class="b-desc">How global network nodes route packets via TCP/IP protocols, DNS hierarchy, and backbones.</p>
-            </div>
-            <a href="blog13-what-is-the-internet.html" class="b-link">Read Full Article &rarr;</a>
-        </article>
-
-        <!-- Blog 12 -->
-        <article class="b-card">
-            <div>
-                <span class="b-tag tag-net">⚡ Diagnostics</span>
-                <h3 class="b-title">What Is Ping? Network Latency & ICMP Protocol</h3>
-                <p class="b-desc">Understand ping commands, ICMP echo packets, round-trip latency (ms), and packet loss reasons.</p>
-            </div>
-            <a href="blog12-ping-network-test.html" class="b-link">Read Full Article &rarr;</a>
-        </article>
-
-        <!-- Blog 11 -->
-        <article class="b-card">
-            <div>
-                <span class="b-tag tag-sec">🔑 SSL / TLS</span>
-                <h3 class="b-title">HTTPS & SSL/TLS Certificates Security Guide</h3>
-                <p class="b-desc">How web encryption works using RSA keys, TLS handshakes, and HTTPS certificate authority checks.</p>
-            </div>
-            <a href="blog11-https-ssl-certificate.html" class="b-link">Read Full Article &rarr;</a>
-        </article>
-
-        <!-- Blog 10 -->
-        <article class="b-card">
-            <div>
-                <span class="b-tag tag-sec">📋 WHOIS Info</span>
-                <h3 class="b-title">WHOIS Domain Lookup & History Guide</h3>
-                <p class="b-desc">How WHOIS and RDAP protocols fetch domain registrar info, nameservers, and registration metadata.</p>
-            </div>
-            <a href="blog10-whois-domain-history.html" class="b-link">Read Full Article &rarr;</a>
-        </article>
-
-        <!-- Blog 9 -->
-        <article class="b-card">
-            <div>
-                <span class="b-tag tag-net">🌐 Domain Name System</span>
-                <h3 class="b-title">DNS Lookup Guide: How Domain Resolution Works</h3>
-                <p class="b-desc">How DNS translates domain names to IP addresses via root servers, TLDs, and authoritative DNS.</p>
-            </div>
-            <a href="blog09-dns-lookup-guide.html" class="b-link">Read Full Article &rarr;</a>
-        </article>
-
-        <!-- Blog 8 -->
-        <article class="b-card">
-            <div>
-                <span class="b-tag tag-sec">🛡️ Cyber Security</span>
-                <h3 class="b-title">LinkGuard Security Scanner: Detect Phishing URLs</h3>
-                <p class="b-desc">Identify malicious links, suspicious redirects, URL shorteners, and unsafe web domains safety checks.</p>
-            </div>
-            <a href="blog08-linkguard-security-scanner.html" class="b-link">Read Full Article &rarr;</a>
-        </article>
-
-        <!-- Blog 7 -->
-        <article class="b-card">
-            <div>
-                <span class="b-tag tag-sec">🚫 Anti-Spam</span>
-                <h3 class="b-title">Spam Blacklist Checker: Email & IP Reputation</h3>
-                <p class="b-desc">Check if an IP or domain is listed on RBL, DNSBL, and global email threat intelligence databases.</p>
-            </div>
-            <a href="blog07-spam-blacklist-checker.html" class="b-link">Read Full Article &rarr;</a>
-        </article>
-
-        <!-- Blog 6 -->
-        <article class="b-card">
-            <div>
-                <span class="b-tag tag-sec">🛡️ Privacy & VPN</span>
-                <h3 class="b-title">VPN Detector & Proxy Analysis Guide</h3>
-                <p class="b-desc">How server flags distinguish between direct ISP connections, residential proxies, and VPN tunnels.</p>
-            </div>
-            <a href="blog06-vpn-detector-proxy-guide.html" class="b-link">Read Full Article &rarr;</a>
-        </article>
-
-        <!-- Blog 5 -->
-        <article class="b-card">
-            <div>
-                <span class="b-tag tag-net">📍 Geolocation</span>
-                <h3 class="b-title">IP Address Geolocation & Location Tracking</h3>
-                <p class="b-desc">How IP geolocation databases estimate ISP, city, and regional coordinates worldwide.</p>
-            </div>
-            <a href="blog05-ip-address-geolocation.html" class="b-link">Read Full Article &rarr;</a>
-        </article>
-
-        <!-- Blog 4 -->
-        <article class="b-card">
-            <div>
-                <span class="b-tag tag-net">🌐 Network IP</span>
-                <h3 class="b-title">IPv4 vs IPv6 Architecture & Subnetting</h3>
-                <p class="b-desc">Understand 32-bit vs 128-bit IP address structures, NAT, and modern internet routing protocols.</p>
-            </div>
-            <a href="blog04-ipv4-vs-ipv6-guide.html" class="b-link">Read Full Article &rarr;</a>
-        </article>
-
-        <!-- Blog 3 -->
-        <article class="b-card">
-            <div>
-                <span class="b-tag tag-os">📋 Telecom Data</span>
-                <h3 class="b-title">Bulk Mobile Number Processing & Analysis</h3>
-                <p class="b-desc">How automated batch parsing tools clean, format, and validate large mobile number datasets.</p>
-            </div>
-            <a href="blog03-bulk-mobile-number-processing.html" class="b-link">Read Full Article &rarr;</a>
-        </article>
-
-        <!-- Blog 2 -->
-        <article class="b-card">
-            <div>
-                <span class="b-tag tag-os">📞 Telecom Network</span>
-                <h3 class="b-title">India Telecom Circles & Number Series Guide</h3>
-                <p class="b-desc">Explanation of TRAI National Numbering Plan (NNP), telecom circles, and operator allocation.</p>
-            </div>
-            <a href="blog02-india-telecom-circles-guide.html" class="b-link">Read Full Article &rarr;</a>
-        </article>
-
-        <!-- Blog 1 -->
-        <article class="b-card">
-            <div>
-                <span class="b-tag tag-os">📱 Mobile Telecom</span>
-                <h3 class="b-title">Global Mobile Number Format & E.164 Standards</h3>
-                <p class="b-desc">How ITU-T E.164 standard structures country codes, national destination codes, and subscriber lines.</p>
-            </div>
-            <a href="blog01-global-mobile-number-e164.html" class="b-link">Read Full Article &rarr;</a>
-        </article>
-
-    </div>
-</div>    <div class="blog-grid-container">
-
-        <!-- 👉 Blog 22 को यहाँ सबसे ऊपर (या नीचे) रखें -->
+        <!-- Blog 22 -->
         <a href="blog22-virus-vs-antivirus-guide.html" class="b-card">
             <div>
                 <span class="b-tag tag-sec">🦠 Cyber Security</span>
-                <h3 class="b-title">Computer Virus vs Antivirus Explained: Security Guide</h3>
+                <h3 class="b-title">Blog 22: Computer Virus vs Antivirus Explained: Security Guide</h3>
                 <p class="b-desc">Understand how malware, trojans, and worms work, and how antivirus software detects and removes threats.</p>
             </div>
             <span class="b-link">Read Full Article &rarr;</span>
         </a>
 
+        <!-- Blog 21 -->
+        <a href="blog21-what-is-ai-future-trends.html" class="b-card">
+            <div>
+                <span class="b-tag tag-ai">🤖 Artificial Intelligence</span>
+                <h3 class="b-title">Blog 21: What Is Artificial Intelligence (AI) & Future AI Technologies</h3>
+                <p class="b-desc">Learn how neural networks work, and explore AGI, Quantum AI, and Neuro-symbolic AI models.</p>
+            </div>
+            <span class="b-link">Read Full Article &rarr;</span>
+        </a>
+
+        <!-- Blog 20 -->
+        <a href="blog20-ios-vs-android-fact-guide.html" class="b-card">
+            <div>
+                <span class="b-tag tag-os">📱 Mobile OS</span>
+                <h3 class="b-title">Blog 20: iOS vs Android Explained: Technical & Security Guide</h3>
+                <p class="b-desc">Deep comparison of Linux vs Darwin kernels, app sandboxing, memory security, and updates.</p>
+            </div>
+            <span class="b-link">Read Full Article &rarr;</span>
+        </a>
+
+        <!-- Blog 19 -->
+        <a href="blog19-internet-water-space-connection.html" class="b-card">
+            <div>
+                <span class="b-tag tag-net">🌊 Subsea Cables</span>
+                <h3 class="b-title">Blog 19: How Internet Connects Oceans and Space</h3>
+                <p class="b-desc">How 99% of global data travels through submarine fiber optic cables and satellite lasers.</p>
+            </div>
+            <span class="b-link">Read Full Article &rarr;</span>
+        </a>
+
+        <!-- Blog 18 -->
+        <a href="blog18-how-internet-changed-the-world.html" class="b-card">
+            <div>
+                <span class="b-tag tag-net">🌍 Global Impact</span>
+                <h3 class="b-title">Blog 18: How the Internet Changed the World</h3>
+                <p class="b-desc">A factual guide on how global networking transformed banking, health, education, and commerce.</p>
+            </div>
+            <span class="b-link">Read Full Article &rarr;</span>
+        </a>
+
+        <!-- Blog 17 -->
+        <a href="blog17-future-internet-technology.html" class="b-card">
+            <div>
+                <span class="b-tag tag-ai">🚀 Future Internet</span>
+                <h3 class="b-title">Blog 17: Future Internet Technologies: 6G, Quantum & Li-Fi</h3>
+                <p class="b-desc">Technical breakdown of 6G Terahertz frequencies, Quantum Key Distribution, and Li-Fi light data.</p>
+            </div>
+            <span class="b-link">Read Full Article &rarr;</span>
+        </a>
+
+        <!-- Blog 16 -->
+        <a href="blog16-what-is-wifi-safety-guide.html" class="b-card">
+            <div>
+                <span class="b-tag tag-sec">🔒 Wi-Fi Security</span>
+                <h3 class="b-title">Blog 16: What Is Wi-Fi & Public Wi-Fi Safety Guide</h3>
+                <p class="b-desc">How Wi-Fi routers transmit radio signals, WPA2 vs WPA3 encryption, and hotspot safety rules.</p>
+            </div>
+            <span class="b-link">Read Full Article &rarr;</span>
+        </a>
+
+        <!-- Blog 15 -->
+        <a href="blog15-types-of-internet.html" class="b-card">
+            <div>
+                <span class="b-tag tag-net">🌐 Broadband</span>
+                <h3 class="b-title">Blog 15: Types of Internet Connections Explained</h3>
+                <p class="b-desc">Detailed guide comparing Fiber FTTH, DSL, Cable Broadband, Cellular 5G, and Satellite latency.</p>
+            </div>
+            <span class="b-link">Read Full Article &rarr;</span>
+        </a>
+
+        <!-- Blog 14 -->
+        <a href="blog14-google-history.html" class="b-card">
+            <div>
+                <span class="b-tag tag-sec">🔍 Privacy</span>
+                <h3 class="b-title">Blog 14: Google Search History & Privacy Management</h3>
+                <p class="b-desc">How Google logs search queries, server storage mechanics, auto-delete, and privacy settings.</p>
+            </div>
+            <span class="b-link">Read Full Article &rarr;</span>
+        </a>
+
+        <!-- Blog 13 -->
+        <a href="blog13-what-is-the-internet.html" class="b-card">
+            <div>
+                <span class="b-tag tag-net">🌐 Internet Core</span>
+                <h3 class="b-title">Blog 13: What Is the Internet? Physical Architecture</h3>
+                <p class="b-desc">How global network nodes route packets via TCP/IP protocols, DNS hierarchy, and backbones.</p>
+            </div>
+            <span class="b-link">Read Full Article &rarr;</span>
+        </a>
+
+        <!-- Blog 12 -->
+        <a href="blog12-ping-network-test.html" class="b-card">
+            <div>
+                <span class="b-tag tag-net">⚡ Diagnostics</span>
+                <h3 class="b-title">Blog 12: What Is Ping? Network Latency & ICMP Protocol</h3>
+                <p class="b-desc">Understand ping commands, ICMP echo packets, round-trip latency (ms), and packet loss reasons.</p>
+            </div>
+            <span class="b-link">Read Full Article &rarr;</span>
+        </a>
+
+        <!-- Blog 11 -->
+        <a href="blog11-https-ssl-certificate.html" class="b-card">
+            <div>
+                <span class="b-tag tag-sec">🔑 SSL / TLS</span>
+                <h3 class="b-title">Blog 11: HTTPS & SSL/TLS Certificates Security Guide</h3>
+                <p class="b-desc">How web encryption works using RSA keys, TLS handshakes, and HTTPS certificate authority checks.</p>
+            </div>
+            <span class="b-link">Read Full Article &rarr;</span>
+        </a>
+
+        <!-- Blog 10 -->
+        <a href="blog10-whois-domain-history.html" class="b-card">
+            <div>
+                <span class="b-tag tag-sec">📋 WHOIS Info</span>
+                <h3 class="b-title">Blog 10: WHOIS Domain Lookup & History Guide</h3>
+                <p class="b-desc">How WHOIS and RDAP protocols fetch domain registrar info, nameservers, and registration metadata.</p>
+            </div>
+            <span class="b-link">Read Full Article &rarr;</span>
+        </a>
+
+        <!-- Blog 9 -->
+        <a href="blog09-dns-lookup-guide.html" class="b-card">
+            <div>
+                <span class="b-tag tag-net">🌐 Domain Name System</span>
+                <h3 class="b-title">Blog 09: DNS Lookup Guide: How Domain Resolution Works</h3>
+                <p class="b-desc">How DNS translates domain names to IP addresses via root servers, TLDs, and authoritative DNS.</p>
+            </div>
+            <span class="b-link">Read Full Article &rarr;</span>
+        </a>
+
+        <!-- Blog 8 -->
+        <a href="blog08-linkguard-security-scanner.html" class="b-card">
+            <div>
+                <span class="b-tag tag-sec">🛡️ Cyber Security</span>
+                <h3 class="b-title">Blog 08: LinkGuard Security Scanner: Detect Phishing URLs</h3>
+                <p class="b-desc">Identify malicious links, suspicious redirects, URL shorteners, and unsafe web domains safety checks.</p>
+            </div>
+            <span class="b-link">Read Full Article &rarr;</span>
+        </a>
+
+        <!-- Blog 7 -->
+        <a href="blog07-spam-blacklist-checker.html" class="b-card">
+            <div>
+                <span class="b-tag tag-sec">🚫 Anti-Spam</span>
+                <h3 class="b-title">Blog 07: Spam Blacklist Checker: Email & IP Reputation</h3>
+                <p class="b-desc">Check if an IP or domain is listed on RBL, DNSBL, and global email threat intelligence databases.</p>
+            </div>
+            <span class="b-link">Read Full Article &rarr;</span>
+        </a>
+
+        <!-- Blog 6 -->
+        <a href="blog06-vpn-detector-proxy-guide.html" class="b-card">
+            <div>
+                <span class="b-tag tag-sec">🛡️ Privacy & VPN</span>
+                <h3 class="b-title">Blog 06: VPN Detector & Proxy Analysis Guide</h3>
+                <p class="b-desc">How server flags distinguish between direct ISP connections, residential proxies, and VPN tunnels.</p>
+            </div>
+            <span class="b-link">Read Full Article &rarr;</span>
+        </a>
+
+        <!-- Blog 5 -->
+        <a href="blog05-ip-address-geolocation.html" class="b-card">
+            <div>
+                <span class="b-tag tag-net">📍 Geolocation</span>
+                <h3 class="b-title">Blog 05: IP Address Geolocation & Location Tracking</h3>
+                <p class="b-desc">How IP geolocation databases estimate ISP, city, and regional coordinates worldwide.</p>
+            </div>
+            <span class="b-link">Read Full Article &rarr;</span>
+        </a>
+
+        <!-- Blog 4 -->
+        <a href="blog04-ipv4-vs-ipv6-guide.html" class="b-card">
+            <div>
+                <span class="b-tag tag-net">🌐 Network IP</span>
+                <h3 class="b-title">Blog 04: IPv4 vs IPv6 Architecture & Subnetting</h3>
+                <p class="b-desc">Understand 32-bit vs 128-bit IP address structures, NAT, and modern internet routing protocols.</p>
+            </div>
+            <span class="b-link">Read Full Article &rarr;</span>
+        </a>
+
+        <!-- Blog 3 -->
+        <a href="blog03-bulk-mobile-number-processing.html" class="b-card">
+            <div>
+                <span class="b-tag tag-os">📋 Telecom Data</span>
+                <h3 class="b-title">Blog 03: Bulk Mobile Number Processing & Analysis</h3>
+                <p class="b-desc">How automated batch parsing tools clean, format, and validate large mobile number datasets.</p>
+            </div>
+            <span class="b-link">Read Full Article &rarr;</span>
+        </a>
+
+        <!-- Blog 2 -->
+        <a href="blog02-india-telecom-circles-guide.html" class="b-card">
+            <div>
+                <span class="b-tag tag-os">📞 Telecom Network</span>
+                <h3 class="b-title">Blog 02: India Telecom Circles & Number Series Guide</h3>
+                <p class="b-desc">Explanation of TRAI National Numbering Plan (NNP), telecom circles, and operator allocation.</p>
+            </div>
+            <span class="b-link">Read Full Article &rarr;</span>
+        </a>
+
         <!-- Blog 1 -->
-        <article class="b-card">
+        <a href="blog01-global-mobile-number-e164.html" class="b-card">
             <div>
                 <span class="b-tag tag-os">📱 Mobile Telecom</span>
-                <h3 class="b-title">Global Mobile Number Format & E.164 Standards</h3>
+                <h3 class="b-title">Blog 01: Global Mobile Number Format & E.164 Standards</h3>
                 <p class="b-desc">How ITU-T E.164 standard structures country codes, national destination codes, and subscriber lines.</p>
             </div>
-            <a href="blog01-global-mobile-number-e164.html" class="b-link">Read Full Article &rarr;</a>
-        </article>
+            <span class="b-link">Read Full Article &rarr;</span>
+        </a>
 
-    </div> <!-- .blog-grid-container बंद -->
-</div> <!-- मुख्य card बंद -->
+    </div>
+</div>
 <!-- ==================== BLOG SECTION END ==================== -->
     
-<!-- ==================== BLOG SECTION END ==================== -->
-            
+                
 
             
     
