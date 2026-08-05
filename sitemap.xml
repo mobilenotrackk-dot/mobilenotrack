@@ -267,7 +267,26 @@
             <span class="b-link">Read Full Article &rarr;</span>
         </a>
 
+        <!-- Blog 1 -->        <!-- Blog 22 -->
+        <a href="blog22-virus-vs-antivirus-guide.html" class="b-card">
+            <div>
+                <span class="b-tag tag-sec">🦠 Cyber Security</span>
+                <h3 class="b-title">Computer Virus vs Antivirus Explained: Security Guide</h3>
+                <p class="b-desc">Understand how malware, trojans, and worms work, and how antivirus software detects and removes threats.</p>
+            </div>
+            <span class="b-link">Read Full Article &rarr;</span>
+        </a>
+
         <!-- Blog 1 -->
+        <a href="blog01-global-mobile-number-e164.html" class="b-card">
+            <div>
+                <span class="b-tag tag-os">📱 Mobile Telecom</span>
+                <h3 class="b-title">Global Mobile Number Format & E.164 Standards</h3>
+                <p class="b-desc">How ITU-T E.164 standard structures country codes, national destination codes, and subscriber lines.</p>
+            </div>
+            <span class="b-link">Read Full Article &rarr;</span>
+        </a>
+      
         <a href="blog01-global-mobile-number-e164.html" class="b-card">
             <div>
                 <span class="b-tag tag-os">📱 Mobile Telecom</span>
