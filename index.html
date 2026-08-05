@@ -460,80 +460,292 @@
         </div>
         <div id="bulkResult" style="margin-top:14px; overflow-x:auto;"></div>
     </div>
+<!-- ==================== BLOG SECTION START (ALL 21 BLOGS) ==================== -->
+<div class="card" style="margin-top: 14px;">
+    <h2 style="font-size: 20px; color: #1a1a2e; margin-bottom: 4px;">📚 Tech, Network & Security Guides</h2>
+    <p class="subtitle" style="margin-bottom: 18px;">100% Fact-Based Technical Research, IP, OS, Privacy & Future Tech Articles</p>
 
-<!-- 📚 Knowledge & Safety Guides Section -->
-<div class="card" style="padding: 22px; margin-top: 14px;">
-    <h2 style="text-align: center; margin-bottom: 20px; font-size: 20px; color: #1a1a2e;">📚 Knowledge & Safety Guides</h2>
-    
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px;">
+    <!-- Internal CSS for Blog Section Grid & Cards -->
+    <style>
+        .blog-grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 14px;
+        }
+        .b-card {
+            background: #f8fafc;
+            border: 1px solid #cbd5e1;
+            border-radius: 10px;
+            padding: 14px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .b-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+            border-color: #0f3460;
+        }
+        .b-tag {
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 3px 8px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .tag-ai { background: #f3e8ff; color: #7e22ce; border: 1px solid #d8b4fe; }
+        .tag-os { background: #e0f2fe; color: #0369a1; border: 1px solid #7dd3fc; }
+        .tag-net { background: #dcfce7; color: #15803d; border: 1px solid #86efac; }
+        .tag-sec { background: #ffe4e6; color: #be123c; border: 1px solid #fecdd3; }
         
-        <!-- Blog 1 -->
-        <a href="blog1-mobile-number-trace.html" style="text-decoration: none; color: inherit; border: 1px solid #e2e8f0; border-radius: 10px; padding: 16px; background: #f8fafc; display: block;">
-            <span style="font-size: 11px; font-weight: 700; color: #1d4ed8; text-transform: uppercase;">📍 Phone Lookup</span>
-            <h3 style="font-size: 15px; margin: 6px 0 4px; color: #111827;">How to Trace a Mobile Number Location</h3>
-            <p style="font-size: 12px; color: #6b7280; margin: 0; line-height: 1.4;">Learn what phone lookup tools can and cannot do.</p>
-        </a>
+        .b-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #0f3460;
+            margin-bottom: 6px;
+            line-height: 1.35;
+        }
+        .b-desc {
+            font-size: 12px;
+            color: #475569;
+            line-height: 1.5;
+            margin-bottom: 12px;
+            flex-grow: 1;
+        }
+        .b-link {
+            text-decoration: none;
+            color: #e94560;
+            font-size: 12px;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .b-link:hover {
+            text-decoration: underline;
+        }
+    </style>
 
-        <!-- Blog 2 -->
-        <a href="Blog2-ip-address-location.html" style="text-decoration: none; color: inherit; border: 1px solid #e2e8f0; border-radius: 10px; padding: 16px; background: #f8fafc; display: block;">
-            <span style="font-size: 11px; font-weight: 700; color: #0f766e; text-transform: uppercase;">🌐 IP Geolocation</span>
-            <h3 style="font-size: 15px; margin: 6px 0 4px; color: #111827;">How to Find Location from an IP Address</h3>
-            <p style="font-size: 12px; color: #6b7280; margin: 0; line-height: 1.4;">A simple breakdown of IP geolocation accuracy.</p>
-        </a>
+    <div class="blog-grid-container">
 
-        <!-- Blog 3 -->
-        <a href="blog3-what-is-vpn.html" style="text-decoration: none; color: inherit; border: 1px solid #e2e8f0; border-radius: 10px; padding: 16px; background: #f8fafc; display: block;">
-            <span style="font-size: 11px; font-weight: 700; color: #7c3aed; text-transform: uppercase;">🛡️ Privacy & VPN</span>
-            <h3 style="font-size: 15px; margin: 6px 0 4px; color: #111827;">What Is a VPN and How Does It Work?</h3>
-            <p style="font-size: 12px; color: #6b7280; margin: 0; line-height: 1.4;">A plain English guide to VPNs and proxy detection.</p>
-        </a>
+        <!-- Blog 21 -->
+        <article class="b-card">
+            <div>
+                <span class="b-tag tag-ai">🤖 Artificial Intelligence</span>
+                <h3 class="b-title">What Is Artificial Intelligence (AI) & Future AI Technologies</h3>
+                <p class="b-desc">Learn how neural networks work, and explore AGI, Quantum AI, and Neuro-symbolic AI models.</p>
+            </div>
+            <a href="blog21-what-is-ai-future-trends.html" class="b-link">Read Full Article &rarr;</a>
+        </article>
 
-        <!-- Blog 4 -->
-        <a href="blog4-spam-calls.html">
+        <!-- Blog 20 -->
+        <article class="b-card">
+            <div>
+                <span class="b-tag tag-os">📱 Mobile OS</span>
+                <h3 class="b-title">iOS vs Android Explained: Technical & Security Guide</h3>
+                <p class="b-desc">Deep comparison of Linux vs Darwin kernels, app sandboxing, memory security, and updates.</p>
+            </div>
+            <a href="blog20-ios-vs-android-fact-guide.html" class="b-link">Read Full Article &rarr;</a>
+        </article>
 
-            style="text-decoration: none; color: inherit; border: 1px solid #e2e8f0; border-radius: 10px; padding: 16px; background: #f8fafc; display: block;">
-            <span style="font-size: 11px; font-weight: 700; color: #dc2626; text-transform: uppercase;">🚫 Spam Protection</span>
-            <h3 style="font-size: 15px; margin: 6px 0 4px; color: #111827;">How to Identify Spam Calls & Protect Yourself</h3>
-            <p style="font-size: 12px; color: #6b7280; margin: 0; line-height: 1.4;">Practical tips to recognize scam calls in India.</p>
-        </a>
+        <!-- Blog 19 -->
+        <article class="b-card">
+            <div>
+                <span class="b-tag tag-net">🌊 Subsea Cables</span>
+                <h3 class="b-title">How Internet Connects Oceans and Space</h3>
+                <p class="b-desc">How 99% of global data travels through submarine fiber optic cables and satellite lasers.</p>
+            </div>
+            <a href="blog19-internet-water-space-connection.html" class="b-link">Read Full Article &rarr;</a>
+        </article>
 
-        <!-- Blog 5 -->
-        <a href="blog5-dns-lookup.html" style="text-decoration: none; color: inherit; border: 1px solid #e2e8f0; border-radius: 10px; padding: 16px; background: #f8fafc; display: block;">
-            <span style="font-size: 11px; font-weight: 700; color: #2563eb; text-transform: uppercase;">🔍 DNS Lookup</span>
-            <h3 style="font-size: 15px; margin: 6px 0 4px; color: #111827;">Understanding DNS Records & Domain Lookup</h3>
-            <p style="font-size: 12px; color: #6b7280; margin: 0; line-height: 1.4;">Learn how DNS resolves domain names to IP addresses.</p>
-        </a>
+        <!-- Blog 18 -->
+        <article class="b-card">
+            <div>
+                <span class="b-tag tag-net">🌍 Global Impact</span>
+                <h3 class="b-title">How the Internet Changed the World</h3>
+                <p class="b-desc">A factual guide on how global networking transformed banking, health, education, and commerce.</p>
+            </div>
+            <a href="blog18-how-internet-changed-the-world.html" class="b-link">Read Full Article &rarr;</a>
+        </article>
 
-        <!-- Blog 6 -->
-        <a href="blog6-link-safety.html" style="text-decoration: none; color: inherit; border: 1px solid #e2e8f0; border-radius: 10px; padding: 16px; background: #f8fafc; display: block;">
-            <span style="font-size: 11px; font-weight: 700; color: #16a34a; text-transform: uppercase;">🔗 Link Checker</span>
-            <h3 style="font-size: 15px; margin: 6px 0 4px; color: #111827;">How to Check If a URL or Link Is Safe</h3>
-            <p style="font-size: 12px; color: #6b7280; margin: 0; line-height: 1.4;">Identify phishing links and suspicious redirects before clicking.</p>
-        </a>
+        <!-- Blog 17 -->
+        <article class="b-card">
+            <div>
+                <span class="b-tag tag-ai">🚀 Future Internet</span>
+                <h3 class="b-title">Future Internet Technologies: 6G, Quantum & Li-Fi</h3>
+                <p class="b-desc">Technical breakdown of 6G Terahertz frequencies, Quantum Key Distribution, and Li-Fi light data.</p>
+            </div>
+            <a href="blog17-future-internet-technology.html" class="b-link">Read Full Article &rarr;</a>
+        </article>
 
-        <!-- Blog 7 -->
-        <a href="blog7-mnp.html" style="text-decoration: none; color: inherit; border: 1px solid #e2e8f0; border-radius: 10px; padding: 16px; background: #f8fafc; display: block;">
-            <span style="font-size: 11px; font-weight: 700; color: #d97706; text-transform: uppercase;">📱 MNP & Telecom</span>
-            <h3 style="font-size: 15px; margin: 6px 0 4px; color: #111827;">Mobile Number Portability (MNP) Guide</h3>
-            <p style="font-size: 12px; color: #6b7280; margin: 0; line-height: 1.4;">How operator lookup and circle tracking work in India.</p>
-        </a>
+        <!-- Blog 16 -->
+        <article class="b-card">
+            <div>
+                <span class="b-tag tag-sec">🔒 Wi-Fi Security</span>
+                <h3 class="b-title">What Is Wi-Fi & Public Wi-Fi Safety Guide</h3>
+                <p class="b-desc">How Wi-Fi routers transmit radio signals, WPA2 vs WPA3 encryption, and hotspot safety rules.</p>
+            </div>
+            <a href="blog16-what-is-wifi-safety-guide.html" class="b-link">Read Full Article &rarr;</a>
+        </article>
 
-        <!-- Blog 8 -->
-        <a href="blog8-ip-blacklist.html" style="text-decoration: none; color: inherit; border: 1px solid #e2e8f0; border-radius: 10px; padding: 16px; background: #f8fafc; display: block;">
-            <span style="font-size: 11px; font-weight: 700; color: #6d28d9; text-transform: uppercase;">⛔ IP Blocklist</span>
-            <h3 style="font-size: 15px; margin: 6px 0 4px; color: #111827;">What Is an IP Blacklist & How to Delist</h3>
-            <p style="font-size: 12px; color: #6b7280; margin: 0; line-height: 1.4;">Learn how DNSBL filters work and check your IP reputation.</p>
-        </a>
+        <!-- Blog 15 -->
+        <article class="b-card">
+            <div>
+                <span class="b-tag tag-net">🌐 Broadband</span>
+                <h3 class="b-title">Types of Internet Connections Explained</h3>
+                <p class="b-desc">Detailed guide comparing Fiber FTTH, DSL, Cable Broadband, Cellular 5G, and Satellite latency.</p>
+            </div>
+            <a href="blog15-types-of-internet.html" class="b-link">Read Full Article &rarr;</a>
+        </article>
+
+        <!-- Blog 14 -->
+        <article class="b-card">
+            <div>
+                <span class="b-tag tag-sec">🔍 Privacy</span>
+                <h3 class="b-title">Google Search History & Privacy Management</h3>
+                <p class="b-desc">How Google logs search queries, server storage mechanics, auto-delete, and privacy settings.</p>
+            </div>
+            <a href="blog14-google-history.html" class="b-link">Read Full Article &rarr;</a>
+        </article>
+
+        <!-- Blog 13 -->
+        <article class="b-card">
+            <div>
+                <span class="b-tag tag-net">🌐 Internet Core</span>
+                <h3 class="b-title">What Is the Internet? Physical Architecture</h3>
+                <p class="b-desc">How global network nodes route packets via TCP/IP protocols, DNS hierarchy, and backbones.</p>
+            </div>
+            <a href="blog13-what-is-the-internet.html" class="b-link">Read Full Article &rarr;</a>
+        </article>
+
+        <!-- Blog 12 -->
+        <article class="b-card">
+            <div>
+                <span class="b-tag tag-net">⚡ Diagnostics</span>
+                <h3 class="b-title">What Is Ping? Network Latency & ICMP Protocol</h3>
+                <p class="b-desc">Understand ping commands, ICMP echo packets, round-trip latency (ms), and packet loss reasons.</p>
+            </div>
+            <a href="blog12-ping-network-test.html" class="b-link">Read Full Article &rarr;</a>
+        </article>
+
+        <!-- Blog 11 -->
+        <article class="b-card">
+            <div>
+                <span class="b-tag tag-sec">🔑 SSL / TLS</span>
+                <h3 class="b-title">HTTPS & SSL/TLS Certificates Security Guide</h3>
+                <p class="b-desc">How web encryption works using RSA keys, TLS handshakes, and HTTPS certificate authority checks.</p>
+            </div>
+            <a href="blog11-https-ssl-certificate.html" class="b-link">Read Full Article &rarr;</a>
+        </article>
+
+        <!-- Blog 10 -->
+        <article class="b-card">
+            <div>
+                <span class="b-tag tag-sec">📋 WHOIS Info</span>
+                <h3 class="b-title">WHOIS Domain Lookup & History Guide</h3>
+                <p class="b-desc">How WHOIS and RDAP protocols fetch domain registrar info, nameservers, and registration metadata.</p>
+            </div>
+            <a href="blog10-whois-domain-history.html" class="b-link">Read Full Article &rarr;</a>
+        </article>
 
         <!-- Blog 9 -->
-        <a href="blog-privacy-guide-2026.html" style="text-decoration: none; color: inherit; border: 1px solid #e2e8f0; border-radius: 10px; padding: 16px; background: #f8fafc; display: block;">
-            <span style="font-size: 11px; font-weight: 700; color: #0f766e; text-transform: uppercase;">🔒 Digital Privacy</span>
-            <h3 style="font-size: 15px; margin: 6px 0 4px; color: #111827;">How to Protect Your Privacy Online (2026)</h3>
-            <p style="font-size: 12px; color: #6b7280; margin: 0; line-height: 1.4;">Simple, actionable steps to protect your personal data.</p>
-        </a>
+        <article class="b-card">
+            <div>
+                <span class="b-tag tag-net">🌐 Domain Name System</span>
+                <h3 class="b-title">DNS Lookup Guide: How Domain Resolution Works</h3>
+                <p class="b-desc">How DNS translates domain names to IP addresses via root servers, TLDs, and authoritative DNS.</p>
+            </div>
+            <a href="blog09-dns-lookup-guide.html" class="b-link">Read Full Article &rarr;</a>
+        </article>
+
+        <!-- Blog 8 -->
+        <article class="b-card">
+            <div>
+                <span class="b-tag tag-sec">🛡️ Cyber Security</span>
+                <h3 class="b-title">LinkGuard Security Scanner: Detect Phishing URLs</h3>
+                <p class="b-desc">Identify malicious links, suspicious redirects, URL shorteners, and unsafe web domains safety checks.</p>
+            </div>
+            <a href="blog08-linkguard-security-scanner.html" class="b-link">Read Full Article &rarr;</a>
+        </article>
+
+        <!-- Blog 7 -->
+        <article class="b-card">
+            <div>
+                <span class="b-tag tag-sec">🚫 Anti-Spam</span>
+                <h3 class="b-title">Spam Blacklist Checker: Email & IP Reputation</h3>
+                <p class="b-desc">Check if an IP or domain is listed on RBL, DNSBL, and global email threat intelligence databases.</p>
+            </div>
+            <a href="blog07-spam-blacklist-checker.html" class="b-link">Read Full Article &rarr;</a>
+        </article>
+
+        <!-- Blog 6 -->
+        <article class="b-card">
+            <div>
+                <span class="b-tag tag-sec">🛡️ Privacy & VPN</span>
+                <h3 class="b-title">VPN Detector & Proxy Analysis Guide</h3>
+                <p class="b-desc">How server flags distinguish between direct ISP connections, residential proxies, and VPN tunnels.</p>
+            </div>
+            <a href="blog06-vpn-detector-proxy-guide.html" class="b-link">Read Full Article &rarr;</a>
+        </article>
+
+        <!-- Blog 5 -->
+        <article class="b-card">
+            <div>
+                <span class="b-tag tag-net">📍 Geolocation</span>
+                <h3 class="b-title">IP Address Geolocation & Location Tracking</h3>
+                <p class="b-desc">How IP geolocation databases estimate ISP, city, and regional coordinates worldwide.</p>
+            </div>
+            <a href="blog05-ip-address-geolocation.html" class="b-link">Read Full Article &rarr;</a>
+        </article>
+
+        <!-- Blog 4 -->
+        <article class="b-card">
+            <div>
+                <span class="b-tag tag-net">🌐 Network IP</span>
+                <h3 class="b-title">IPv4 vs IPv6 Architecture & Subnetting</h3>
+                <p class="b-desc">Understand 32-bit vs 128-bit IP address structures, NAT, and modern internet routing protocols.</p>
+            </div>
+            <a href="blog04-ipv4-vs-ipv6-guide.html" class="b-link">Read Full Article &rarr;</a>
+        </article>
+
+        <!-- Blog 3 -->
+        <article class="b-card">
+            <div>
+                <span class="b-tag tag-os">📋 Telecom Data</span>
+                <h3 class="b-title">Bulk Mobile Number Processing & Analysis</h3>
+                <p class="b-desc">How automated batch parsing tools clean, format, and validate large mobile number datasets.</p>
+            </div>
+            <a href="blog03-bulk-mobile-number-processing.html" class="b-link">Read Full Article &rarr;</a>
+        </article>
+
+        <!-- Blog 2 -->
+        <article class="b-card">
+            <div>
+                <span class="b-tag tag-os">📞 Telecom Network</span>
+                <h3 class="b-title">India Telecom Circles & Number Series Guide</h3>
+                <p class="b-desc">Explanation of TRAI National Numbering Plan (NNP), telecom circles, and operator allocation.</p>
+            </div>
+            <a href="blog02-india-telecom-circles-guide.html" class="b-link">Read Full Article &rarr;</a>
+        </article>
+
+        <!-- Blog 1 -->
+        <article class="b-card">
+            <div>
+                <span class="b-tag tag-os">📱 Mobile Telecom</span>
+                <h3 class="b-title">Global Mobile Number Format & E.164 Standards</h3>
+                <p class="b-desc">How ITU-T E.164 standard structures country codes, national destination codes, and subscriber lines.</p>
+            </div>
+            <a href="blog01-global-mobile-number-e164.html" class="b-link">Read Full Article &rarr;</a>
+        </article>
 
     </div>
-    </div>
+</div>
+<!-- ==================== BLOG SECTION END ==================== -->
+            
+
             
     
     <d
