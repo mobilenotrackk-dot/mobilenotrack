@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WHOIS Lookup & Domain History: Complete Guide to Checking Domain Age, Registrar Records & Ownership - Mobile No Track</title>
+  <meta name="description" content="Master WHOIS lookup techniques to verify domain age, ownership history, registrar details, and EPP status codes. Learn how to spot scam websites and perform domain safety audits.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background-color: #f9fafb; color: #111827; line-height: 1.75; padding: 20px 12px; }
+    .container { max-width: 780px; margin: 0 auto; background: #ffffff; padding: 36px; border-radius: 12px; border: 1px solid #e5e7eb; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+    nav { font-size: 13px; color: #6b7280; margin-bottom: 24px; }
+    nav a { color: #2563eb; text-decoration: none; font-weight: 500; }
+    h1 { font-family: 'Lora', serif; font-size: 30px; line-height: 1.3; margin-bottom: 14px; color: #111827; font-weight: 600; }
+    .meta { font-size: 13px; color: #6b7280; display: flex; gap: 18px; flex-wrap: wrap; margin-bottom: 28px; border-bottom: 1px solid #f3f4f6; padding-bottom: 18px; }
+    p { margin-bottom: 20px; font-size: 16px; color: #374151; word-break: break-word; }
+    h2 { font-family: 'Lora', serif; font-size: 22px; margin: 32px 0 14px; color: #111827; border-bottom: 2px solid #eff6ff; padding-bottom: 6px; }
+    h3 { font-size: 18px; margin: 22px 0 10px; color: #1f2937; font-weight: 600; }
+    .summary-box { background: #eff6ff; border-left: 4px solid #2563eb; padding: 18px 22px; border-radius: 0 8px 8px 0; margin: 28px 0; font-size: 15px; color: #1e40af; line-height: 1.6; }
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin: 24px 0; }
+    .card { background: #f8fafc; border: 1px solid #e2e8f0; padding: 18px; border-radius: 8px; }
+    .card h3 { font-size: 15px; margin-bottom: 6px; margin-top: 0; color: #0f172a; }
+    ul, ol { margin-bottom: 22px; padding-left: 22px; color: #374151; }
+    li { margin-bottom: 10px; font-size: 15px; }
+    code { background: #f1f5f9; color: #0f172a; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 14px; }
+    pre { background: #1e293b; color: #f8fafc; padding: 16px; border-radius: 8px; overflow-x: auto; font-size: 13px; margin-bottom: 22px; }
+    .highlight-box { background: #fff1f2; border: 1px solid #fecdd3; padding: 20px; border-radius: 8px; margin: 24px 0; color: #881337; }
+    .highlight-box h3 { color: #9f1239; margin-top: 0; }
+    .table-wrapper { overflow-x: auto; margin-bottom: 24px; }
+    table { width: 100%; border-collapse: collapse; text-align: left; font-size: 14px; }
+    th, td { padding: 12px 14px; border: 1px solid #e5e7eb; }
+    th { background: #f8fafc; font-weight: 600; color: #111827; }
+    .footer-nav { margin-top: 44px; padding-top: 24px; border-top: 1px solid #e5e7eb; text-align: center; font-size: 13px; color: #6b7280; }
+    .footer-nav a { color: #2563eb; text-decoration: none; margin: 0 8px; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <nav>
+    <a href="index.html">📱 Mobile No Track</a> &rsaquo; <span>WHOIS & Domain Security</span>
+  </nav>
+
+  <h1>WHOIS Lookup & Domain History: Complete Guide to Checking Domain Age, Registrar Records & Ownership</h1>
+  
+  <div class="meta">
+    <span>🗓️ August 2026</span>
+    <span>⏱️ 9 min read</span>
+    <span>✍️ Mobile No Track Technical Research Team</span>
+  </div>
+
+  <p>Every single website functioning on the global World Wide Web is linked to a registered domain name—such as <code>google.com</code>, <code>wikipedia.org</code>, or <code>example.in</code>. When a domain is registered, its administrative, technical, and scheduling metadata are recorded in a public internet query protocol known as <strong>WHOIS</strong>.</p>
+
+  <p>Whether you are a cybersecurity practitioner evaluating a suspicious link, a web developer acquiring an existing domain, an e-commerce customer verifying an unfamiliar shopping site, or a researcher analyzing digital infrastructure, understanding WHOIS lookup tools and historical registration logs is one of the most practical skills in internet safety.</p>
+
+  <p>This comprehensive operational guide explores how the WHOIS protocol works under the hood, how to perform command-line and web-based WHOIS queries, how to interpret domain age and EPP status codes, how GDPR privacy rules modified public records, and how to spot malicious domain schemes before falling victim to fraud.</p>
+
+  <div class="summary-box">
+    <strong>Core Cybersecurity Rule:</strong> Fraudulent e-commerce sites, phishing landing pages, and tech support scams almost universally run on newly registered domains (often under 30 days old). Performing a 60-second WHOIS domain age check can prevent severe financial loss and credential theft.
+  </div>
+
+  <h2>What is the WHOIS Protocol and How Does it Function?</h2>
+  <p>The term WHOIS is not an acronym; it simply answers the literal question, <em>"Who is responsible for this domain name or IP address block?"</em> Established in the early days of ARPANET and standardized under RFC 3912, WHOIS operates on a query-and-response TCP model over <strong>Port 43</strong>.</p>
+
+  <p>When you register a domain name through a accredited ICANN (Internet Corporation for Assigned Names and Numbers) registrar—such as GoDaddy, Namecheap, Cloudflare, or Google Domains—the registrar submits registration records to the centralized registry operator responsible for that top-level domain (TLD), such as Verisign for <code>.com</code> and <code>.net</code> or NIXI for <code>.in</code>.</p>
+
+  <h3>Thin vs. Thick WHOIS Data Models</h3>
+  <p>Understanding how WHOIS data is distributed across global servers depends on whether the TLD operates on a Thin or Thick data model:</p>
+  <ul>
+    <li><strong>Thin WHOIS Model:</strong> The central registry database holds only essential technical information, such as the registrar name, creation date, expiration date, and active name servers. To get detailed registrant contact info, the query must jump to the specific registrar's WHOIS server. (Example: <code>.com</code> and <code>.net</code> historically used thin models).</li>
+    <li><strong>Thick WHOIS Model:</strong> The central registry holds both technical data and complete administrative contact details in a single unified database. This provides faster, central querying but requires strict data synchronization. (Example: <code>.info</code>, <code>.biz</code>, and most country-code top-level domains like <code>.org</code>).</li>
+  </ul>
+
+  <h2>Key Components Found in a Standard WHOIS Record</h2>
+  <p>When you query a domain using a terminal command line or a web-based lookup tool, the server returns a structured text output containing critical administrative markers. Below is a detailed breakdown of what these data points signify:</p>
+
+  <div class="card-grid">
+    <div class="card">
+      <h3>📅 Creation Date (Domain Age)</h3>
+      <p style="font-size: 13px; margin:0; color: #4b5563;">The exact UTC timestamp when the domain was first registered. This marker is vital for calculating domain age and baseline trust.</p>
+    </div>
+    <div class="card">
+      <h3>⌛ Expiration & Updated Dates</h3>
+      <p style="font-size: 13px; margin:0; color: #4b5563;">Indicates when current ownership rights expire and the last date administrative or DNS records were modified.</p>
+    </div>
+    <div class="card">
+      <h3>🏢 Accredited Registrar</h3>
+      <p style="font-size: 13px; margin:0; color: #4b5563;">The commercial entity through which the owner purchased the domain (e.g., Cloudflare Inc., Namecheap Inc., GoDaddy LLC).</p>
+    </div>
+    <div class="card">
+      <h3>⚙️ Authoritative Name Servers</h3>
+      <p style="font-size: 13px; margin:0; color: #4b5563;">Lists the primary DNS servers (e.g., <code>ns1.cloudflare.com</code>) responsible for routing domain traffic to web hosts.</p>
+    </div>
+  </div>
+
+  <h2>Understanding EPP Domain Status Codes</h2>
+  <p>Extensible Provisioning Protocol (EPP) status codes (also called domain transfer codes) reflect the operational health, security locks, and lifecycle status of a domain name. Spotting these codes in a WHOIS lookup reveals whether a domain is locked, expiring, or undergoing transfer.</p>
+
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>EPP Status Code</th>
+          <th>What It Means</th>
+          <th>Security & Operational Impact</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>ok</code> or <code>active</code></td>
+          <td>Standard operational status</td>
+          <td>The domain has no pending administrative actions or security locks applied.</td>
+        </tr>
+        <tr>
+          <td><code>clientTransferProhibited</code></td>
+          <td>Registrar lock active</td>
+          <td>Prevents unauthorized domain hijacking or illegal transfer attempts to another registrar.</td>
+        </tr>
+        <tr>
+          <td><code>clientHold</code> / <code>serverHold</code></td>
+          <td>Domain DNS suspended</td>
+          <td>The domain is inactive due to non-payment, legal disputes, or severe malware/phishing abuse.</td>
+        </tr>
+        <tr>
+          <td><code>redemptionPeriod</code></td>
+          <td>Expired domain grace period</td>
+          <td>The domain expired, and the original owner has a short window (typically 30 days) to restore it before public deletion.</td>
+        </tr>
+        <tr>
+          <td><code>pendingDelete</code></td>
+          <td>Scheduled for deletion</td>
+          <td>The domain is about to be purged from the central registry and released back into the public market for re-registration.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Why Domain Age and Registration History Matter for Online Safety</h2>
+  <p>In digital risk assessments, **domain age is a primary trust metric**. While a new website is not inherently malicious, cybercriminals rely heavily on temporary infrastructure due to the rapid automated teardown of scam operations by security vendors.</p>
+
+  <h3>1. Phishing & Financial Fraud Prevention</h3>
+  <p>Scammers register domains that closely resemble real brands (typosquatting)—such as <code>support-hdfc-banking-login.com</code> instead of <code>hdfcbank.com</code>. These fraudulent sites are usually deployed hours or days before sending out mass spam SMS campaigns. A WHOIS check showing a creation date from 48 hours ago immediately proves the site is an imposter.</p>
+
+  <h3>2. E-Commerce Store Verification</h3>
+  <p>Fake online shopping portals offering unbelievable discounts on smartphones, fashion, or electronics frequently pop up during festive seasons. Checking the WHOIS record often reveals that a "10-year-old trusted store" was actually registered 3 weeks ago under an anonymous privacy proxy.</p>
+
+  <h3>3. Domain Flipping and Drop Catching Audits</h3>
+  <p>If you plan to purchase a domain name from a domain broker or secondary marketplace, analyzing its WHOIS history ensures the domain was not previously penalized by search engines for distributing malware, spam backlinking, or adult content hosting.</p>
+
+  <div class="highlight-box">
+    <h3>🔒 The Impact of GDPR & WHOIS Privacy Protection</h3>
+    <p>Prior to May 2018, WHOIS records publicly displayed the domain owner's full name, personal home address, email ID, and telephone number. Following the enforcement of the European Union's <strong>GDPR (General Data Protection Regulation)</strong>, ICANN introduced the Temporary Specification for gTLD Registration Data.</p>
+    <p style="margin-bottom:0; margin-top: 10px;">Today, personal contact fields in public WHOIS queries display as <code>REDACTED FOR PRIVACY</code> or are masked by privacy proxy services (such as <em>Withheld for Privacy Ltd</em> or <em>Domains By Proxy LLC</em>). However, crucial technical attributes—including **creation date, expiration date, registrar name, EPP status, and authoritative name servers—always remain 100% public.**</p>
+  </div>
+
+  <h2>How to Perform a WHOIS Lookup: Step-by-Step</h2>
+
+  <h3>Method A: Using Command Line Terminal (Linux, macOS, Windows Subsystem)</h3>
+  <p>For technical users and developers, querying WHOIS via the terminal provides raw, unfiltered ASCII data directly from Port 43 WHOIS servers:</p>
+
+  <pre><code># Open your terminal or shell prompt and run:
+whois example.com
+
+# Output sample:
+Domain Name: EXAMPLE.COM
+Registry Domain ID: 2336799_DOMAIN_COM-VRSN
+Registrar WHOIS Server: whois.iana.org
+Registrar: RESERVED-Internet Assigned Numbers Authority
+Creation Date: 1995-08-14T04:00:00Z
+Registry Expiry Date: 2027-08-13T04:00:00Z
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Name Server: A.IANA-SERVERS.NET
+Name Server: B.IANA-SERVERS.NET</code></pre>
+
+  <h3>Method B: Using ICANN’s Official Registration Data Lookup</h3>
+  <p>For standard web users, ICANN provides an official, ad-free web lookup service that parses WHOIS and modern RDAP (Registration Data Access Protocol) data:</p>
+
+  <ol>
+    <li>Navigate to ICANN's official lookup tool: <code>lookup.icann.org</code></li>
+    <li>Enter the target website domain (e.g., <code>example.com</code>) without <code>http://</code> or <code>www</code>.</li>
+    <li>Click <strong>Lookup</strong> to view structured details regarding creation dates, registrar contact info, and DNS status.</li>
+  </ol>
+
+  <h3>Method C: Investigating Historical Domain Records (Wayback Machine)</h3>
+  <p>To view what a domain contained in previous years—even if ownership changed hands—combine WHOIS lookups with the **Internet Archive Wayback Machine**:</p>
+  <ul>
+    <li>Visit <code>archive.org/web</code></li>
+    <li>Paste the target domain name into the search bar.</li>
+    <li>Inspect historical web snapshots across a calendar timeline to verify if the site content matched its claimed history.</li>
+  </ul>
+
+  <h2>Frequently Asked Questions (FAQs)</h2>
+
+  <h3>1. Can a website owner fake or falsify their WHOIS creation date?</h3>
+  <p>No. Domain creation dates are immutably logged and cryptographically signed by central registry operators (like Verisign or PIR). Individual domain owners, registrars, or webmasters have zero technical ability to alter or fabricate the creation timestamp recorded in the central database.</p>
+
+  <h3>2. Why does a WHOIS lookup show a domain was created in 2026 if the business claims to exist since 2010?</h3>
+  <p>This discrepancy usually means one of two things: either the business operated offline/under a different domain before registering the new one, or the business is falsely claiming longevity to appear trustworthy. In e-commerce security, treat any site with a brand-new domain registration date as a high-risk entity regardless of marketing claims.</p>
+
+  <h3>3. Is searching WHOIS records free and legal?</h3>
+  <p>Yes. WHOIS is a public internet utility protocol managed under ICANN regulations. Basic WHOIS queries are completely free and legal for anyone conducting technical research, buying domain names, or assessing web safety.</p>
+
+  <h3>4. What is RDAP, and is it replacing WHOIS?</h3>
+  <p>RDAP (Registration Data Access Protocol) is the modern successor to the traditional WHOIS protocol. Unlike older text-based WHOIS outputs, RDAP delivers machine-readable JSON responses, supports internationalized character sets, provides standardized HTTP error codes, and enforces strict access controls for protected contact data under global privacy laws.</p>
+
+  <h2>Conclusion</h2>
+  <p>Performing a WHOIS lookup is one of the most effective, accessible cybersecurity habits for validating online platforms. By looking beyond web design and examining baseline technical markers—such as domain creation timestamps, registrar reputation, EPP lock statuses, and name server configurations—users can instantly distinguish legitimate digital platforms from malicious pop-up scams.</p>
+
+  <p>Before conducting financial transactions, entering sensitive credentials, or clicking unexpected links, take 60 seconds to inspect the domain's WHOIS footprint. Staying informed and verifying digital identity markers remains your first line of defense in an interconnected world.</p>
+
+  <div class="footer-nav">
+    <a href="index.html">Home</a> •
+    <a href="blog1-mobile-number-trace.html">Phone Lookup</a> •
+    <a href="Blog2-ip-address-location.html">IP Location</a> •
+    <a href="blog3-what-is-vpn.html">VPN Guide</a> •
+    <a href="blog4-spam-calls.html">Spam Protection</a> •
+    <a href="blog5-dns-lookup.html">DNS Lookup</a>
+  </div>
+</div>
+
+</body>
+</html>
