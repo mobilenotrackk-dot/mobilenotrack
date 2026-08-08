@@ -443,7 +443,7 @@
 
     <!-- Header -->
     <div class="header" style="position:relative;">
-        <button id="loginBtn" onclick="openLoginModal()" style="position:absolute; top:0; right:0; background:rgba(255,255,255,0.12); padding:8px 16px; font-size:13px; border-radius:20px;">👤 Login</button>
+        
         <h1>📱 Mobile No Track</h1>
         <p>Find telecom circle & location for any mobile number, worldwide</p>
     </div>
