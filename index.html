@@ -965,33 +965,7 @@
 
 </div>
 
-<!-- ═════════════════════════════════════════════
-     Login Modal (UI placeholder — NOT functional yet)
-     Wire this up later to Firebase Auth / Supabase Auth /
-     your own backend. See TODO comments in the script below.
-     ═════════════════════════════════════════════ -->
-<div id="loginModalOverlay" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.55); z-index:10000; align-items:center; justify-content:center; padding:16px;">
-    <div style="background:#fff; border-radius:14px; padding:26px; max-width:360px; width:100%; box-shadow:0 12px 40px rgba(0,0,0,0.3);">
-        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
-            <h3 style="margin:0;">👤 Login</h3>
-            <button onclick="closeLoginModal()" style="background:none; color:#888; padding:2px 8px; font-size:18px; box-shadow:none;">✕</button>
-        </div>
 
-        <p style="font-size:12px; color:#c0392b; background:#fdf0f0; padding:8px 10px; border-radius:6px; margin-bottom:14px;">
-            ⚠️ Login is not active yet — this is a placeholder UI. No account is created and no data is sent anywhere.
-        </p>
-
-        <input type="email" id="loginEmail" placeholder="Email address" style="width:100%; margin-bottom:10px;">
-        <input type="password" id="loginPassword" placeholder="Password" style="width:100%; margin-bottom:14px;">
-
-        <button onclick="handleLoginPlaceholder()" style="width:100%; margin-bottom:8px;">Log In</button>
-        <button onclick="handleLoginPlaceholder()" style="width:100%; background:linear-gradient(135deg, #4a90d9, #357abd);">Sign Up</button>
-
-        <p style="font-size:11px; color:#999; text-align:center; margin-top:12px;">
-            Coming soon — powered by your choice of auth provider.
-        </p>
-    </div>
-</div>
 
 <!-- Map Init -->
 <script>
@@ -1819,31 +1793,7 @@
             });
     }
 
-    // ─────────────────────────────────────────────
-    // Login Modal (placeholder — not functional yet)
-    // TODO: Replace handleLoginPlaceholder() with real
-    // auth calls once you wire up Firebase Auth /
-    // Supabase Auth / your own backend, e.g.:
-    //   firebase.auth().signInWithEmailAndPassword(email, pass)
-    // ─────────────────────────────────────────────
-    function openLoginModal() {
-        document.getElementById('loginModalOverlay').style.display = 'flex';
-    }
-    function closeLoginModal() {
-        document.getElementById('loginModalOverlay').style.display = 'none';
-    }
-    function handleLoginPlaceholder() {
-        alert('Login is not active yet — this is a placeholder. Connect a real auth provider (e.g. Firebase Auth) to enable this.');
-    }
-    document.getElementById('loginModalOverlay').addEventListener('click', function(e) {
-        if (e.target === this) closeLoginModal();
-    });
-
-    // Auto-run on load
-    window.addEventListener('load', function() {
-        setTimeout(lookupNumber, 700);
-    });
-
+    
     // ─────────────────────────────────────────────
     // Cookie Consent Banner (required for GDPR + AdSense)
     // ─────────────────────────────────────────────
