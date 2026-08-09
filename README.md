@@ -32,4 +32,5 @@ Site mein mention hai:
 Phone numbers browser mein process hote hain
 Numbers store nahi kiye jate
 AdSense use hota hai
-IP services sirf tab call hoti hain jab user My IP feature use kare !
+IP services sirf tab call hoti hain jab user My IP feature use kare ! Educational Tool
+s website 
