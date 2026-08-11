@@ -1,292 +1,213 @@
-<!-- ==================== BLOG SECTION START ==================== -->
-<div class="card" style="margin-top: 14px; padding: 22px;">
-    <h2 style="font-size: 20px; color: #1a1a2e; margin-bottom: 4px; text-align: center;">📚 Tech, Network & Security Guides</h2>
-    <p class="subtitle" style="margin-bottom: 18px; text-align: center;">100% Fact-Based Technical Research, IP, OS, Privacy & Future Tech Articles</p>
+  <?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+    <!-- Homepage -->
+    <url>
+        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/index.html</loc>
+        <lastmod>2026-08-12</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
 
-    <!-- Internal CSS for Blog Section Grid & Cards -->
-    <style>
-        .blog-grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-            gap: 14px;
-        }
-        .b-card {
-            background: #f8fafc;
-            border: 1px solid #cbd5e1;
-            border-radius: 10px;
-            padding: 16px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            text-decoration: none;
-            color: inherit;
-            transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
-        }
-        .b-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-            border-color: #0f3460;
-        }
-        .b-tag {
-            font-size: 10px;
-            font-weight: 700;
-            text-transform: uppercase;
-            padding: 3px 8px;
-            border-radius: 4px;
-            display: inline-block;
-            margin-bottom: 8px;
-        }
-        .tag-ai { background: #f3e8ff; color: #7e22ce; border: 1px solid #d8b4fe; }
-        .tag-os { background: #e0f2fe; color: #0369a1; border: 1px solid #7dd3fc; }
-        .tag-net { background: #dcfce7; color: #15803d; border: 1px solid #86efac; }
-        .tag-sec { background: #ffe4e6; color: #be123c; border: 1px solid #fecdd3; }
-        
-        .b-title {
-            font-size: 15px;
-            font-weight: 700;
-            color: #0f3460;
-            margin-bottom: 6px;
-            line-height: 1.35;
-        }
-        .b-desc {
-            font-size: 12px;
-            color: #475569;
-            line-height: 1.5;
-            margin-bottom: 12px;
-            flex-grow: 1;
-        }
-        .b-link {
-            color: #e94560;
-            font-size: 12px;
-            font-weight: 700;
-            display: inline-flex;
-            align-items: center;
-            gap: 4px;
-        }
-    </style>
+    <!-- Blog 25: Machine Learning -->
+    <url>
+        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog25-what-is-machine-learning.html</loc>
+        <lastmod>2026-08-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-    <div class="blog-grid-container">
+    <!-- Blog 24: History of AI -->
+    <url>
+        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog24-history-of-ai.html</loc>
+        <lastmod>2026-08-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-        <!-- Blog 22 -->
-        <a href="blog22-virus-vs-antivirus-guide.html" class="b-card">
-            <div>
-                <span class="b-tag tag-sec">🦠 Cyber Security</span>
-                <h3 class="b-title">Computer Virus vs Antivirus Explained: Security Guide</h3>
-                <p class="b-desc">Understand how malware, trojans, and worms work, and how antivirus software detects and removes threats.</p>
-            </div>
-            <span class="b-link">Read Full Article &rarr;</span>
-        </a>
+    <!-- Blog 23: Satellite Internet -->
+    <url>
+        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog23-satellite-vs-normal-internet.html</loc>
+        <lastmod>2026-08-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-        <!-- Blog 21 -->
-        <a href="blog21-what-is-ai-future-trends.html" class="b-card">
-            <div>
-                <span class="b-tag tag-ai">🤖 Artificial Intelligence</span>
-                <h3 class="b-title">What Is Artificial Intelligence (AI) & Future AI Technologies</h3>
-                <p class="b-desc">Learn how neural networks work, and explore AGI, Quantum AI, and Neuro-symbolic AI models.</p>
-            </div>
-            <span class="b-link">Read Full Article &rarr;</span>
-        </a>
+    <!-- Blog 22: Virus vs Antivirus -->
+    <url>
+        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog22-virus-vs-antivirus-guide.html</loc>
+        <lastmod>2026-08-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-        <!-- Blog 20 -->
-        <a href="blog20-ios-vs-android-fact-guide.html" class="b-card">
-            <div>
-                <span class="b-tag tag-os">📱 Mobile OS</span>
-                <h3 class="b-title">iOS vs Android Explained: Technical & Security Guide</h3>
-                <p class="b-desc">Deep comparison of Linux vs Darwin kernels, app sandboxing, memory security, and updates.</p>
-            </div>
-            <span class="b-link">Read Full Article &rarr;</span>
-        </a>
+    <!-- Blog 21: AI & Future Trends -->
+    <url>
+        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog21-what-is-ai-future-trends.html</loc>
+        <lastmod>2026-08-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-        <!-- Blog 19 -->
-        <a href="blog19-internet-water-space-connection.html" class="b-card">
-            <div>
-                <span class="b-tag tag-net">🌊 Subsea Cables</span>
-                <h3 class="b-title">How Internet Connects Oceans and Space</h3>
-                <p class="b-desc">How 99% of global data travels through submarine fiber optic cables and satellite lasers.</p>
-            </div>
-            <span class="b-link">Read Full Article &rarr;</span>
-        </a>
+    <!-- Blog 20: iOS vs Android -->
+    <url>
+        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog20-ios-vs-android-fact-guide.html</loc>
+        <lastmod>2026-08-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-        <!-- Blog 18 -->
-        <a href="blog18-how-internet-changed-the-world.html" class="b-card">
-            <div>
-                <span class="b-tag tag-net">🌍 Global Impact</span>
-                <h3 class="b-title">How the Internet Changed the World</h3>
-                <p class="b-desc">A factual guide on how global networking transformed banking, health, education, and commerce.</p>
-            </div>
-            <span class="b-link">Read Full Article &rarr;</span>
-        </a>
+    <!-- Blog 19: Internet Oceans and Space -->
+    <url>
+        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog19-internet-water-space-connection.html</loc>
+        <lastmod>2026-08-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-        <!-- Blog 17 -->
-        <a href="blog17-future-internet-technology.html" class="b-card">
-            <div>
-                <span class="b-tag tag-ai">🚀 Future Internet</span>
-                <h3 class="b-title">Future Internet Technologies: 6G, Quantum & Li-Fi</h3>
-                <p class="b-desc">Technical breakdown of 6G Terahertz frequencies, Quantum Key Distribution, and Li-Fi light data.</p>
-            </div>
-            <span class="b-link">Read Full Article &rarr;</span>
-        </a>
+    <!-- Blog 18: How Internet Changed the World -->
+    <url>
+        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog18-how-internet-changed-the-world.html</loc>
+        <lastmod>2026-08-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-        <!-- Blog 16 -->
-        <a href="blog16-what-is-wifi-safety-guide.html" class="b-card">
-            <div>
-                <span class="b-tag tag-sec">🔒 Wi-Fi Security</span>
-                <h3 class="b-title">What Is Wi-Fi & Public Wi-Fi Safety Guide</h3>
-                <p class="b-desc">How Wi-Fi routers transmit radio signals, WPA2 vs WPA3 encryption, and hotspot safety rules.</p>
-            </div>
-            <span class="b-link">Read Full Article &rarr;</span>
-        </a>
+    <!-- Blog 17: Future Internet Technologies -->
+    <url>
+        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog17-future-internet-technology.html</loc>
+        <lastmod>2026-08-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-        <!-- Blog 15 -->
-        <a href="blog15-types-of-internet.html" class="b-card">
-            <div>
-                <span class="b-tag tag-net">🌐 Broadband</span>
-                <h3 class="b-title">Types of Internet Connections Explained</h3>
-                <p class="b-desc">Detailed guide comparing Fiber FTTH, DSL, Cable Broadband, Cellular 5G, and Satellite latency.</p>
-            </div>
-            <span class="b-link">Read Full Article &rarr;</span>
-        </a>
+    <!-- Blog 16: Wi-Fi Safety Guide -->
+    <url>
+        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog16-what-is-wifi-safety-guide.html</loc>
+        <lastmod>2026-08-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-        <!-- Blog 14 -->
-        <a href="blog14-google-history.html" class="b-card">
-            <div>
-                <span class="b-tag tag-sec">🔍 Privacy</span>
-                <h3 class="b-title">Google Search History & Privacy Management</h3>
-                <p class="b-desc">How Google logs search queries, server storage mechanics, auto-delete, and privacy settings.</p>
-            </div>
-            <span class="b-link">Read Full Article &rarr;</span>
-        </a>
+    <!-- Blog 15: Types of Internet Connections -->
+    <url>
+        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog15-types-of-internet.html</loc>
+        <lastmod>2026-08-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-        <!-- Blog 13 -->
-        <a href="blog13-what-is-the-internet.html" class="b-card">
-            <div>
-                <span class="b-tag tag-net">🌐 Internet Core</span>
-                <h3 class="b-title">What Is the Internet? Physical Architecture</h3>
-                <p class="b-desc">How global network nodes route packets via TCP/IP protocols, DNS hierarchy, and backbones.</p>
-            </div>
-            <span class="b-link">Read Full Article &rarr;</span>
-        </a>
+    <!-- Blog 14: Google History & Privacy -->
+    <url>
+        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog14-google-history.html</loc>
+        <lastmod>2026-08-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-        <!-- Blog 12 -->
-        <a href="blog12-ping-network-test.html" class="b-card">
-            <div>
-                <span class="b-tag tag-net">⚡ Diagnostics</span>
-                <h3 class="b-title">What Is Ping? Network Latency & ICMP Protocol</h3>
-                <p class="b-desc">Understand ping commands, ICMP echo packets, round-trip latency (ms), and packet loss reasons.</p>
-            </div>
-            <span class="b-link">Read Full Article &rarr;</span>
-        </a>
+    <!-- Blog 13: What Is the Internet -->
+    <url>
+        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog13-what-is-the-internet.html</loc>
+        <lastmod>2026-08-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-        <!-- Blog 11 -->
-        <a href="blog11-https-ssl-certificate.html" class="b-card">
-            <div>
-                <span class="b-tag tag-sec">🔑 SSL / TLS</span>
-                <h3 class="b-title">HTTPS & SSL/TLS Certificates Security Guide</h3>
-                <p class="b-desc">How web encryption works using RSA keys, TLS handshakes, and HTTPS certificate authority checks.</p>
-            </div>
-            <span class="b-link">Read Full Article &rarr;</span>
-        </a>
+    <!-- Blog 12: What Is Ping -->
+    <url>
+        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog12-ping-network-test.html</loc>
+        <lastmod>2026-08-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-        <!-- Blog 10 -->
-        <a href="blog10-whois-domain-history.html" class="b-card">
-            <div>
-                <span class="b-tag tag-sec">📋 WHOIS Info</span>
-                <h3 class="b-title">WHOIS Domain Lookup & History Guide</h3>
-                <p class="b-desc">How WHOIS and RDAP protocols fetch domain registrar info, nameservers, and registration metadata.</p>
-            </div>
-            <span class="b-link">Read Full Article &rarr;</span>
-        </a>
+    <!-- Blog 11: HTTPS & SSL Certificate -->
+    <url>
+        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog11-https-ssl-certificate.html</loc>
+        <lastmod>2026-08-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-        <!-- Blog 9 -->
-        <a href="blog09-dns-lookup-guide.html" class="b-card">
-            <div>
-                <span class="b-tag tag-net">🌐 Domain Name System</span>
-                <h3 class="b-title">DNS Lookup Guide: How Domain Resolution Works</h3>
-                <p class="b-desc">How DNS translates domain names to IP addresses via root servers, TLDs, and authoritative DNS.</p>
-            </div>
-            <span class="b-link">Read Full Article &rarr;</span>
-        </a>
+    <!-- Blog 10: WHOIS Domain History -->
+    <url>
+        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog10-whois-domain-history.html</loc>
+        <lastmod>2026-08-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-        <!-- Blog 8 -->
-        <a href="blog08-linkguard-security-scanner.html" class="b-card">
-            <div>
-                <span class="b-tag tag-sec">🛡️ Cyber Security</span>
-                <h3 class="b-title">LinkGuard Security Scanner: Detect Phishing URLs</h3>
-                <p class="b-desc">Identify malicious links, suspicious redirects, URL shorteners, and unsafe web domains safety checks.</p>
-            </div>
-            <span class="b-link">Read Full Article &rarr;</span>
-        </a>
+    <!-- Blog 9: DNS Lookup Guide -->
+    <url>
+        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog09-dns-lookup-guide.html</loc>
+        <lastmod>2026-08-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-        <!-- Blog 7 -->
-        <a href="blog07-spam-blacklist-checker.html" class="b-card">
-            <div>
-                <span class="b-tag tag-sec">🚫 Anti-Spam</span>
-                <h3 class="b-title">Spam Blacklist Checker: Email & IP Reputation</h3>
-                <p class="b-desc">Check if an IP or domain is listed on RBL, DNSBL, and global email threat intelligence databases.</p>
-            </div>
-            <span class="b-link">Read Full Article &rarr;</span>
-        </a>
+    <!-- Blog 8: LinkGuard Security Scanner -->
+    <url>
+        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog08-linkguard-security-scanner.html</loc>
+        <lastmod>2026-08-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-        <!-- Blog 6 -->
-        <a href="blog06-vpn-detector-proxy-guide.html" class="b-card">
-            <div>
-                <span class="b-tag tag-sec">🛡️ Privacy & VPN</span>
-                <h3 class="b-title">VPN Detector & Proxy Analysis Guide</h3>
-                <p class="b-desc">How server flags distinguish between direct ISP connections, residential proxies, and VPN tunnels.</p>
-            </div>
-            <span class="b-link">Read Full Article &rarr;</span>
-        </a>
+    <!-- Blog 7: Spam Blacklist Checker -->
+    <url>
+        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog07-spam-blacklist-checker.html</loc>
+        <lastmod>2026-08-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-        <!-- Blog 5 -->
-        <a href="blog05-ip-address-geolocation.html" class="b-card">
-            <div>
-                <span class="b-tag tag-net">📍 Geolocation</span>
-                <h3 class="b-title">IP Address Geolocation & Location Tracking</h3>
-                <p class="b-desc">How IP geolocation databases estimate ISP, city, and regional coordinates worldwide.</p>
-            </div>
-            <span class="b-link">Read Full Article &rarr;</span>
-        </a>
+    <!-- Blog 6: VPN Detector & Proxy Guide -->
+    <url>
+        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog06-vpn-detector-proxy-guide.html</loc>
+        <lastmod>2026-08-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-        <!-- Blog 4 -->
-        <a href="blog04-ipv4-vs-ipv6-guide.html" class="b-card">
-            <div>
-                <span class="b-tag tag-net">🌐 Network IP</span>
-                <h3 class="b-title">IPv4 vs IPv6 Architecture & Subnetting</h3>
-                <p class="b-desc">Understand 32-bit vs 128-bit IP address structures, NAT, and modern internet routing protocols.</p>
-            </div>
-            <span class="b-link">Read Full Article &rarr;</span>
-        </a>
+    <!-- Blog 5: IP Address Geolocation -->
+    <url>
+        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog05-ip-address-geolocation.html</loc>
+        <lastmod>2026-08-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-        <!-- Blog 3 -->
-        <a href="blog03-bulk-mobile-number-processing.html" class="b-card">
-            <div>
-                <span class="b-tag tag-os">📋 Telecom Data</span>
-                <h3 class="b-title">Bulk Mobile Number Processing & Analysis</h3>
-                <p class="b-desc">How automated batch parsing tools clean, format, and validate large mobile number datasets.</p>
-            </div>
-            <span class="b-link">Read Full Article &rarr;</span>
-        </a>
+    <!-- Blog 4: IPv4 vs IPv6 -->
+    <url>
+        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog04-ipv4-vs-ipv6-guide.html</loc>
+        <lastmod>2026-08-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-        <!-- Blog 2 -->
-        <a href="blog02-india-telecom-circles-guide.html" class="b-card">
-            <div>
-                <span class="b-tag tag-os">📞 Telecom Network</span>
-                <h3 class="b-title">India Telecom Circles & Number Series Guide</h3>
-                <p class="b-desc">Explanation of TRAI National Numbering Plan (NNP), telecom circles, and operator allocation.</p>
-            </div>
-            <span class="b-link">Read Full Article &rarr;</span>
-        </a>
+    <!-- Blog 3: Bulk Mobile Number Processing -->
+    <url>
+        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog03-bulk-mobile-number-processing.html</loc>
+        <lastmod>2026-08-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-        <!-- Blog 1 -->
-        <a href="blog01-global-mobile-number-e164.html" class="b-card">
-            <div>
-                <span class="b-tag tag-os">📱 Mobile Telecom</span>
-                <h3 class="b-title">Global Mobile Number Format & E.164 Standards</h3>
-                <p class="b-desc">How ITU-T E.164 standard structures country codes, national destination codes, and subscriber lines.</p>
-            </div>
-            <span class="b-link">Read Full Article &rarr;</span>
-        </a>
+    <!-- Blog 2: India Telecom Circles -->
+    <url>
+        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog02-india-telecom-circles-guide.html</loc>
+        <lastmod>2026-08-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-    </div>
-</div>
-<!-- ==================== BLOG SECTION END ==================== -->
+    <!-- Blog 1: Global Mobile Number Format -->
+    <url>
+        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog01-global-mobile-number-e164.html</loc>
+        <lastmod>2026-08-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+</urlset>
+            
