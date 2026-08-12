@@ -1,209 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    
-    <!-- Homepage -->
+
     <url>
-        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/index.html</loc>
+        <loc>https://mobilenotrack.com/</loc>
         <lastmod>2026-08-12</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
 
-    <!-- Blog 25: Machine Learning -->
     <url>
-        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog25-what-is-machine-learning.html</loc>
+        <loc>https://mobilenotrack.com/blog25-what-is-machine-learning.html</loc>
         <lastmod>2026-08-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Blog 24: History of AI -->
     <url>
-        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog24-history-of-ai.html</loc>
+        <loc>https://mobilenotrack.com/blog24-history-of-ai.html</loc>
         <lastmod>2026-08-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Blog 23: Satellite Internet -->
     <url>
-        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog23-satellite-vs-normal-internet.html</loc>
+        <loc>https://mobilenotrack.com/blog23-satellite-vs-normal-internet.html</loc>
         <lastmod>2026-08-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Blog 22: Virus vs Antivirus -->
     <url>
-        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog22-virus-vs-antivirus-guide.html</loc>
+        <loc>https://mobilenotrack.com/blog22-virus-vs-antivirus-guide.html</loc>
         <lastmod>2026-08-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Blog 21: AI & Future Trends -->
     <url>
-        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog21-what-is-ai-future-trends.html</loc>
+        <loc>https://mobilenotrack.com/blog21-what-is-ai-future-trends.html</loc>
         <lastmod>2026-08-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Blog 20: iOS vs Android -->
     <url>
-        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog20-ios-vs-android-fact-guide.html</loc>
+        <loc>https://mobilenotrack.com/blog20-ios-vs-android-fact-guide.html</loc>
         <lastmod>2026-08-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Blog 19: Internet Oceans and Space -->
     <url>
-        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog19-internet-water-space-connection.html</loc>
+        <loc>https://mobilenotrack.com/blog19-internet-water-space-connection.html</loc>
         <lastmod>2026-08-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Blog 18: How Internet Changed the World -->
     <url>
-        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog18-how-internet-changed-the-world.html</loc>
+        <loc>https://mobilenotrack.com/blog18-how-internet-changed-the-world.html</loc>
         <lastmod>2026-08-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Blog 17: Future Internet Technologies -->
     <url>
-        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog17-future-internet-technology.html</loc>
+        <loc>https://mobilenotrack.com/blog17-future-internet-technology.html</loc>
         <lastmod>2026-08-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Blog 16: Wi-Fi Safety Guide -->
     <url>
-        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog16-what-is-wifi-safety-guide.html</loc>
+        <loc>https://mobilenotrack.com/blog16-what-is-wifi-safety-guide.html</loc>
         <lastmod>2026-08-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Blog 15: Types of Internet Connections -->
     <url>
-        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog15-types-of-internet.html</loc>
+        <loc>https://mobilenotrack.com/blog15-types-of-internet.html</loc>
         <lastmod>2026-08-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Blog 14: Google History & Privacy -->
     <url>
-        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog14-google-history.html</loc>
+        <loc>https://mobilenotrack.com/blog14-google-history.html</loc>
         <lastmod>2026-08-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Blog 13: What Is the Internet -->
     <url>
-        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog13-what-is-the-internet.html</loc>
+        <loc>https://mobilenotrack.com/blog13-what-is-the-internet.html</loc>
         <lastmod>2026-08-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Blog 12: What Is Ping -->
     <url>
-        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog12-ping-network-test.html</loc>
+        <loc>https://mobilenotrack.com/blog12-ping-network-test.html</loc>
         <lastmod>2026-08-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Blog 11: HTTPS & SSL Certificate -->
     <url>
-        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog11-https-ssl-certificate.html</loc>
+        <loc>https://mobilenotrack.com/blog11-https-ssl-certificate.html</loc>
         <lastmod>2026-08-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Blog 10: WHOIS Domain History -->
     <url>
-        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog10-whois-domain-history.html</loc>
+        <loc>https://mobilenotrack.com/blog10-whois-domain-history.html</loc>
         <lastmod>2026-08-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Blog 9: DNS Lookup Guide -->
     <url>
-        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog09-dns-lookup-guide.html</loc>
+        <loc>https://mobilenotrack.com/blog09-dns-lookup-guide.html</loc>
         <lastmod>2026-08-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Blog 8: LinkGuard Security Scanner -->
     <url>
-        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog08-linkguard-security-scanner.html</loc>
+        <loc>https://mobilenotrack.com/blog08-linkguard-security-scanner.html</loc>
         <lastmod>2026-08-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Blog 7: Spam Blacklist Checker -->
     <url>
-        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog07-spam-blacklist-checker.html</loc>
+        <loc>https://mobilenotrack.com/blog07-spam-blacklist-checker.html</loc>
         <lastmod>2026-08-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Blog 6: VPN Detector & Proxy Guide -->
     <url>
-        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog06-vpn-detector-proxy-guide.html</loc>
+        <loc>https://mobilenotrack.com/blog06-vpn-detector-proxy-guide.html</loc>
         <lastmod>2026-08-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Blog 5: IP Address Geolocation -->
     <url>
-        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog05-ip-address-geolocation.html</loc>
+        <loc>https://mobilenotrack.com/blog05-ip-address-geolocation.html</loc>
         <lastmod>2026-08-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Blog 4: IPv4 vs IPv6 -->
     <url>
-        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog04-ipv4-vs-ipv6-guide.html</loc>
+        <loc>https://mobilenotrack.com/blog04-ipv4-vs-ipv6-guide.html</loc>
         <lastmod>2026-08-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Blog 3: Bulk Mobile Number Processing -->
     <url>
-        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog03-bulk-mobile-number-processing.html</loc>
+        <loc>https://mobilenotrack.com/blog03-bulk-mobile-number-processing.html</loc>
         <lastmod>2026-08-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Blog 2: India Telecom Circles -->
     <url>
-        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog02-india-telecom-circles-guide.html</loc>
+        <loc>https://mobilenotrack.com/blog02-india-telecom-circles-guide.html</loc>
         <lastmod>2026-08-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Blog 1: Global Mobile Number Format -->
     <url>
-        <loc>https://mobilenotrackk-dot.github.io/mobilenotrack/blog01-global-mobile-number-e164.html</loc>
+        <loc>https://mobilenotrack.com/blog01-global-mobile-number-e164.html</loc>
         <lastmod>2026-08-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
