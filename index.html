@@ -2090,26 +2090,21 @@
             res.innerHTML = '❌ Invalid number। + देश कोड के साथ दर्ज करें।<br><span style="font-size:11px;color:#888;">उदाहरण: +919876543210 या +14155552671</span>';
         }
     }
-</script>
-    <!-- Cookie Consent Banner -->
-    <div id="cookieConsentBanner" style="position: fixed; bottom: 0; left: 0; right: 0; background: #1a1a2e; color: #fff; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; z-index: 9999; box-shadow: 0 -4px 10px rgba(0,0,0,0.3); font-size: 14px;">
-        <span>We use cookies to analyze traffic and serve ads through Google AdSense. By using our site, you consent to cookies.</span>
-        <button onclick="acceptCookies()" style="background: #e94560; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: bold; white-space: nowrap; margin-left: 15px;">Got It</button>
-    </div>
+<!-- Cookie Consent Banner -->
+<div id="cookieConsentBanner" style="position: fixed; bottom: 0; left: 0; right: 0; background: #1a1a2e; color: #fff; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; z-index: 9999; box-shadow: 0 -4px 10px rgba(0,0,0,0.3); font-size: 14px;">
+    <span>We use cookies to analyze traffic and serve ads through Google AdSense. By using our site, you consent to cookies.</span>
+    <button onclick="acceptCookies()" style="background: #e94560; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: bold; white-space: nowrap; margin-left: 15px;">Got It</button>
+</div>
 
-    <script>
-        function acceptCookies() {
-            document.getElementById('cookieConsentBanner').style.display = 'none';
-            localStorage.setItem('cookiesAccepted', 'true');
-        }
-        if(localStorage.getItem('cookiesAccepted') === 'true') {
-            document.getElementById('cookieConsentBanner').style.display = 'none';
-        }
-    </script>
+<script>
+    function acceptCookies() {
+        document.getElementById('cookieConsentBanner').style.display = 'none';
+        localStorage.setItem('cookiesAccepted', 'true');
+    }
+    if(localStorage.getItem('cookiesAccepted') === 'true') {
+        document.getElementById('cookieConsentBanner').style.display = 'none';
+    }
 </script>
-
-</body>
-</html>
 
 </body>
 </html>
