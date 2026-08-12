@@ -2092,25 +2092,29 @@
     }
 </script>
     <!-- Cookie Consent Banner -->
-    <div id="cookieConsentBanner" style="position: fixed; bottom: 0; left: 0; right: 0; background: #1a1a2e; color: #fff; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; z-index: 9999; box-shadow: 0 -4px 10px rgba(0,0,0,0.3); font-size: 14px;">
-        <span>We use cookies to analyze traffic and serve ads through Google AdSense. By using our site, you consent to cookies.</span>
-        <button onclick="acceptCookies()" style="background: #e94560; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: bold; white-space: nowrap; margin-left: 15px;">Got It</button>
-    </div>
+<div id="cookieConsentBanner" style="position:fixed;bottom:0;left:0;right:0;background:#1a1a2e;color:#fff;padding:15px 20px;display:none;justify-content:space-between;align-items:center;z-index:9999;box-shadow:0 -4px 10px rgba(0,0,0,.3);font-size:14px;gap:10px;flex-wrap:wrap;">
+  <span>
+    We use cookies to analyze traffic and serve ads through Google AdSense.
+    By using our site, you consent to cookies.
+  </span>
 
-    <script>
-        function acceptCookies() {
-            document.getElementById('cookieConsentBanner').style.display = 'none';
-            localStorage.setItem('cookiesAccepted', 'true');
-        }
-        if(localStorage.getItem('cookiesAccepted') === 'true') {
-            document.getElementById('cookieConsentBanner').style.display = 'none';
-        }
-    </script>
+  <button id="cookieAcceptBtn" style="background:#e94560;color:#fff;border:none;padding:8px 16px;border-radius:6px;cursor:pointer;font-weight:bold;white-space:nowrap;">
+    Got It
+  </button>
+</div>
+
+<script>
+(function () {
+  const banner = document.getElementById('cookieConsentBanner');
+  const btn = document.getElementById('cookieAcceptBtn');
+
+  if (!localStorage.getItem('cookiesAccepted')) {
+    banner.style.display = 'flex';
+  }
+
+  btn.addEventListener('click', function () {
+    localStorage.setItem('cookiesAccepted', 'true');
+    banner.style.display = 'none';
+  });
+})();
 </script>
-
-</body>
-</html>
-
-</body>
-</html>
-Ye haata du full kya
