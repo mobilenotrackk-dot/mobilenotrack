@@ -2,8 +2,7 @@
 
 **Free online tool** to trace mobile number telecom circle & location, plus a full network/security utility hub — all client-side, no login required.
 
-🔗 **Live:** [mobilenotrackk-dot.github.io/mobilenotrack](https://mobilenotrackk-dot.github.io/mobilenotrack/)
-
+🔗 **Live:** 🌍 http://mobilenotrack.com
 ---
 
 ## 🛡️ Main Features
