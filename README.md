@@ -5,7 +5,7 @@
 🔗 **Live:** 🌍 https://mobilenotrack.com
 ---
 
-## 🛡️ Main Features
+## 🛡️ Main Features+ (Free Utility Tools) 
 
 | Tool | Description |
 |---|---|
@@ -22,7 +22,7 @@
 
 ---
 
-## 📚 Blog Section
+(## 📚 Blog Section))
 
 25+ fact-based technical guides covering:
 
