@@ -28,8 +28,5 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-# आपके नए कस्टम डोमेन का सही साइटमैप रास्ता
-Sitemap: https://mobilenotrack.com
-
-# Crawl delay
-Crawl-delay: 1
+# सही साइटमैप रास्ता
+Sitemap: https://mobilenotrack.com/sitemap.xml
