@@ -1,11 +1,35 @@
 User-agent: *
 Allow: /
 
-# Block bots from admin/private paths (add if needed)
-# Disallow: /admin/
+# OpenAI के ChatGPT बॉट को अनुमति
+User-agent: GPTBot
+Allow: /
 
-# Sitemap location
-Sitemap: https://mobilenotrackk-dot.github.io/mobilenotrack/sitemap.xml
+User-agent: ChatGPT-User
+Allow: /
 
-# Crawl delay (optional, respectful)
+# Google के AI (Gemini/Bard) बॉट को अनुमति
+User-agent: Google-Extended
+Allow: /
+
+# Anthropic (Claude AI) बॉट को अनुमति
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity AI बॉट को अनुमति
+User-agent: PerplexityBot
+Allow: /
+
+# Apple के AI बॉट को अनुमति
+User-agent: Applebot-Extended
+Allow: /
+
+# Common Crawl बॉट को अनुमति
+User-agent: CCBot
+Allow: /
+
+# आपके नए कस्टम डोमेन का सही साइटमैप रास्ता
+Sitemap: https://mobilenotrack.com
+
+# Crawl delay
 Crawl-delay: 1
