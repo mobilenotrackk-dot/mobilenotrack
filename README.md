@@ -59,10 +59,10 @@ This is a **free educational and informational tool** — not intended for surve
 
 ---
 
-## 📧 Contact
+## 📧 Contact-contact@mobilenotrack.com
 
 **Email:** contact@mobilenotrack.com
-**Website:** [mobilenotrack.com](https://mobilenotrack.com) *(custom domain — coming soon)*
+**Website:** https://mobilenotrack.com *
 
 ---
 
