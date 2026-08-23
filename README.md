@@ -12,7 +12,7 @@
 
 ## 🛡️ Main Features+ (Free Utility Tools) 
 
-| Tool | Description |
+| Tool | Description |Security Tools
 |---|---|
 | 📱 **Phone Lookup** | Country + telecom circle / region detection for any mobile number |
 | 🌐 **DNS Lookup** | Domain ke A, MX, AAAA, NS records check karo |
