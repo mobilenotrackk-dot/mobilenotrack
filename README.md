@@ -51,7 +51,26 @@
 
 ## 🎓 Purpose
 
-This is a **free educational and informational tool** — not intended for surveillance, stalking, or exact location tracking of individuals.
+This is a **free educational and informational tool** — not intended for surveillance, stalking, or exact location tracking of individuals.javascript
+html
+webapp
+learning
+machine-learning
+phone-lookup
+ip-lookup
+ip-geolocation
+dns-lookup
+whois
+network-security
+cybersecurity
+internet-security
+wifi-security
+vpn
+phishing-prevention
+telecom
+network
+security-tools
+internet-tools
 
 ---
 
