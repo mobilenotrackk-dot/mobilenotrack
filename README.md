@@ -70,7 +70,7 @@ phishing-prevention
 telecom
 network
 security-tools
-internet-tools
+internet-toolsAdvance,webapp,website.
 
 ---
 
@@ -79,7 +79,7 @@ internet-tools
 - Vanilla HTML/CSS/JavaScript (no framework)
 - [Leaflet.js](https://leafletjs.com/) — map rendering
 - [libphonenumber-js](https://github.com/catamphetamine/libphonenumber-js) — phone number parsing
-- Google DNS API, GeoJS, RDAP — public data sources
+- Google DNS API, GeoJS, RDAP — public data sources.
 
 ---
 
