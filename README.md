@@ -70,7 +70,7 @@ phishing-prevention
 telecom
 network
 security-tools
-internet-toolsAdvance,webapp,website all-in-one free option .
+internet-toolsAdvance,webapp,website all-in-one free option SPA.
 mobilenotrack.com.
 
 ---
