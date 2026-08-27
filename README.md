@@ -70,7 +70,7 @@ phishing-prevention
 telecom
 network
 security-tools, safety tools
-internet-toolsAdvance,webapp,website all-in-one free option SPA OSINT Tools (Open Source Intelligence).
+internet-toolsAdvance,webapp,website all-in-one free option SPA OSINT Tools (Open Source Intelligence).SPA (Single-Page Application)
 mobilenotrack.com.
 
 ---
