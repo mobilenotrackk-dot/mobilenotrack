@@ -1,25 +1,32 @@
 User-agent: *
 Allow: /
 
+# OpenAI के ChatGPT बॉट को अनुमति
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
+# Google के AI (Gemini/Bard) बॉट को अनुमति
 User-agent: Google-Extended
 Allow: /
 
+# Anthropic (Claude AI) बॉट को अनुमति
 User-agent: ClaudeBot
 Allow: /
 
+# Perplexity AI बॉट को अनुमति
 User-agent: PerplexityBot
 Allow: /
 
+# Apple के AI बॉट को अनुमति
 User-agent: Applebot-Extended
 Allow: /
 
+# Common Crawl बॉट को अनुमति
 User-agent: CCBot
 Allow: /
 
+# सही साइटमैप रास्ता
 Sitemap: https://mobilenotrack.com/sitemap.xml
