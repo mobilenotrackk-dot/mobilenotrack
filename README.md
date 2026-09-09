@@ -52,7 +52,7 @@
 ## 🎓 Purpose
 
 This is a **free educational and informational tool** — not intended for surveillance, stalking, or exact location tracking of individuals.javascript
-html
+html,opensourceintelligent
 webapp
 learning
 machine-learning
