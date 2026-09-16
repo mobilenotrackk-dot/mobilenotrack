@@ -53,14 +53,14 @@
 
 This is a **free educational and informational tool** — not intended for surveillance, stalking, or exact location tracking of individuals.javascript
 html,opensourceintelligent
-webapp
-learning
+webapp,tool,tools
+learning,weptool,tools
 machine-learning
 phone-lookup
-ip-lookup
+ip-lookup, onlinetool,tools
 ip-geolocation
-dns-lookup
-whois
+dns-lookup,safe,tool,tools
+whois, intrnattool,tools
 network-security
 cybersecurity
 internet-security
