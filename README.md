@@ -23,7 +23,11 @@
 | 🌐 **IP Lookup** | IP address se city, region, country, ISP nikalo |
 | 🛡️ **VPN / Proxy Detection** | IP ka network type — residential, mobile, ya VPN/datacenter |
 | 🚫 **Spam / Blacklist Check** | Spamhaus ZEN, SpamCop, SORBS ke against IP reputation check |
-| 📲 **Carrier Lookup** | International numbers ka carrier & number type (via libphonenumber-js) |
+| 📲 **Carrier Lookup** | International numbers ka carrier & number type (via libphonenumber-js) |,add QR Code Generator
+ Image Compressor
+ Age Calculator
+ Image → PDF
+ PDF Info
 
 ---
 
@@ -63,7 +67,11 @@ dns-lookup,safe,tool,tools
 whois, intrnattool,tools
 network-security
 cybersecurity
-internet-security
+internet-security,QR Code Generator
+ Image Compressor
+ Age Calculator
+ Image → PDF
+ PDF Info
 wifi-security,Technical Architecture, Digital Library,multi-page web application 
 vpn,toolkit,Worldwide Standards
 phishing-prevention,Application Programming Interfaces,All-in-One Utility
