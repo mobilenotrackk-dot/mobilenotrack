@@ -64,7 +64,7 @@ whois, intrnattool,tools
 network-security
 cybersecurity
 internet-security
-wifi-security,Technical Architecture, Digital Library 
+wifi-security,Technical Architecture, Digital Library,multi-page web application 
 vpn,toolkit,Worldwide Standards
 phishing-prevention,Application Programming Interfaces,All-in-One Utility
 telecom,Dev-Utility & Security Portal,Bulk Lookup — Check Multiple Numbers at Once US,UK,Europe,Global)Global, Cyber-Security Tools),High-Authority Educational Resource
