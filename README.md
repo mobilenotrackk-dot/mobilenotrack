@@ -31,7 +31,7 @@
 | 🎂 **Age Calculator** | Date of birth se age in years, months, days aur next birthday information calculate karo |
 | 📄 **Image → PDF** | Multiple JPG, PNG ya WebP images ko browser print workflow se PDF mein save karo |
 | 🔍 **PDF Info** | PDF file size, version, header, MIME type aur basic metadata browser mein check karo |
-
+| 🖨️**Compress PDF (Reduce File Size) Smart mode: pages that contain a photo/scan are compressed as an image; pages that are pure text are kept exactly as-is (still selectable/searchable). Works best on scanned or photo-heavy PDFs. If a PDF has no images at all, the tool will tell you there is nothing to shrink, instead of making it bigger.
 ---
 
 ## 📚 Blog Section
