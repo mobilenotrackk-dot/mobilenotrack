@@ -642,82 +642,75 @@
 .mnt-star-frame{
   position:relative;
   width:100%;
-  max-width:520px;
-  height:75px;
-  margin:10px auto;
+  max-width:100%; /* 520 hataya */
+  height:78px;
+  margin:0; /* upar ka gap khatam */
   overflow:hidden;
-  border-radius:12px;
   background:#050812;
-  border:1px solid rgba(0,220,255,.25);
+  border-top:1px solid rgba(0,220,255,.25);
+  border-bottom:1px solid rgba(0,220,255,.25);
+  border-left:0;
+  border-right:0;
+  border-radius:0; /* mobile pe khali na lage */
 }
-
 .mnt-star-frame canvas{
   position:absolute;
-  inset:0;
+  left:0; top:0;
   width:100%;
   height:100%;
+  display:block;
+  pointer-events:none;
+}
+
+/* Desktop pe thoda style dega */
+@media(min-width:768px){
+  .mnt-star-frame{
+    height:85px;
+    border-radius:12px;
+    border:1px solid rgba(0,220,255,.25);
+    max-width:520px;
+    margin:10px auto;
+  }
 }
 </style>
 
 <script>
-(()=>{
+(()=> {
+  const c=document.getElementById("mntMiniStars");
+  if(!c) return;
+  const x=c.getContext("2d",{alpha:true});
+  const box=c.parentElement;
+  let W,H,stars=[],dpr=1;
 
-const c=document.getElementById("mntMiniStars");
-const x=c.getContext("2d");
-const box=c.parentElement;
-let W,H,stars=[];
-
-function size(){
- W=box.clientWidth;
- H=box.clientHeight;
-
- c.width=W*2;
- c.height=H*2;
- c.style.width=W+"px";
- c.style.height=H+"px";
-
- x.setTransform(2,0,0,2,0,0);
-
- stars=Array.from({length:120},()=>({
-  x:Math.random()*W,
-  y:Math.random()*H,
-  r:Math.random()*1.4+.25,
-  p:Math.random()*6.28,
-  s:.015+Math.random()*.06
- }));
-}
-
-function draw(){
-
- x.clearRect(0,0,W,H);
-
- stars.forEach(s=>{
-
-  s.p+=s.s;
-
-  let a=.25+(Math.sin(s.p)+1)/2*.75;
-
-  x.beginPath();
-  x.arc(s.x,s.y,s.r,0,Math.PI*2);
-
-  x.fillStyle=`rgba(255,255,255,${a})`;
-
-  x.shadowColor="#fff";
-  x.shadowBlur=s.r>1?7:2;
-
-  x.fill();
-
-  x.shadowBlur=0;
- });
-
- requestAnimationFrame(draw);
-}
-
-addEventListener("resize",size);
-
-size();
-draw();
-
+  function size(){
+    W=box.clientWidth;
+    H=box.clientHeight;
+    dpr=Math.min(window.devicePixelRatio||1,2);
+    c.width=W*dpr;
+    c.height=H*dpr;
+    x.setTransform(dpr,0,0,dpr,0,0);
+    stars=Array.from({length:90},()=>({
+      x:Math.random()*W,
+      y:Math.random()*H,
+      r:Math.random()*1.4+0.3,
+      p:Math.random()*6.28,
+      s:0.015+Math.random()*0.04
+    }));
+  }
+  function draw(){
+    x.clearRect(0,0,W,H);
+    stars.forEach(s=>{
+      s.p+=s.s;
+      let a=0.35+(Math.sin(s.p)+1)/2*0.65;
+      x.beginPath();
+      x.arc(s.x,s.y,s.r,0,Math.PI*2);
+      x.fillStyle=`rgba(200,230,255,${a})`;
+      x.fill();
+    });
+    requestAnimationFrame(draw);
+  }
+  window.addEventListener("resize",size,{passive:true});
+  size(); draw();
 })();
 </script>
 <div class="header" style="position:relative;"><h1>📱 Mobile No Track</h1>
