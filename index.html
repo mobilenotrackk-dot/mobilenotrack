@@ -634,77 +634,7 @@
 
 <div class="wrapper">
 
-  <!-- Header --><div class="mnt-star-frame">
-  <canvas id="mntMiniStars"></canvas>
-</div>
-
-<style>
-/* theme ka gap hamesha ke liye khatam */
-html,body{margin:0!important;padding:0!important;overflow-x:hidden}
-.mnt-star-frame{
-  position:relative;
-  left:50%;
-  transform:translateX(-50%);
-  width:100vw;
-  width:100dvw;
-  height:clamp(130px, 22vw, 190px);
-  margin:0;
-  margin-top:calc(-1 * env(safe-area-inset-top, 0px));
-  padding-top:env(safe-area-inset-top, 0px);
-  background:#050812;
-  overflow:hidden;
-  display:block;
-  box-sizing:border-box;
-  border:0;
-  border-bottom:1px solid rgba(0,220,255,.25);
-  line-height:0;
-  z-index:9999;
-}
-.mnt-star-frame canvas{
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  display:block;
-}
-</style>
-
-<script>
-(()=> {
-  const c=document.getElementById("mntMiniStars");
-  if(!c) return;
-  const ctx=c.getContext("2d",{alpha:true});
-  let W,H,stars=[],raf;
-  function size(){
-    W=c.parentElement.clientWidth;
-    H=c.parentElement.clientHeight;
-    let dpr=Math.min(window.devicePixelRatio||1,2);
-    c.width=W*dpr; c.height=H*dpr;
-    ctx.setTransform(dpr,0,0,dpr,0,0);
-    stars=Array.from({length:Math.round(W/6)},o=>({
-      x:Math.random()*W,
-      y:Math.random()*H,
-      r:Math.random()*1.7+0.3,
-      p:Math.random()*6.28,
-      s:0.01+Math.random()*0.035
-    }));
-  }
-  function draw(){
-    ctx.clearRect(0,0,W,H);
-    for(let s of stars){
-      s.p+=s.s;
-      let a=0.35+(Math.sin(s.p)+1)*0.325;
-      ctx.beginPath();
-      ctx.arc(s.x,s.y,s.r,0,6.283);
-      ctx.fillStyle=`rgba(255,255,255,${a})`;
-      ctx.fill();
-    }
-    raf=requestAnimationFrame(draw);
-  }
-  window.addEventListener("resize",size,{passive:true});
-  size(); draw();
-})();
-</script>
+  <!-- Header -->
 <div class="header" style="position:relative;"><h1>📱 Mobile No Track</h1>
     <p style="color:#00ff88; text-align:center; font-size:14px; margin:0 0 6px 0; opacity:0.9; font-weight:bold;">((((( <a href="https://mobilenotrack.com" class="blink-link">
   mobilenotrack.com
