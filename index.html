@@ -634,11 +634,96 @@
 
 <div class="wrapper">
 
-    <!-- Header -->
+  <!-- Header --><div class="mnt-star-frame">
+  <canvas id="mntMiniStars"></canvas>
+</div>
+
+<style>
+.mnt-star-frame{
+  position:relative;
+  width:100%;
+  max-width:520px;
+  height:75px;
+  margin:10px auto;
+  overflow:hidden;
+  border-radius:12px;
+  background:#050812;
+  border:1px solid rgba(0,220,255,.25);
+}
+
+.mnt-star-frame canvas{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+}
+</style>
+
+<script>
+(()=>{
+
+const c=document.getElementById("mntMiniStars");
+const x=c.getContext("2d");
+const box=c.parentElement;
+let W,H,stars=[];
+
+function size(){
+ W=box.clientWidth;
+ H=box.clientHeight;
+
+ c.width=W*2;
+ c.height=H*2;
+ c.style.width=W+"px";
+ c.style.height=H+"px";
+
+ x.setTransform(2,0,0,2,0,0);
+
+ stars=Array.from({length:120},()=>({
+  x:Math.random()*W,
+  y:Math.random()*H,
+  r:Math.random()*1.4+.25,
+  p:Math.random()*6.28,
+  s:.015+Math.random()*.06
+ }));
+}
+
+function draw(){
+
+ x.clearRect(0,0,W,H);
+
+ stars.forEach(s=>{
+
+  s.p+=s.s;
+
+  let a=.25+(Math.sin(s.p)+1)/2*.75;
+
+  x.beginPath();
+  x.arc(s.x,s.y,s.r,0,Math.PI*2);
+
+  x.fillStyle=`rgba(255,255,255,${a})`;
+
+  x.shadowColor="#fff";
+  x.shadowBlur=s.r>1?7:2;
+
+  x.fill();
+
+  x.shadowBlur=0;
+ });
+
+ requestAnimationFrame(draw);
+}
+
+addEventListener("resize",size);
+
+size();
+draw();
+
+})();
+</script>
 <div class="header" style="position:relative;"><h1>📱 Mobile No Track</h1>
     <p style="color:#00ff88; text-align:center; font-size:14px; margin:0 0 6px 0; opacity:0.9; font-weight:bold;">((((( <a href="https://mobilenotrack.com" class="blink-link">
   mobilenotrack.com
-</a>
+    </a>
 
 <style>
 .blink-link {
