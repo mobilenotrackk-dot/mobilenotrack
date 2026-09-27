@@ -641,36 +641,24 @@
 <style>
 .mnt-star-frame{
   position:relative;
-  width:100%;
-  max-width:100%; /* 520 hataya */
-  height:78px;
-  margin:0; /* upar ka gap khatam */
-  overflow:hidden;
+  width:100vw;
+  margin-left:calc(-50vw + 50%);
+  margin-right:calc(-50vw + 50%);
+  height:165px;
   background:#050812;
-  border-top:1px solid rgba(0,220,255,.25);
-  border-bottom:1px solid rgba(0,220,255,.25);
-  border-left:0;
-  border-right:0;
-  border-radius:0; /* mobile pe khali na lage */
+  overflow:hidden;
+  border-top:1px solid rgba(0,220,255,.3);
+  border-bottom:1px solid rgba(0,220,255,.3);
 }
 .mnt-star-frame canvas{
   position:absolute;
-  left:0; top:0;
+  inset:0;
   width:100%;
   height:100%;
   display:block;
-  pointer-events:none;
 }
-
-/* Desktop pe thoda style dega */
 @media(min-width:768px){
-  .mnt-star-frame{
-    height:85px;
-    border-radius:12px;
-    border:1px solid rgba(0,220,255,.25);
-    max-width:520px;
-    margin:10px auto;
-  }
+  .mnt-star-frame{ height:190px; }
 }
 </style>
 
@@ -678,38 +666,45 @@
 (()=> {
   const c=document.getElementById("mntMiniStars");
   if(!c) return;
-  const x=c.getContext("2d",{alpha:true});
+  const x=c.getContext("2d");
   const box=c.parentElement;
-  let W,H,stars=[],dpr=1;
-
+  let W,H,stars=[];
   function size(){
-    W=box.clientWidth;
-    H=box.clientHeight;
-    dpr=Math.min(window.devicePixelRatio||1,2);
-    c.width=W*dpr;
-    c.height=H*dpr;
+    W=box.clientWidth; H=box.clientHeight;
+    let dpr=Math.min(devicePixelRatio||1,2);
+    c.width=W*dpr; c.height=H*dpr;
     x.setTransform(dpr,0,0,dpr,0,0);
-    stars=Array.from({length:90},()=>({
+    stars=Array.from({length:180},()=>({
       x:Math.random()*W,
       y:Math.random()*H,
-      r:Math.random()*1.4+0.3,
+      r:Math.random()*1.8+0.4,
       p:Math.random()*6.28,
-      s:0.015+Math.random()*0.04
+      s:0.01+Math.random()*0.03
     }));
   }
   function draw(){
     x.clearRect(0,0,W,H);
+    // halka gradient glow
+    let g=x.createRadialGradient(W/2,H/2,0,W/2,H/2,H);
+    g.addColorStop(0,"rgba(0,220,255,0.08)");
+    g.addColorStop(1,"rgba(0,0,0,0)");
+    x.fillStyle=g;
+    x.fillRect(0,0,W,H);
+    
     stars.forEach(s=>{
       s.p+=s.s;
-      let a=0.35+(Math.sin(s.p)+1)/2*0.65;
+      let a=0.4+(Math.sin(s.p)+1)/2*0.6;
       x.beginPath();
       x.arc(s.x,s.y,s.r,0,Math.PI*2);
-      x.fillStyle=`rgba(200,230,255,${a})`;
+      x.fillStyle=`rgba(255,255,255,${a})`;
+      x.shadowColor="#7ee8ff";
+      x.shadowBlur=s.r>1.2?10:0;
       x.fill();
+      x.shadowBlur=0;
     });
     requestAnimationFrame(draw);
   }
-  window.addEventListener("resize",size,{passive:true});
+  addEventListener("resize",size,{passive:true});
   size(); draw();
 })();
 </script>
